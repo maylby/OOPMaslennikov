@@ -17,19 +17,26 @@ public class S002Main {
         cat.setAge(5);
         System.out.println(cat);
         badMethod();
-        RussianGreyCat russianGreyCat = new RussianGreyCat();
-        russianGreyCat.voice();
-        Animal.sayHello();
+        // RussianGreyCat russianGreyCat = new RussianGreyCat();
+        // russianGreyCat.voice();
+        // Animal.sayHello();
 
     }
 
 
 
     public static void badMethod(){
-        cat.setName("murzik");
+        cat.setName("murka"); // исправление "boris" на "murzik"
+                                    // выдаёт:
+                                    // Cat{name='boris', age=5}
+                                    // bad name! // запрет на исправление
+                                    // Cat{name='boris', age=5}
 
-
-        System.out.println(cat);
-
+        System.out.println(cat); // исправил "murzik" на "murka" 
+                                 // выдача:
+                                 // Cat{name='boris', age=5}
+                                 // Cat{name='murka', age=5}
+                                 // Можно изменить имя 
+                                 // на любое, кроме "murzik"
     }
 }
