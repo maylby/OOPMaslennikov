@@ -2,6 +2,12 @@
 Урок 1. Принципы ООП: Инкапсуляция, наследование, полиморфизм
 https://gb.ru/lessons/414496
 
+00:49:30
+
+Ссылка на репозиторий GitHub с кодами:
+https://github.com/besSmertniyKoder/untitled
+
+
 00:31:00
 
 Наследование (Класс "RusGreyCat")
@@ -29,11 +35,3 @@ public class S002RusGreyCat extends S002Animal {
 
     }
 }
-
-/*
-00:49:30
-
-Ссылка на репозиторий GitHub с кодами:
-https://github.com/besSmertniyKoder/untitled
-
- */

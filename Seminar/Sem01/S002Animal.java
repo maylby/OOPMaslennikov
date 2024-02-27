@@ -2,6 +2,12 @@
 Урок 1. Принципы ООП: Инкапсуляция, наследование, полиморфизм
 https://gb.ru/lessons/414496
 
+00:49:30
+
+Ссылка на репозиторий GitHub с кодами:
+https://github.com/besSmertniyKoder/untitled
+
+
 00:41:00
 
 Абстракция
@@ -26,10 +32,3 @@ public abstract class S002Animal {
                                   // метод абстрактный
 }
 
-/*
-00:49:30
-
-Ссылка на репозиторий GitHub с кодами:
-https://github.com/besSmertniyKoder/untitled
-
- */

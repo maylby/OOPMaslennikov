@@ -2,6 +2,12 @@
 Урок 1. Принципы ООП: Инкапсуляция, наследование, полиморфизм
 https://gb.ru/lessons/414496
 
+00:49:30
+
+Ссылка на репозиторий GitHub с кодами:
+https://github.com/besSmertniyKoder/untitled
+
+
 00:14:30
 
 Инкапсуляция
@@ -38,12 +44,3 @@ public class S002Main {
                                  // на любое, кроме "murzik"
     }
 }
-
-/*
-00:49:30
-
-Ссылка на репозиторий GitHub с кодами:
-https://github.com/besSmertniyKoder/untitled
-
- */
-
