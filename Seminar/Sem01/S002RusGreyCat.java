@@ -21,7 +21,7 @@ public class S002RusGreyCat extends S002Animal {
      * Переопределение метода "voice",
      * указанного в абстрактном классе "S002Animal",
      * где метод "voice" не получил реализации, которую
-     * можно задать сейчас в ".println("meow")"
+     * можно задать сейчас в ".println()"
      */
     @Override
     public void voice() {
