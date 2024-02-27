@@ -27,11 +27,13 @@ public class S002Cat {
      * если переменная определена в цикле, то
      * вызвать её вне цикла нельзя
      * (пример инкапсуляции)
+     * 
+     * сохранил метод "meow()" для примера
      */
-    public void meow() { // сохранил данную запись для примера
-        String meow = "meow";
-        System.out.println(meow);
-    }
+    // public void meow() { 
+    //     String meow = "meow";
+    //     System.out.println(meow);
+    // }
 
     public void purr(){
         System.out.println("purring");
@@ -61,6 +63,9 @@ public class S002Cat {
         this.age = age;
     }
 
+    /*
+     * Переопределение метода "toString()"
+     */
     @Override
     public String toString() {
         return "Cat{" +
