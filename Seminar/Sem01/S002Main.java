@@ -29,7 +29,7 @@ public class S002Main {
         cat.setName("murka"); // исправление "boris" на "murzik"
                                     // выдаёт:
                                     // Cat{name='boris', age=5}
-                                    // bad name! // запрет на исправление
+                                    // bad name! (запрет на исправление имени)
                                     // Cat{name='boris', age=5}
 
         System.out.println(cat); // исправил "murzik" на "murka" 
