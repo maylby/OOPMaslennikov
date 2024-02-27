@@ -17,6 +17,12 @@ package OOP.Seminar.Sem01;
  * неограниченное число наследников (полиморфизм)
  */
 public class S002RusGreyCat extends S002Animal {
+    /*
+     * Переопределение метода "voice",
+     * указанного в абстрактном классе "S002Animal",
+     * где метод "voice" не получил реализации, которую
+     * можно задать сейчас в ".println("meow")"
+     */
     @Override
     public void voice() {
         System.out.println("meow");
