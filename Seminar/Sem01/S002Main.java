@@ -19,11 +19,9 @@ public class S002Main {
         badMethod();
         S002RusGreyCat rusGreyCat = new S002RusGreyCat();
         rusGreyCat.voice();
-        S002Animal.sayHello();
-
+        S002Animal.sayHello();  // вызов метода "sayHello" 
+                                // абстрактного класса "S002Animal"
     }
-
-
 
     public static void badMethod(){
         cat.setName("murka"); // исправление "boris" на "murzik"
