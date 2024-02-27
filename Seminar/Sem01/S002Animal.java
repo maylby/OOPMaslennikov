@@ -16,7 +16,8 @@ package OOP.Seminar.Sem01;
 public abstract class S002Animal {
     String test;
     /*
-     * "static" привязывает метод не к экземпляру класса, а к самому классу
+     * "static" привязывает метод "sayHello" 
+     * не к экземпляру класса, а к самому классу
      */
     public static void sayHello() {
         System.out.println("sayHello");
