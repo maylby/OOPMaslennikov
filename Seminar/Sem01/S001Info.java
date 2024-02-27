@@ -39,11 +39,6 @@ https://gb.ru/lessons/414496
     � Научимся составлять идеологически верный ООП программы
 
 
-00:14:30
-
-Инкапсуляция
-
-
 Роман Сухачев 
 https://github.com/besSmertniyKoder/untitled
 
