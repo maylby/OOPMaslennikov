@@ -38,3 +38,12 @@ public class S002Main {
                                  // на любое, кроме "murzik"
     }
 }
+
+/*
+00:49:30
+
+Ссылка на репозиторий GitHub с кодами:
+https://github.com/besSmertniyKoder/untitled
+
+ */
+

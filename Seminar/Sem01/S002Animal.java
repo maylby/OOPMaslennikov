@@ -25,3 +25,11 @@ public abstract class S002Animal {
     public abstract void voice(); // Не указана реализация, т.к.
                                   // метод абстрактный
 }
+
+/*
+00:49:30
+
+Ссылка на репозиторий GitHub с кодами:
+https://github.com/besSmertniyKoder/untitled
+
+ */

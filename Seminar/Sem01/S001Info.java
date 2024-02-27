@@ -39,8 +39,9 @@ https://gb.ru/lessons/414496
     � Научимся составлять идеологически верный ООП программы
 
 
-Роман Сухачев 
-https://github.com/besSmertniyKoder/untitled
+00:49:30
 
+Ссылка на репозиторий GitHub с кодами:
+https://github.com/besSmertniyKoder/untitled
 
 */

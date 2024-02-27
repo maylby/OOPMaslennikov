@@ -29,3 +29,11 @@ public class S002RusGreyCat extends S002Animal {
 
     }
 }
+
+/*
+00:49:30
+
+Ссылка на репозиторий GitHub с кодами:
+https://github.com/besSmertniyKoder/untitled
+
+ */
