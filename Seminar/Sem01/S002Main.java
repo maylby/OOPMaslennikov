@@ -30,12 +30,12 @@ public class S002Main {
                                     // выдаёт:
                                     // Cat{name='boris', age=5}
                                     // bad name! (запрет на исправление имени)
-                                    // Cat{name='boris', age=5}
+                                    // Cat{name='boris', age=5} (имя прежнее)
 
         System.out.println(cat); // исправил "murzik" на "murka" 
                                  // выдача:
-                                 // Cat{name='boris', age=5}
-                                 // Cat{name='murka', age=5}
+                                 // Cat{name='boris', age=5} (старое имя)
+                                 // Cat{name='murka', age=5} (новое имя)
                                  // Можно изменить имя 
                                  // на любое, кроме "murzik"
     }
