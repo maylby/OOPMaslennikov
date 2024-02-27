@@ -16,7 +16,7 @@ package OOP.Seminar.Sem01;
  * Но родительский класс может иметь 
  * неограниченное число наследников (полиморфизм)
  */
-public class S002RusGreyCat extends S002Cat{
+public class S002RusGreyCat extends S002Animal {
     @Override
     public void voice() {
         System.out.println("meow");
