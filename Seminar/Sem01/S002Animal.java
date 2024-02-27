@@ -10,7 +10,7 @@ https://gb.ru/lessons/414496
 package OOP.Seminar.Sem01;
 
 /*
- * Абстрактный класс
+ * Абстрактный класс (более старая версия "интерфейса")
  * позволяет писать абстрактные методы
  */
 public abstract class S002Animal {
