@@ -9,6 +9,10 @@ https://gb.ru/lessons/414496
  */
 package OOP.Seminar.Sem01;
 
-public class S002Animal {
-    
+public abstract class S002Animal {
+    String test;
+    public static void sayHello(){
+        System.out.println("sayHello");
+    }
+    public abstract void voice();
 }
