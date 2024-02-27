@@ -9,6 +9,17 @@ https://gb.ru/lessons/414496
  */
 package OOP.Seminar.Sem01;
 
-public class S002RusGreyCat {
-    
+/*
+ * "S002RusGreyCat" - класс наследник
+ * "S002Cat" - класс родитель (наследуемый)
+ * Класс наследник может наследовать, только один класс
+ * Но родительский класс может иметь 
+ * неограниченное число наследников (полиморфизм)
+ */
+public class S002RusGreyCat extends S002Cat{
+    @Override
+    public void voice() {
+        System.out.println("meow");
+
+    }
 }

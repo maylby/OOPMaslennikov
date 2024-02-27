@@ -17,9 +17,9 @@ public class S002Main {
         cat.setAge(5);
         System.out.println(cat);
         badMethod();
-        // RussianGreyCat russianGreyCat = new RussianGreyCat();
-        // russianGreyCat.voice();
-        // Animal.sayHello();
+        S002RusGreyCat rusGreyCat = new S002RusGreyCat();
+        rusGreyCat.voice();
+        Animal.sayHello();
 
     }
 
