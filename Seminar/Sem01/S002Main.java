@@ -19,7 +19,7 @@ public class S002Main {
         badMethod();
         S002RusGreyCat rusGreyCat = new S002RusGreyCat();
         rusGreyCat.voice();
-        Animal.sayHello();
+        S002Animal.sayHello();
 
     }
 
