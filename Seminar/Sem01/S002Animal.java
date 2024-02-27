@@ -31,4 +31,3 @@ public abstract class S002Animal {
     public abstract void voice(); // Не указана реализация, т.к.
                                   // метод абстрактный
 }
-
