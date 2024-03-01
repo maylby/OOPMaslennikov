@@ -15,7 +15,6 @@ https://gb.ru/lessons/414496
 только через кнопку Run Java
 
 Решение
-(Сергей Пономарев)
  */
 
 package OOP.Seminar.Sem01W;
