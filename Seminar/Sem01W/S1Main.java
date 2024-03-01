@@ -30,7 +30,7 @@ public class S1Main {
         
         VendingMachine vendingMachine = new VendingMachine();
         vendingMachine.initProducts(prods);
-        System.out.println((vendingMachine.getProduct("Сыр")));
+        System.out.println(vendingMachine.getProduct("Сыр"));
     }
 }
 
