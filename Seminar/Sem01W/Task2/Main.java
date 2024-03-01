@@ -33,3 +33,9 @@ public class Main {
         System.out.println(vendingMachine.getProduct("Минералка"));
     }
 }
+
+
+// Windows PowerShell
+// (C) Корпорация Майкрософт (Microsoft Corporation)
+// Попробуйте новую кроссплатформенную оболочку 
+// PowerShell (https://aka.ms/pscore6) 
