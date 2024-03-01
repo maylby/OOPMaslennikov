@@ -72,8 +72,8 @@ class S1Product {
     @Override
     public String toString() {
         return "Product{" +
-        "name='" + name + '\'' +
-        ", cost=" + cost +
+        "name: '" + name + '\'' +
+        ", cost: " + cost +
         '}';
     }
 }
