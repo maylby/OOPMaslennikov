@@ -34,6 +34,10 @@ public class S1Main {
     }
 }
 
+/*
+ * Внесение наименования каждого продукта 
+ * и его стоимости в общий список
+ */
 class S1Product {
 
     private String name;
@@ -60,6 +64,11 @@ class S1Product {
         this.cost = cost;
     }
 
+    /*
+     * Переопределение метода
+     * для выдачи сведений о продукте
+     * в понятной потребителю форме
+     */
     @Override
     public String toString() {
         return "Product{" +
@@ -70,7 +79,9 @@ class S1Product {
 
 }
 
-
+/*
+ * Передача списка продуктов с их стоимостью торговой машине
+ */
 class VendingMachine {
     private ArrayList<S1Product> products;
     
