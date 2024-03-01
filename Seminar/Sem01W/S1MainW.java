@@ -20,7 +20,7 @@ package OOP.Seminar.Sem01W;
  */
 import java.util.ArrayList;
 
-public class S1Main {
+public class S1MainW {
     public static void main(String[] args) {
         ArrayList<S1Product> prods = new ArrayList<>();
         prods.add(new S1Product("Хлеб", 40.0));
