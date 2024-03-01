@@ -38,6 +38,9 @@ class Main {
     }
 }
 
+/*
+ * Интерфейс (обновлённый вариант абстрактного класса)
+ */
 interface VendingMachine {
     
     Object getProduct(String prodName); // "public" - удалил перед "Product"
@@ -52,8 +55,9 @@ interface VendingMachine {
         // }
 }
 
-
-
+/*
+ * Абстрактный класс (устаревший вариант интерфейса)
+ */
 abstract class Product {
 
     private String name;
