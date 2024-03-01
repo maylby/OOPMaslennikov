@@ -37,3 +37,19 @@ class Main {
         System.out.println(vendingMachine.getProduct("Минералка"));
     }
 }
+
+interface VendingMachine {
+    
+    
+    Object getProduct(String prodName); // "public" - удалил перед "Product"
+                                         // вместо скобок "{}", точка с запятой
+        // {
+        //     for (Product p : products) {
+        //         if (p.getName().equals(prodName)){
+        //             return p;
+        //         }
+        //     }
+        //     return null;
+        // }
+    
+}
