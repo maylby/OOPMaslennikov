@@ -23,7 +23,9 @@ import java.util.ArrayList;
  * (пример: ПродающийБутылкиВодыАвтомат
  * 
  * В интерфейсе только getProduct!
- * 
+ */
+
+/* 
  * Код не запускался  
  * Пока "class All" и "interface VendingMachine" 
  * находились самом внизу,
