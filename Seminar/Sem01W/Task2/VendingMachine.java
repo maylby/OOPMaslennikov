@@ -18,7 +18,6 @@ package OOP.Seminar.Sem01W.Task2;
 
 public interface VendingMachine {
     
-    
     Object getProduct(String prodName); // "public" - удалил перед "Product"
                                          // вместо скобок "{}", точка с запятой
         // {
