@@ -28,35 +28,6 @@ import java.util.ArrayList;
 public class All {
     
 }
-class Main {
-    public static void main(String[] args) {
-        ArrayList<Product> prods = new ArrayList<>();
-        prods.add(new BottleWater("Вода", 40.0));
-        prods.add(new BottleWater("Минералка", 60.0));
-        prods.add(new BottleWater("Кола", 80.0));
-        
-        VendMach vendingMachine = new VendMach();
-        vendingMachine.initProducts(prods);
-        System.out.println(vendingMachine.getProduct("Минералка"));
-    }
-}
-
-/*
- * Интерфейс (обновлённый вариант абстрактного класса)
- */
-interface VendingMachine {
-    
-    Object getProduct(String prodName); // "public" - удалил перед "Product"
-                                         // вместо скобок "{}", точка с запятой
-        // {
-        //     for (Product p : products) {
-        //         if (p.getName().equals(prodName)){
-        //             return p;
-        //         }
-        //     }
-        //     return null;
-        // }
-}
 
 /*
  * Абстрактный класс (устаревший вариант интерфейса)
@@ -102,8 +73,7 @@ abstract class Product {
         "name: '" + name + '\'' +
         ", cost: " + cost +
         '}';
-    }
-    
+    } 
 }
 
 /*
@@ -144,9 +114,39 @@ class VendMach implements VendingMachine {
     public Product getProduct(String prodName) {
         for (Product p : bottleWaters) {
             if (p.getName().equals(prodName)) {
-            return p;
+                return p;
             }
         }
         return null;
+    }
+}
+
+/*
+ * Интерфейс (обновлённый вариант абстрактного класса)
+ */
+interface VendingMachine {
+    
+    Object getProduct(String prodName); // "public" - удалил перед "Product"
+                                         // вместо скобок "{}", точка с запятой
+        // {
+        //     for (Product p : products) {
+        //         if (p.getName().equals(prodName)){
+        //             return p;
+        //         }
+        //     }
+        //     return null;
+        // }
+}
+
+class Main {
+    public static void main(String[] args) {
+        ArrayList<Product> prods = new ArrayList<>();
+        prods.add(new BottleWater("Вода", 40.0));
+        prods.add(new BottleWater("Минералка", 60.0));
+        prods.add(new BottleWater("Кола", 80.0));
+        
+        VendMach vendingMachine = new VendMach();
+        vendingMachine.initProducts(prods);
+        System.out.println(vendingMachine.getProduct("Минералка"));
     }
 }
