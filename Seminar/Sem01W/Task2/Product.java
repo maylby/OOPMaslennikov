@@ -53,8 +53,7 @@ public abstract class Product {
 }
 
 /*
- * Класс "Наследников"
- * BottleWater
+ * BottleWater Класс "наследник"
  */
 class BottleWater extends Product {
     String name;
@@ -62,9 +61,13 @@ class BottleWater extends Product {
 
     public BottleWater(String name, double cost) {
         super(name, cost);
-}
+    }
 }
 
+/*
+ * Burger - Класс "наследник"
+ * (неиспользован)
+ */
 class Burger {
     public Burger() {
         super();
@@ -73,6 +76,10 @@ class Burger {
 
 
 class VendMach implements VendingMachine {
+    
+    /*
+     * Автомат по подаже бутилированной воды
+     */
     private ArrayList<Product> bottleWaters;
 
     public void initProducts(ArrayList<Product> battleOfWaters) {
