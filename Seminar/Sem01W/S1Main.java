@@ -76,7 +76,6 @@ class S1Product {
         ", cost=" + cost +
         '}';
     }
-
 }
 
 /*
