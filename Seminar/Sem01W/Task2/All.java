@@ -15,7 +15,6 @@ https://gb.ru/lessons/414496
 package OOP.Seminar.Sem01W.Task2;
 
 import java.util.ArrayList;
-
 /*
  * Сделать класс Товар абстрактным, 
  * создать нескольких наследников (к примеру: БутылкаВоды), 
@@ -24,10 +23,44 @@ import java.util.ArrayList;
  * (пример: ПродающийБутылкиВодыАвтомат
  * 
  * В интерфейсе только getProduct!
+ * 
+ * Код не запускался  
+ * Пока "class All" и "interface VendingMachine" 
+ * находились самом внизу,
+ * система выдавала сообщение:
+ * "ошибка: не могу найти метод main(String[]) 
+ * в классе: OOP.Seminar.Sem01W.Task2.All"
  */
-public class All {
-    
+ class All {
+    public static void main(String[] args) {
+        ArrayList<Product> prods = new ArrayList<>();
+        prods.add(new BottleWater("Вода", 40.0));
+        prods.add(new BottleWater("Минералка", 60.0));
+        prods.add(new BottleWater("Кола", 80.0));
+        
+        VendMach vendingMachine = new VendMach();
+        vendingMachine.initProducts(prods);
+        System.out.println(vendingMachine.getProduct("Минералка"));
+    }
 }
+
+/*
+ * Интерфейс (обновлённый вариант абстрактного класса)
+ */
+interface VendingMachine {
+    
+    Product getProduct(String prodName); // "public" - удалил перед "Product"
+                                         // вместо скобок "{}", точка с запятой
+        // {
+        //     for (Product p : products) {
+        //         if (p.getName().equals(prodName)){
+        //             return p;
+        //         }
+        //     }
+        //     return null;
+        // }
+}
+
 
 /*
  * Абстрактный класс (устаревший вариант интерфейса)
@@ -118,35 +151,5 @@ class VendMach implements VendingMachine {
             }
         }
         return null;
-    }
-}
-
-/*
- * Интерфейс (обновлённый вариант абстрактного класса)
- */
-interface VendingMachine {
-    
-    Object getProduct(String prodName); // "public" - удалил перед "Product"
-                                         // вместо скобок "{}", точка с запятой
-        // {
-        //     for (Product p : products) {
-        //         if (p.getName().equals(prodName)){
-        //             return p;
-        //         }
-        //     }
-        //     return null;
-        // }
-}
-
-class Main {
-    public static void main(String[] args) {
-        ArrayList<Product> prods = new ArrayList<>();
-        prods.add(new BottleWater("Вода", 40.0));
-        prods.add(new BottleWater("Минералка", 60.0));
-        prods.add(new BottleWater("Кола", 80.0));
-        
-        VendMach vendingMachine = new VendMach();
-        vendingMachine.initProducts(prods);
-        System.out.println(vendingMachine.getProduct("Минералка"));
     }
 }
