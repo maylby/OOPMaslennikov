@@ -3,15 +3,20 @@
 https://gb.ru/lessons/414496
 
 
-01:05:00
+00:55:00
 
-*/
+Задача 1
+
+Решение
+(Сергей Пономарев)
+
+ */
 package OOP.Seminar.Sem01W;
 /*
-* Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат,
-* содержащий в себе методы initProducts (List <Product>)
-* сохраняющий в себе список исходных продуктов и getProduct(String name) 
-*/
+ * Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат,
+ * содержащий в себе методы initProducts (List <Product>)
+ * сохраняющий в себе список исходных продуктов и getProduct(String name) 
+ */
 import java.util.ArrayList;
 
 public class S1Main {
