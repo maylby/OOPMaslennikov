@@ -8,15 +8,15 @@ package OOP.Seminar.Sem01W.Task2;
 public interface VendingMachine {
     
     
-    Product getProduct(String prodName); // "public" - удалил перед "Product"
+    Object getProduct(String prodName); // "public" - удалил перед "Product"
                                          // вместо скобок "{}", точка с запятой
-    // {
-    //     for (Product p : products) {
-    //         if (p.getName().equals(prodName)){
-    //             return p;
-    //         }
-    //     }
-    //     return null;
-    // }
+        // {
+        //     for (Product p : products) {
+        //         if (p.getName().equals(prodName)){
+        //             return p;
+        //         }
+        //     }
+        //     return null;
+        // }
     
 }
