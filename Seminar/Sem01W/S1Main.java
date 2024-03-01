@@ -11,7 +11,7 @@ public class S1Main {
         prods.add(new S1Product("Колбаса", 120.0));
         prods.add(new S1Product("Сыр", 150.0));
         
-        VendingMachine vendingMachine = new VendingMachine();
+        S1VendingMachine vendingMachine = new S1VendingMachine();
         vendingMachine.initProducts(prods);
         System.out.println(vendingMachine.getProduct("Сыр"));
     }
