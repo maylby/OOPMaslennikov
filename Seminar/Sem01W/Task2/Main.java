@@ -5,6 +5,12 @@ https://gb.ru/lessons/414496
 
 Задача 2 
 
+Вариант-2 
+(коды в разных файлах):
+    ● Main (вывод результатов)
+    ● abstract class Product
+    ● interface VendingMachine
+    
 Решение
 (Александр Верзун)
 
