@@ -15,7 +15,9 @@ https://gb.ru/lessons/414496
 package OOP.Seminar.Sem01W;
 
 import java.util.ArrayList;
-
+/*
+ * Передача списка продуктов с их стоимостью торговой машине
+ */
 public class S1VendingMachine {
         private ArrayList<S1Product> products;
     
