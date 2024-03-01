@@ -16,11 +16,9 @@ https://gb.ru/lessons/414496
 
 package OOP.Seminar.Sem01W;
 /*
-* Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат,
-* содержащий в себе методы initProducts (List <Product>)
-* сохраняющий в себе список исходных продуктов и getProduct(String name) 
-*/
-
+ * Внесение наименования каждого продукта 
+ * и его стоимости в общий список
+ */
 public class S1Product {
 
     private String name;
@@ -46,7 +44,12 @@ public class S1Product {
         this.name = name;
         this.cost = cost;
     }
-
+    
+    /*
+     * Переопределение метода
+     * для выдачи сведений о продукте
+     * в понятной потребителю форме
+     */
     @Override
     public String toString() {
         return "Product{" +
