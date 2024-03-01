@@ -18,9 +18,6 @@ package OOP.Seminar.Sem01W;
 * сохраняющий в себе список исходных продуктов и getProduct(String name) 
 */
 
-import java.util.ArrayList;
-// import java.util.List;
-
 public class S1Product {
 
     private String name;
@@ -55,23 +52,5 @@ public class S1Product {
         '}';
     }
 
-}
-
-
-class VendingMachine {
-    private ArrayList<S1Product> products;
-    
-    public void initProducts(ArrayList<S1Product> products){
-        this.products = products;
-    }
-    
-    public S1Product getProduct(String prodName){
-        for (S1Product p : products) {
-            if (p.getName().equals(prodName)){
-                return p;
-            }
-        }
-        return null;
-    }
 }
 
