@@ -18,7 +18,7 @@ package OOP.Seminar.Sem01W;
 */
 
 import java.util.ArrayList;
-import java.util.List;
+// import java.util.List;
 
 public class S1Product {
 
@@ -45,13 +45,23 @@ public class S1Product {
         this.name = name;
         this.cost = cost;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+        "name='" + name + '\'' +
+        ", cost=" + cost +
+        '}';
+    }
+
 }
+
 
 class VendingMachine {
     private ArrayList<S1Product> products;
     
     public void initProducts(ArrayList<S1Product> products){
-    this.products = products;
+        this.products = products;
     }
     
     public S1Product getProduct(String prodName){
@@ -61,5 +71,20 @@ class VendingMachine {
             }
         }
         return null;
+    }
+}
+
+class S1Main {
+
+    public static void main(String[] args) {
+        ArrayList<S1Product> prods = new ArrayList<>();
+        prods.add(new S1Product("Хлеб", 40.0));
+        prods.add(new S1Product("Молоко", 80.0));
+        prods.add(new S1Product("Колбаса", 120.0));
+        prods.add(new S1Product("Сыр", 150.0));
+        
+        VendingMachine vendingMachine = new VendingMachine();
+        vendingMachine.initProducts(prods);
+        System.out.println((vendingMachine.getProduct("Сыр")));
     }
 }
