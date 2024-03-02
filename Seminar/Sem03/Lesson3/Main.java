@@ -1,7 +1,7 @@
 package OOP.Seminar.Sem03.Lesson3;
 
 import java.util.ArrayList;
-import java.util.Collections;
+// import java.util.Collections;
 import java.util.List;
 
 /**
