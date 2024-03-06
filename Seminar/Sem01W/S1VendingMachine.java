@@ -31,14 +31,6 @@ public class S1VendingMachine {
             if (p.getName().equals(prodName)){
                 return p;
             }
-            /*
-             * Как добавить указание объёма (volume) 
-             * для ввода заказа в "HotBrinksMachine",
-             * не меняя название заказываемого продукта???
-             */
-            // if (p.getVolume().eguals(volume)){
-            //     return p;
-            // }
         }
         return null;
     }
