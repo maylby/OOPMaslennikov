@@ -26,11 +26,19 @@ public class S1VendingMachine {
         this.products = products;
     }
     
-    public S1Product getProduct(String prodName){
+    public S1Product getProduct(String prodName, int volume){
         for (S1Product p : products) {
             if (p.getName().equals(prodName)){
                 return p;
             }
+            /*
+             * Как добавить указание объёма (volume) 
+             * для ввода заказа в "HotBrinksMachine",
+             * не меняя название заказываемого продукта???
+             */
+            // if (p.getVolume().eguals(volume)){
+            //     return p;
+            // }
         }
         return null;
     }

@@ -33,6 +33,7 @@ public class HotBrinksMachine {
         prods.add(new Product("TurkishCoffee", 150, 80, 55.0));
         prods.add(new Product("BlackTea", 200, 90, 60.0));
         prods.add(new Product("GreenTea", 200, 90, 60.0));
+        prods.add(new Product("TeaMilk", 200, 70, 65.0));
         
         VendingMachine vendingMachine = new VendingMachine();
         vendingMachine.initProducts(prods);
