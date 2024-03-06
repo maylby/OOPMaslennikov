@@ -36,6 +36,10 @@ public class HotBrinksMachine {
         
         VendingMachine vendingMachine = new VendingMachine();
         vendingMachine.initProducts(prods);
+        /*
+         * Нужна возможность добавления в заказ данных 
+         * об объёме напитка и количестве сахара.
+         */
         System.out.println(vendingMachine.getProduct("Latte"));
     }
 }
