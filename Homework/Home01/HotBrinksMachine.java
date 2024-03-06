@@ -13,6 +13,7 @@ https://gb.ru/lessons/414496/homework
 и воспроизвести логику, заложенную в программе
 Всё вышеуказанное создать согласно принципам ООП, пройденным на семинаре
 
+TeaMilk
 */
 
 package OOP.Homework.Home01;
@@ -23,11 +24,13 @@ public class HotBrinksMachine {
     public static void main(String[] args) {
         ArrayList<Product> prods = new ArrayList<>();
         prods.add(new Product("Latte", 100, 80, 50.0));
-        // prods.add(new Product("Latte", 150, 80, 70.0));
+        prods.add(new Product("Latte", 150, 80, 70.0));
         prods.add(new Product("Cappuccino", 100, 80, 60.0));
-        // prods.add(new Product("Cappuccino", 150, 80, 80.0));
+        prods.add(new Product("Cappuccino", 150, 80, 80.0));
         prods.add(new Product("CoffeeMilk", 100, 60, 50.0));
+        prods.add(new Product("CoffeeMilk", 150, 60, 70.0));
         prods.add(new Product("TurkishCoffee", 100, 80, 40.0));
+        prods.add(new Product("TurkishCoffee", 150, 80, 55.0));
         prods.add(new Product("BlackTea", 200, 90, 60.0));
         prods.add(new Product("GreenTea", 200, 90, 60.0));
         

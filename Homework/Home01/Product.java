@@ -64,6 +64,7 @@ public class Product {
         "name = '" + name + '\'' +
         ", volume: " + volume + 
         ", temperature: " + termo +
+        ", cost: " + cost +
         '}';
     }
 }
