@@ -25,6 +25,7 @@ public class VendingMachine {
              * Как добавить указание объёма (volume) 
              * при вводе заказа в "HotBrinksMachine",
              * не меняя название продукта в заказе???
+             * Форма записи ниже не корректна.
              */
             // if (p.getVolume().equals(volume)){
             //     return p;
