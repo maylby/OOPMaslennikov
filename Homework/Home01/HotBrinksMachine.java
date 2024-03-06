@@ -13,12 +13,6 @@ https://gb.ru/lessons/414496/homework
 и воспроизвести логику, заложенную в программе
 Всё вышеуказанное создать согласно принципам ООП, пройденным на семинаре
 
-Latte 
-Cappuccino
-TurkishCoffee
-BlackTea
-greenTea
-coffeeMilk
 */
 
 package OOP.Homework.Home01;
