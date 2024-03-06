@@ -29,7 +29,9 @@ public class HotВrinksMachine {
     public static void main(String[] args) {
         ArrayList<Product> prods = new ArrayList<>();
         prods.add(new Product("Latte", 100, 80, 50.0));
+        // prods.add(new Product("Latte", 150, 80, 70.0));
         prods.add(new Product("Cappuccino", 100, 80, 60.0));
+        // prods.add(new Product("Cappuccino", 150, 80, 80.0));
         prods.add(new Product("CoffeeMilk", 100, 60, 50.0));
         prods.add(new Product("TurkishCoffee", 100, 80, 40.0));
         prods.add(new Product("BlackTea", 200, 90, 60.0));
