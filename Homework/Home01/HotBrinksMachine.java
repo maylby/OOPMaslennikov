@@ -25,7 +25,7 @@ package OOP.Homework.Home01;
 
 import java.util.ArrayList;
 
-public class HotВrinksMachine {
+public class HotBrinksMachine {
     public static void main(String[] args) {
         ArrayList<Product> prods = new ArrayList<>();
         prods.add(new Product("Latte", 100, 80, 50.0));
