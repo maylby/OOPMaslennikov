@@ -18,11 +18,25 @@ Cappuccino
 TurkishCoffee
 BlackTea
 greenTea
-
+coffeeMilk
 */
 
 package OOP.Homework.Home01;
 
+import java.util.ArrayList;
+
 public class HotВrinksMachine {
-    
+    public static void main(String[] args) {
+        ArrayList<Product> prods = new ArrayList<>();
+        prods.add(new Product("Latte", 50.0));
+        prods.add(new Product("Cappuccino", 60.0));
+        prods.add(new Product("CoffeeMilk", 50.0));
+        prods.add(new Product("TurkishCoffee", 40.0));
+        prods.add(new Product("BlackTea", 50.0));
+        prods.add(new Product("GreenTea", 50.0));
+        
+        VendingMachine vendingMachine = new VendingMachine();
+        vendingMachine.initProducts(prods);
+        System.out.println(vendingMachine.getProduct("Сыр"));
+    }
 }
