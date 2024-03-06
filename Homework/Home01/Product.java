@@ -12,6 +12,7 @@ public class Product {
     private String name;
     private int volume;
     private int termo;
+    private double cost;
 
     public String getName() {
         return name;
@@ -36,11 +37,20 @@ public class Product {
     public void setTermo(int termo) {
         this.termo = termo;
     }
+
+    public double getCost() {
+        return cost;
+    }
         
-    public Product(String name, int volume, int termo) {
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+        
+    public Product(String name, int volume, int termo, double cost) {
         this.name = name;
         this.volume = volume;
         this.termo = termo;
+        this.cost = cost;
     }
     
     /*
