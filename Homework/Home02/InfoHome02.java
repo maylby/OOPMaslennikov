@@ -26,7 +26,7 @@ void: acceptToMarket
 
  */
 
-package JavaHomework.Home02;
+package OOP.Homework.Home02;
 
 public class InfoHome02 {
     
