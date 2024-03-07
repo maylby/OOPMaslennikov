@@ -42,8 +42,13 @@ abstract String: getName()
 <<class>>
 Human (extends Actor)
 
-*/
 
+00:43:00
+
+Решение
+(Alexey Logachev)
+
+*/
 package OOP.Seminar.Sem02.Ex02;
 
 public abstract class Actor implements ActorBehaviour {
