@@ -1,3 +1,10 @@
+/*
+Объектно-ориентированное программирование (семинары)
+Урок 2. Принципы ООП Абстракция и интерфейсы. 
+https://gb.ru/lessons/414497
+
+*/
+
 package OOP.Seminar.Sem02.Ex01;
 
 /**
@@ -9,3 +16,12 @@ package OOP.Seminar.Sem02.Ex01;
 public interface Feeding {
     void feed();
 }
+
+/*
+00:39:00
+
+Роман Сухачев 
+Сылка на GitHub:
+https://github.com/besSmertniyKoder/bstractions
+
+ */

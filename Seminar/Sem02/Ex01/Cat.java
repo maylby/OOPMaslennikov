@@ -37,3 +37,12 @@ public class Cat extends Animal implements Feeding {
         System.out.println("feeding with whiskas");
     }
 }
+
+/*
+00:39:00
+
+Роман Сухачев 
+Сылка на GitHub:
+https://github.com/besSmertniyKoder/bstractions
+
+ */

@@ -35,3 +35,12 @@ public class Owl extends Animal implements Feeding {
         System.out.println("catches mouse");
     } 
 }
+
+/*
+00:39:00
+
+Роман Сухачев 
+Сылка на GitHub:
+https://github.com/besSmertniyKoder/bstractions
+
+ */

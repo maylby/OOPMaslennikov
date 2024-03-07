@@ -29,3 +29,12 @@ public class Main {
     feeding with whiskas
     catches mouse 
 */ 
+
+/*
+00:39:00
+
+Роман Сухачев 
+Сылка на GitHub:
+https://github.com/besSmertniyKoder/bstractions
+
+ */
