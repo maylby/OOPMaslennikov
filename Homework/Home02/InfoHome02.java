@@ -24,6 +24,10 @@ void: acceptToMarket
 void: acceptToMarket 
 void: acceptToMarket
 
+
+P.S.
+Копировать все файлы папки "Ex02" семинара 2 для выполнения ДЗ
+
  */
 
 package OOP.Homework.Home02;
