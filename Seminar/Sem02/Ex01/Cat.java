@@ -19,7 +19,9 @@ public class Cat extends Animal {
      * Переопределяем (@Override) метод "voice"
      * задаём значение, указывая конкретный голос
      */
-    @Override
+    @Override  // аноация "@Override" - косметическая (заголовок)
+               // без неё реализация метода тоже будет работать,
+               // но всё же лучше её указывать для удобства чтения кода
 	public void voice() {
 		System.out.println("meow");
 	}
