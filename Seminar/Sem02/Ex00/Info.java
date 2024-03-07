@@ -210,3 +210,12 @@ interface InnerInfo2 {
 interface InnerInfo3 {
 
 }
+
+/*
+00:39:00
+
+Роман Сухачев 
+Сылка на GitHub:
+https://github.com/besSmertniyKoder/bstractions
+
+ */
