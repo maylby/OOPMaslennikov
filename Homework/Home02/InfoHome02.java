@@ -16,14 +16,12 @@ https://gb.ru/lessons/414497/homework
 MarketBehaviour – помещает и удаляет человека из очереди, 
 метод update – обновляет состояние магазина (принимает и отдает заказы)
 
-
 <<class>>
 Market
 
 void: acceptToMarket 
 void: acceptToMarket 
 void: acceptToMarket
-
 
 P.S.
 Копировать все файлы папки "Ex02" семинара 2 
