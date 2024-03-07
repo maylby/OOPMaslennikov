@@ -168,19 +168,23 @@ public class Info extends ExternInfo /*, TextInfo */ {
  * При многократном наследовании интерфейсов каким-либо классом,
  * ошибки не возникает, число наследований интерфейсов неограничено
  */
-class ExternInfo implements InnerInfo, InnerInfo1, InnerInfo2 {
+class ExternInfo implements InnerInfo, InnerInfo1 {
  
 }
 
 /**
  * TextInfo
+ * Так же можно наследовать какой-то класс, 
+ * одновременно наследуя интерфейс(ы)
  */
-class TextInfo {
+class TextInfo extends Info implements InnerInfo2, InnerInfo3 {
   
 }
 
 /**
  * InnerInfo
+ * "public" перед "interface" никогда не пишется, т.к.
+ * интерфейс по умолчанию (default) публичен
  */
 interface InnerInfo {
     
@@ -200,4 +204,11 @@ interface InnerInfo2 {
 
 }
 
-// 00:25:50
+/**
+ * InnerInfo3
+ */
+interface InnerInfo3 {
+
+}
+
+// 00:23:30
