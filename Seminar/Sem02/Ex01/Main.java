@@ -7,6 +7,11 @@ https://gb.ru/lessons/414497
 
 package OOP.Seminar.Sem02.Ex01;
 
+/*
+ * Создание в классе "Main" 
+ * новых переменных (cat, owl) и
+ * вызов методов, реализующих переменные
+ */
 public class Main {
     public static void main(String[] args) {
 		Cat cat = new Cat();
