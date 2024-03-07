@@ -13,5 +13,7 @@ public class Main {
 		Owl owl = new Owl();
 		cat.voice();
 		owl.voice();
+        cat.feed();
+        owl.feed();
     }
 }
