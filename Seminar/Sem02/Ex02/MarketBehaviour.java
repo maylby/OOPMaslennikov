@@ -8,6 +8,8 @@ https://gb.ru/lessons/414497
 
 package OOP.Seminar.Sem02.Ex02;
 
+import java.util.List;
+
 interface QueueBehaviour {
 
 	void acceptToMarket(Actor actor);

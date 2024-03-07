@@ -8,6 +8,8 @@ https://gb.ru/lessons/414497
 
 package OOP.Seminar.Sem02.Ex02;
 
+import java.util.List;
+
 public class Market implements MarketBehaviour, QueueBehaviour {
 
 	
@@ -46,4 +48,3 @@ public class Market implements MarketBehaviour, QueueBehaviour {
 		// void update = true;
 	}
 }
-
