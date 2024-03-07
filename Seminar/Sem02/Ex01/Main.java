@@ -17,9 +17,10 @@ public class Main {
         owl.feed();
     }
 }
-/* вывод:
+/* 
+вывод:
     meow
     uhuu
     feeding with whiskas
     catches mouse 
-    */ 
+*/ 
