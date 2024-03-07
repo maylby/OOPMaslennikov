@@ -6,7 +6,7 @@ https://gb.ru/lessons/414497
 
 */
 
-package OOP.Seminar.Sem02.Ex03;
+package OOP.Seminar.Sem02.Ex02;
 
 interface QueueBehaviour {
 
