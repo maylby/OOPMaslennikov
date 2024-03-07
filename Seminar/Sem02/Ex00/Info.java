@@ -152,7 +152,7 @@ ____________________________________________________________
 
 */
 
-package OOP.Seminar.Sem02;
+package OOP.Seminar.Sem02.Ex00;
 
 /*
  * Если некий класс "Info" наследует (extends) какой-то класс "ExternInfo", то
