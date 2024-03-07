@@ -52,7 +52,5 @@ public abstract class Actor implements ActorBehaviour {
 	protected boolean isMakeOrder;
 	protected boolean isTakeOrder;
 
-	public abstract String getName() {
-        
-    }
+	public abstract String getName();
 }

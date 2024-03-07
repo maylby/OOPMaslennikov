@@ -9,10 +9,10 @@ https://gb.ru/lessons/414497
 package OOP.Seminar.Sem02.Ex02;
 
 public class Human extends Actor {
-    
+
     @Override
 	public String getName() {
-		return null;
+		return name;
 	}
 
 	@Override
