@@ -13,7 +13,7 @@ package OOP.Seminar.Sem02.Ex01;
  * метод следует реализовать, т.к.
  * он не реализуется по умолчанию. 
  */
-public class Owl extends Animal {
+public class Owl extends Animal implements Feeding {
 
     /*
      * Переопределяем (@Override) метод "voice"
@@ -23,4 +23,13 @@ public class Owl extends Animal {
 	public void voice() {
 		System.out.println("uhuu");
 	}
+
+    /*
+     * Реализуем - имплементируем (implements) метод "feed"
+     * задаём значение, указывая, что именно ест животное (Owl)
+     */
+    @Override
+    public void feed() {
+        System.out.println("catches mouse");
+    } 
 }
