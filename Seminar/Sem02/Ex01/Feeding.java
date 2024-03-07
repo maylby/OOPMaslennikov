@@ -6,5 +6,5 @@ package OOP.Seminar.Sem02.Ex01;
  * их реализация неоднотипна, в каждом методе своя
  */
 public interface Feeding {
-    
+    void feed();
 }
