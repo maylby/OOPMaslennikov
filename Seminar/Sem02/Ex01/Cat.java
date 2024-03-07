@@ -7,6 +7,20 @@ https://gb.ru/lessons/414497
 
 package OOP.Seminar.Sem02.Ex01;
 
-public class Cat {
+/*
+ * Класс "Cat" наследует абстрактный класс "Animal",
+ * в котором размещён не реализованный метод "voice",
+ * метод следует реализовать, т.к.
+ * он не реализуется по умолчанию. 
+ */
+public class Cat extends Animal {
     
+    /*
+     * Переопределяем (@Override) метод "voice"
+     * задаём значение, указывая конкретный голос
+     */
+    @Override
+	public void voice() {
+		System.out.println("meow");
+	}
 }
