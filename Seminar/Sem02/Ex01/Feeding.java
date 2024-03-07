@@ -21,7 +21,7 @@ public interface Feeding {
 00:39:00
 
 Роман Сухачев 
-Сылка на GitHub:
+Ссылка на репозиторий с кодом занятия на GitHub:
 https://github.com/besSmertniyKoder/bstractions
 
  */
