@@ -8,6 +8,11 @@ https://gb.ru/lessons/414497
 
 package OOP.Seminar.Sem02.Ex02;
 
-public class ActorBehaviour {
-    
+interface ActorBehaviour {
+
+	void setMakeOrder();
+	void setTakeOrder();
+
+	boolean isMakeOrder();
+	boolean isTakeOrder();
 }
