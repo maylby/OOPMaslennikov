@@ -4,7 +4,7 @@
 https://gb.ru/lessons/414491
 
  */
-package OOP.Lesson.Les03;
+package OOP.Lesson.Les03.Ex000;
 
 public class Program {
     public static void main(String[] args) {

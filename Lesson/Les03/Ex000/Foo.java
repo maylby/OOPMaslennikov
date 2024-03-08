@@ -27,7 +27,7 @@ https://gb.ru/lessons/414491
 00:03:00
 
  */
-package OOP.Lesson.Les03;
+package OOP.Lesson.Les03.Ex000;
 
 public abstract class Foo {
 	public abstract void m1();
