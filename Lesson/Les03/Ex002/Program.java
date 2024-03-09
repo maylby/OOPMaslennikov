@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import OOP.Lesson.Les03.Ex002.ExBeverage.*;
+import OOP.Lesson.Les03.Ex002.ExBeverage.*; // импорт папки с файлами для запуска программы
 
 
 public class Program {

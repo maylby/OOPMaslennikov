@@ -9,7 +9,18 @@ package OOP.Lesson.Les03.Ex002;
 
 import java.util.Iterator;
 
-public class Worker implements Iterator<String> {
+/*
+ * Реализация (implements) в "Worker" интерфейса "Iterator"
+ */
+public class Worker implements Iterator<String> {  /* Если реализовать итератор (Iterator), 
+                                                    * как "Object", вместо "String", то
+                                                    * выводить "next" можно в простом виде:
+                                                    * "return firstName"
+                                                    * при реализации "String"
+                                                    * вывод можно сделать более красивым 
+                                                    * и понятным пользователю:
+                                                    * <имя переменной>: <значение>
+                                                    */
     public String firstName;
     public String lastName;
     public int age;
@@ -52,7 +63,6 @@ public class Worker implements Iterator<String> {
             default:
                 //return salary;
                 return String.format("salary: %d", salary);
-
         }
     }
 }
