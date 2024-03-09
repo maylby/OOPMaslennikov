@@ -7,9 +7,9 @@ https://gb.ru/lessons/414491
 
 package OOP.Lesson.Les03.Ex002.ExBeverage;
 
-public class BlackTeas extends Ingredient {
+public class Вeans extends Ingredient {
 
-    public BlackTeas(String brand) {
+    public Вeans(String brand) {
         super(brand);
     }    
 }
