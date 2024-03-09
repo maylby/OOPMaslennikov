@@ -40,11 +40,11 @@ public class Program {
         // db.sort(new AgeComporator()); // вызов Comporator'a сортировки по возрасту
         // db.sort(new SalaryComporator()); // вызов Comporator'a сортировки по зарплате
 
-        // db.sort((w1, w2) -> Integer.compare(w1.age, w2.age)); // лямбда: прямой вызов  
+        db.sort((w1, w2) -> Integer.compare(w1.age, w2.age)); // лямбда: прямой вызов  
                                                                  // сортировки по возрасту
-        db.sort((w1, w2) -> Integer.compare(w1.salary, w2.salary)); // лямбда: прямой вызов 
+        // db.sort((w1, w2) -> Integer.compare(w1.salary, w2.salary)); // лямбда: прямой вызов 
                                                                     // сортировки по ЗП
-        // Collections.sort(db);
+        Collections.sort(db);
         // Array.sort(...)
 
         System.out.println(db);
@@ -54,14 +54,14 @@ public class Program {
         // #region Comparable<Worker>
 
         // List<Worker> db = new ArrayList<>();
-        // for (int i = 0; i < 5; i++) {
-        //     db.add(new Worker("Имя " + i, "Фамилия " + i, r.nextInt(18, 31), r.nextInt(10000)));
-        // }
-        // System.out.println(db);
+        for (int i = 0; i < 5; i++) {
+            db.add(new Worker("Имя " + i, "Фамилия " + i, r.nextInt(18, 31), r.nextInt(10000)));
+        }
+        System.out.println(db);
 
-        // db.sort(new AgeComporator());
+        db.sort(new AgeComporator());
 
-        // System.out.println(db);
+        System.out.println(db);
 
         // #endregion
 
