@@ -21,11 +21,17 @@ public class Worker implements Iterator<String> {  /* Если реализов�
                                                     * и понятным пользователю:
                                                     * <имя переменной>: <значение>
                                                     */
+    /*
+     * список переменных с указанием типа 
+     */
     public String firstName;
     public String lastName;
     public int age;
     public int salary;
 
+    /*
+     * Конструктор
+     */
     public Worker(String firstName,
             String lastName,
             int age,
@@ -41,7 +47,7 @@ public class Worker implements Iterator<String> {  /* Если реализов�
         return String.format("%s %s", firstName, lastName);
     }
 
-    int index;
+    int index; // задана переменная "index" для перебора строк
 
     @Override
     public boolean hasNext() {
