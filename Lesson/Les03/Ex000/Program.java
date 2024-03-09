@@ -11,12 +11,12 @@ public class Program {
 		Foo foo1 = new Foo() {
 			@Override
 			public void m1() {
-				System.out.print("m1");
+				System.out.print(" m1 ");
 			}
 
 			@Override
 			public void m2() {
-				System.out.print("m2");		
+				System.out.print(" m2 ");		
 			}	
 		}; // зачем точка с запятой после фигурной скобки?
 
@@ -30,12 +30,12 @@ public class Program {
 		Foo foo2 = new Foo() {
 			@Override
 			public void m1() {
-				System.out.print(">>>m1");
+				System.out.print(" >>>m1 ");
 			}
 
 			@Override
 			public void m2() {
-				System.out.print(">>>m2");
+				System.out.print(" >>>m2 ");
 			}	
 		}; 
 		foo2.m1(); // замена переменной на foo2 и вызов, того же метода (m1)
