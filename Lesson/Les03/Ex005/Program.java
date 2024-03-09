@@ -37,7 +37,8 @@ public class Program {
         }
         System.out.println(db);
 
-        db.sort(new AgeComporator());
+        db.sort(new AgeComporator()); // вызов сортировки по возрасту
+        // db.sort(new SalaryComporator()); // вызов сортировки по зарплате
         Collections.sort(db);
         // Array.sort(...)
 
