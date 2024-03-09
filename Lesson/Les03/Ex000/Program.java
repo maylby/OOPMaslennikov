@@ -11,17 +11,34 @@ public class Program {
 		Foo foo1 = new Foo() {
 			@Override
 			public void m1() {
+				System.out.print("m1");
+			}
+
+			@Override
+			public void m2() {
+				System.out.print("m2");		
+			}	
+		}; // зачем точка с запятой после фигурной скобки?
+
+		foo1.m1(); // переменная foo1 вызывает метод m1 с заданным поведением "m1"
+		
+		/*
+		 * Дубль верхней записи "@Override"
+		 * смена пременной "foo1" на "foo2"
+		 * изменение поведения с "m1" на ">>>m1"
+		 */
+		Foo foo2 = new Foo() {
+			@Override
+			public void m1() {
 				System.out.print(">>>m1");
 			}
 
 			@Override
 			public void m2() {
-				System.out.print("m2");
+				System.out.print(">>>m2");
 			}	
-		}; // зачем точка с запятой после фигурной скобки?
-
-		// foo1.m1(); // переменная foo1 вызывает метод m1 с заданным поведением "m1"
-		foo1.m1(); // замена переменной на foo2 и вызов, того же метода (m1)
+		}; 
+		foo2.m1(); // замена переменной на foo2 и вызов, того же метода (m1)
 			   // после смены его поведения с (m1) на (>>>m1)
 	}
 }
