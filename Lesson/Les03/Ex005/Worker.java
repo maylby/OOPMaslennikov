@@ -39,17 +39,21 @@ public class Worker implements Comparable<Worker> {
 
     @Override
     public int compareTo(Worker o) {
-        if (this.age > o.age)   // Если текущий возраст (age) 
-                                // рабочего (Worker) больше переданного, то
-                                // возврат (return): 1
-            return 1;
-        else if (this.age < o.age)  // Если текущий возраст (age) 
-                                    // рабочего (Worker) больше переданного,
-                                    // возврат (return): -1
-            return -1;
-        else
-            return 0; // иначе, если age == o.age,
-                      // возврат (return): 0
+
+        return Integer.compare(this.age, o.age); // упрощённый способ сравнения
+                                                 // аналог кода, записанного ниже
+
+        // if (this.age > o.age)   // Если текущий возраст (age) 
+        //                         // рабочего (Worker) больше переданного, то
+        //                         // возврат (return): 1
+        //     return 1;
+        // else if (this.age < o.age)  // Если текущий возраст (age) 
+        //                             // рабочего (Worker) больше переданного,
+        //                             // возврат (return): -1
+        //     return -1;
+        // else
+        //     return 0; // иначе, если age == o.age,
+        //               // возврат (return): 0
     }
 }
 
