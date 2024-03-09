@@ -37,6 +37,7 @@ public class Program {
         }
         System.out.println(db);
 
+        db.sort(new AgeComporator());
         Collections.sort(db);
         // Array.sort(...)
 

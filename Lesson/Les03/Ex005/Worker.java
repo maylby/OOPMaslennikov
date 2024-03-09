@@ -40,24 +40,24 @@ public class Worker implements Comparable<Worker> {
     @Override
     public int compareTo(Worker o) {
 
-        return Integer.compare(this.salary, o.salary); // сортировка по зарплате
+        // return Integer.compare(this.salary, o.salary); // сортировка по зарплате
         // return Integer.compare(this.age, o.age); // сортировка по возрасту
                                                     // упрощённый способ сравнения
                                                     // аналог кода, записанного ниже
         /*
-         * Принцип работы метода "compareTo"
+         * Принцип работы метода "compareTo" (?)
          */
-        // if (this.age > o.age)   // Если текущий возраст (age) 
-        //                         // рабочего (Worker) больше переданного, то
-        //                         // возврат (return): 1
-        //     return 1;
-        // else if (this.age < o.age)  // Если текущий возраст (age) 
-        //                             // рабочего (Worker) больше переданного,
-        //                             // возврат (return): -1
-        //     return -1;
-        // else
-        //     return 0; // иначе, если age == o.age,
-        //               // возврат (return): 0
+        if (this.age > o.age)   // Если текущий возраст (age) 
+                                // рабочего (Worker) больше переданного, то
+                                // возврат (return): 1
+            return 1;
+        else if (this.age < o.age)  // Если текущий возраст (age) 
+                                    // рабочего (Worker) больше переданного,
+                                    // возврат (return): -1
+            return -1;
+        else
+            return 0; // иначе, если age == o.age,
+                      // возврат (return): 0
     }
 }
 
