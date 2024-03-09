@@ -15,7 +15,7 @@ import java.util.List;
 import OOP.Lesson.Les03.Ex004.ExBeverage.*; // импорт папки с файлами для запуска программы
 
 
-// три вода
+// три воды
 public class Program {
     public static void main(String[] args) {
         Coffee latte = new Coffee();
