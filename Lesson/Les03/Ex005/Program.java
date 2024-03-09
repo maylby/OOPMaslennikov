@@ -37,11 +37,12 @@ public class Program {
         }
         System.out.println(db);
 
-        // db.sort(new AgeComporator()); // вызов сортировки по возрасту
-        // db.sort(new SalaryComporator()); // вызов сортировки по зарплате
-        // db.sort((w1, w2) -> Integer.compare(w1.age, w2.age)); // прямой вызов сортировки 
-                                                                 // по возрасту (age)
-        db.sort((w1, w2) -> Integer.compare(w1.salary, w2.salary)); // прямой вызов 
+        // db.sort(new AgeComporator()); // вызов Comporator'a сортировки по возрасту
+        // db.sort(new SalaryComporator()); // вызов Comporator'a сортировки по зарплате
+
+        // db.sort((w1, w2) -> Integer.compare(w1.age, w2.age)); // лямбда: прямой вызов  
+                                                                 // сортировки по возрасту
+        db.sort((w1, w2) -> Integer.compare(w1.salary, w2.salary)); // лямбда: прямой вызов 
                                                                     // сортировки по ЗП
         // Collections.sort(db);
         // Array.sort(...)
