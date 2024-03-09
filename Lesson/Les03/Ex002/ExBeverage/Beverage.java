@@ -28,7 +28,7 @@ public abstract class Beverage implements Iterator<Ingredient> {
         return index < components.size();
     }
     
-    @Override
+    @Override 
     public Ingredient next() {
         return components.get(index++);
     }

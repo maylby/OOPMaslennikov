@@ -14,6 +14,11 @@ public abstract class Ingredient {
         this.brand = brand;
     }
 
+    /*
+     * Метод "toString" переопределён для красоты (?)
+     * Так сказано в лекции.
+     * Для какой именно красоты?
+     */
     @Override
     public String toString() {
         return brand;
