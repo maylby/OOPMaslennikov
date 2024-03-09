@@ -12,10 +12,10 @@ import java.util.Iterator;
 /*
  * Реализация (implements) в "Worker" интерфейса "Iterator"
  */
-public class Worker implements Iterator<String> {  /* Если реализовать итератор (Iterator), 
-                                                    * как "Object", вместо "String", то
-                                                    * выводить "next" можно в простом виде:
-                                                    * "return firstName"
+public class Worker implements Iterator<String> {  /* Если реализовать итератор, 
+                                                    * как <Object>, вместо <String>, то
+                                                    * выводить "next" можно в простом виде,
+                                                    * ввиде голого значения,
                                                     * при реализации "String"
                                                     * вывод можно сделать более красивым 
                                                     * и понятным пользователю:
