@@ -45,7 +45,9 @@ public class Worker implements Iterator<String> {  /* Если реализов�
 
     @Override
     public boolean hasNext() {
-        return index++ < 4;
+        return index++ < 4; // "4" - количество строк
+                            // когда число перебраных строк будет равно 4, 
+                            // выполнение метода "hasNext" завершится
     }
 
     @Override
