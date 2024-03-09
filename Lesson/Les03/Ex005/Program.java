@@ -18,7 +18,7 @@ public class Program {
 
         Random r = new Random();
 
-        // #region Collections.sort(numbers);
+        // // #region Collections.sort(numbers);
         // List<Integer> numbers = new ArrayList<>();
         // for (int i = 0; i < 10; i++) {
         // numbers.add(r.nextInt(1,20));
@@ -27,20 +27,20 @@ public class Program {
         // System.out.println(numbers);
         // Collections.sort(numbers);
         // System.out.println(numbers);
-        // #endregion
+        // // #endregion
 
         // #region Comparable<Worker>
-        // List<Worker> db = new ArrayList<>();
-        // for (int i = 0; i < 5; i++) {
-        // db.add(new Worker("Имя " + i, "Фамилия " + i, r.nextInt(18,31),
-        // r.nextInt(10000)));
-        // }
-        // System.out.println(db);
+        List<Worker> db = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+        db.add(new Worker("Имя " + i, "Фамилия " + i, r.nextInt(18,31),
+        r.nextInt(10000)));
+        }
+        System.out.println(db);
 
-        // Collections.sort(db);
-        //// Array.sort(...)
+        Collections.sort(db);
+        // Array.sort(...)
 
-        // System.out.println(db);
+        System.out.println(db);
 
         // #endregion
 

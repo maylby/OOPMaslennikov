@@ -6,6 +6,12 @@ https://gb.ru/lessons/414491
  */
 package OOP.Lesson.Les03.Ex005;
 
+/*
+ * Класс "Worker" реализует интерфейс "Comparable",
+ * содержащий в себе единственный метод "compareTo", который
+ * содержит информацию о том, что значит 
+ * один "Worker" (рабочий) больше другого
+ */
 public class Worker implements Comparable<Worker> {
     public String firstName;
     public String lastName;
