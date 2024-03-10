@@ -48,14 +48,12 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	public void takeOrders() {
         Human human = (Human) queue.peek(); // проверка очереди
 		/*
-		 * Если число людей не равно нулю, то
-		 * внести заказ в список
+		 * Если число людей не равно нулю, то внести заказ в список
 		 */
         if (human != null) {
             human.setTakeOrder();
         }
 	}
-
 
 	/*
 	 * "giveOrders" отдаёт заказы
@@ -64,8 +62,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	public void giveOrders() {
         Human human = (Human) queue.peek(); // проверка очереди
 		/*
-		 * Если число людей не равно нулю, то
-		 * отдать заказ из списка
+		 * Если число людей не равно нулю, то отдать заказ из списка
 		 */
         if (human != null) {
             human.setMakeOrder();
@@ -84,7 +81,6 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	// Реализация интерфейса "MarketBehaviour" (3 метода ниже)
 
 	/**
-	 * 
 	 * "acceptToMarket" - вход в магазин
 	 */
 	@Override
