@@ -15,7 +15,7 @@ https://gb.ru/lessons/414497/homework
  * "Market" взаимодействует с полями
  */
 
- package OOP.Homework.Home02.Solution;
+package OOP.Homework.Home02.Solution;
 
 import java.util.List;
 import java.util.ArrayList;
