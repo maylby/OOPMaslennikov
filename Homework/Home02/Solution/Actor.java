@@ -20,18 +20,6 @@ void: acceptToMarket
 void: acceptToMarket 
 void: acceptToMarket
 
-
-P.S.
-Рекомендации по выполнению ДЗ:
-
-   * Реализация - класс "Market"
-   * "QueueBehaviour" - это очередь (алгоритм очереди)
-   * ("queue" - поле очереди)
-   * "MarketBehaviour" - это магазин (алгоритм поведения)
-   * ("market" - поле магазина)
-   * прописать поля в ArrayList 
-   * "Market" - взаимодействие с полями
-
  */
 
 package OOP.Homework.Home02.Solution;
