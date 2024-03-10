@@ -60,6 +60,7 @@ interface ActorBehaviour {
 package OOP.Seminar.Sem02.Ex02;
 
 import java.util.List;
+
 /*
  * "ActAll" -  переименованный класс "Actor"
  */
