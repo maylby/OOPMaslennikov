@@ -46,7 +46,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
     ArrayList<Actor> market; // магазин
 	
 
-	// 	Реализация интерфейса "QueueBehaviour" (4 метода ниже)
+	// Реализация интерфейса "QueueBehaviour" (4 метода ниже)
 
 	/**
 	 * "takeInQueue" ставит в очередь
@@ -56,35 +56,31 @@ public class Market implements QueueBehaviour, MarketBehaviour {
         queue.add(actor); // добавить в очередь
 	}
 
-	/*
+	/**
 	 * "takeOrders" принимает заказы
 	 */
 	@Override
 	public void takeOrders() {
         Human human = (Human) queue.peek(); // проверка очереди
-		/*
-		 * Если число людей не равно нулю, то внести заказ в список
-		 */
-        if (human != null) {
-            human.setTakeOrder();
+
+        if (human != null) { // Если число людей не равно нулю, то
+            human.setTakeOrder(); // внести заказ в список
         }
 	}
 
-	/*
+	/**
 	 * "giveOrders" отдаёт заказы
 	 */
 	@Override
 	public void giveOrders() {
         Human human = (Human) queue.peek(); // проверка очереди
-		/*
-		 * Если число людей не равно нулю, то отдать заказ из списка
-		 */
-        if (human != null) {
-            human.setMakeOrder();
+		
+        if (human != null) { // Если число людей не равно нулю, то
+            human.setMakeOrder(); // отдать заказ из списка
         }
 	}
 
-	/*
+	/**
 	 * "releaseFromQueue" выпускает из очереди
 	 */
 	@Override
@@ -103,7 +99,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 		market.add(actor);
 	}
 
-	/*
+	/**
 	 * "releaseFromMarket" - выход из магазина
 	 */
 	@Override
@@ -111,7 +107,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 		market.removeAll(actors);
 	}
 
-	/*
+	/**
 	 * "update" - обновление информации о заказах
 	 */
 	@Override
