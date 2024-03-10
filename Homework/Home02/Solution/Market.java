@@ -41,12 +41,39 @@ import java.util.ArrayDeque;
  * интерфейсы "MarketBehaviour" и "QueueBehaviour" 
  * и хранит список людей в очереди в различных статусах
  */
-public class Market implements QueueBehaviour, MarketBehaviour {
+public class Market implements MarketBehaviour, QueueBehaviour {
     ArrayDeque<Actor> queue; // очередь
     ArrayList<Actor> market; // магазин
-	
 
-	// Реализация интерфейса "QueueBehaviour" (4 метода ниже)
+	// Реализация интерфейса "MarketBehaviour" (3 метода ниже)
+
+	/**
+	 * "acceptToMarket" - вход в магазин
+	 */
+	@Override
+	public void acceptToMarket(Actor actor) {
+		market.add(actor);
+	}
+
+	/**
+	 * "releaseFromMarket" - выход из магазина
+	 */
+	@Override
+	public void releaseFromMarket(List<Actor> actors) {
+		market.removeAll(actors);
+	}
+
+	/**
+	 * "update" - обновление информации о заказах
+	 */
+	@Override
+	public void update() { 
+		takeOrders(); // принятые заказы
+        giveOrders(); // отданные заказы
+	}
+
+
+		// Реализация интерфейса "QueueBehaviour" (4 метода ниже)
 
 	/**
 	 * "takeInQueue" ставит в очередь
@@ -84,34 +111,6 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	@Override
 	public void releaseFromQueue() {
         queue.poll();
-	}
-
-
-	// Реализация интерфейса "MarketBehaviour" (3 метода ниже)
-
-	/**
-	 * "acceptToMarket" - вход в магазин
-	 */
-	@Override
-	public void acceptToMarket(Actor actor) {
-		market.add(actor);
-	}
-
-	/**
-	 * "releaseFromMarket" - выход из магазина
-	 */
-	@Override
-	public void releaseFromMarket(List<Actor> actors) {
-		market.removeAll(actors);
-	}
-
-	/**
-	 * "update" - обновление информации о заказах
-	 */
-	@Override
-	public void update() { 
-		takeOrders(); // принятые заказы
-        giveOrders(); // отданные заказы
 	}
 }
 
