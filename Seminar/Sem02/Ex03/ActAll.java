@@ -84,7 +84,7 @@ interface ActorBehaviour {
 }
 
 
-interface QueueBehaviour {
+interface MarketBehaviour {
 
 	void acceptToMarket(ActAll actor);
 	void releaseFromMarket(List<ActAll> actors);
@@ -93,7 +93,7 @@ interface QueueBehaviour {
 }
 
 
-interface MarketBehaviour {
+interface QueueBehaviour {
 
 	void takeInQueue(ActAll actor);
 	void takeOrders();

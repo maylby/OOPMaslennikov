@@ -8,7 +8,7 @@ https://gb.ru/lessons/414497
 
 package OOP.Seminar.Sem02.Ex02;
 
-interface MarketBehaviour {
+interface QueueBehaviour {
 
 	void takeInQueue(Actor actor);
 	void takeOrders();

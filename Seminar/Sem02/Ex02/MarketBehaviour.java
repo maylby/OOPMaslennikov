@@ -10,7 +10,7 @@ package OOP.Seminar.Sem02.Ex02;
 
 import java.util.List;
 
-interface QueueBehaviour {
+interface MarketBehaviour {
 
 	void acceptToMarket(Actor actor);
 	void releaseFromMarket(List<Actor> actors);
