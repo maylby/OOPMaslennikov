@@ -7,7 +7,6 @@ https://github.com/ponomarevss/javaStudy/blob/classwork3/oop/lesson3/Main.java
 
  */
 
-
 package OOP.Seminar.Sem03.Lesson3;
 
 import java.util.ArrayList;
