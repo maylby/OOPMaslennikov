@@ -63,6 +63,8 @@ interface ActorBehaviour {
 package OOP.Seminar.Sem02.Ex03;
 
 import java.util.List;
+import java.util.ArrayList;
+import java.util.ArrayDeque; 
 
 /*
  * "ActAll" -  переименованный класс "Actor"
@@ -177,46 +179,62 @@ interface QueueBehaviour {
 	void releaseFromQueue();
 }
 
+
 /**
  * Класс Market реализует
  * два вышеуказанных интерфейса и хранит
  * список людей в очереди в различных статусах
  */
 class Market implements MarketBehaviour, QueueBehaviour {
+    ArrayDeque<ActAll> queue; // очередь
+    ArrayList<ActAll> market; // магазин
 
 	@Override
 	public void takeInQueue(ActAll actor) {
-		// return null;
+		queue.add(actor); // добавить в очередь
 	}
 
 	@Override
 	public void takeOrders() {
-		// return null;
+		Human human = (Human) queue.peek(); // проверка очереди
+		/*
+		 * Если число людей не равно нулю, то внести заказ в список
+		 */
+        if (human != null) {
+            human.setTakeOrder();
+        }
 	}
 
 	@Override
 	public void giveOrders() {
-		// giveOrders = true;
+        Human human = (Human) queue.peek(); // проверка очереди
+		/*
+		 * Если число людей не равно нулю, то отдать заказ из списка
+		 */
+        if (human != null) {
+            human.setMakeOrder();
+        }
 	}
 
 	@Override
 	public void releaseFromQueue() {
-		// releaseFromQueue = true;
+        queue.poll();
 	}
 
 	@Override
 	public void acceptToMarket(ActAll actor) {
-		// acceptToMarket(Actor actor) = true;
+		market.add(actor);
 	}
 
 	@Override
 	public void releaseFromMarket(List<ActAll> actors) {
-		// releaseFromMarket(List<Actor> actors) = true;
+		market.removeAll(actors);
 	}
 
 	@Override
 	public void update() {
-		// void update = true;
+        takeOrders(); // принятые заказы
+        giveOrders(); // отданные заказы
 	}
 }
 
