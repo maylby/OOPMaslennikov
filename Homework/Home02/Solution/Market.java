@@ -7,9 +7,9 @@ https://gb.ru/lessons/414497/homework
 
 Реализация (класс "Market")
 
- * "QueueBehaviour" - это очередь (алгоритм очереди)
+ * "QueueBehaviour" - алгоритм очереди
  * ("queue" - поле очереди)
- * "MarketBehaviour" - это магазин (алгоритм поведения)
+ * "MarketBehaviour" - магазин, алгоритм поведения
  * ("market" - поле магазина)
  * прописать поля в ArrayList 
  * "Market" взаимодействует с полями
