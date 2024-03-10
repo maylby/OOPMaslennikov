@@ -154,18 +154,18 @@ ________________________________________________________________
 package OOP.Seminar.Sem02.Ex00;
 
 /**
- * Если класс "Info" 
- * наследует (extends) какой-то класс "ExternInfo", то
+ * Если класс "Info" наследует (extends) 
+ * какой-то класс "ExternInfo", то
  * "Info" уже не может наследовать ещё какой-нибудь класс, 
  * например, "TextInfo", будет выводится ошибка.
  */
-public class Info extends ExternInfo /*, TextInfo */ {
+public class Info extends ExternInfo /* TextInfo */ {
     
 }
 
 /**
- * ExternInfo ("Extern" - внешний)
- * При многократном наследовании интерфейсов каким-либо классом,
+ * ExternInfo (Extern - значит внешний)
+ * Наследовать интерфейс какой-либо класс может многократно,
  * ошибки не возникает, число наследований интерфейсов неограничено
  */
 class ExternInfo implements InnerInfo, InnerInfo1 {
@@ -174,7 +174,7 @@ class ExternInfo implements InnerInfo, InnerInfo1 {
 
 /**
  * TextInfo
- * Так же можно наследовать (extends) какой-то класс, 
+ * Можно наследовать (extends) какой-то класс, 
  * одновременно наследуя (implements) интерфейс(ы)
  */
 class TextInfo extends Info implements InnerInfo2, InnerInfo3 {
