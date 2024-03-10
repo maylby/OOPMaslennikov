@@ -53,7 +53,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	 */
 	@Override
 	public void takeInQueue(Actor actor) {
-        queue.add(actor); // добавить в очередь
+		queue.add(actor); // добавить в очередь        
 	}
 
 	/**
@@ -62,8 +62,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	@Override
 	public void takeOrders() {
         Human human = (Human) queue.peek(); // проверка очереди
-
-        if (human != null) { // Если число людей не равно нулю, то
+        if (human != null) { 
             human.setTakeOrder(); // внести заказ в список
         }
 	}
@@ -74,8 +73,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	@Override
 	public void giveOrders() {
         Human human = (Human) queue.peek(); // проверка очереди
-		
-        if (human != null) { // Если число людей не равно нулю, то
+        if (human != null) { 
             human.setMakeOrder(); // отдать заказ из списка
         }
 	}
