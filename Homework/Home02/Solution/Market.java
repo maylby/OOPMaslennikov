@@ -32,85 +32,53 @@ void: acceptToMarket
 
 package OOP.Homework.Home02.Solution;
 
-import java.util.List;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.ArrayDeque; 
+import java.util.List;
 
-/**
- * Класс "Market" реализует 
- * интерфейсы "MarketBehaviour" и "QueueBehaviour" 
- * и хранит список людей в очереди в различных статусах
- */
-public class Market implements MarketBehaviour, QueueBehaviour {
-    ArrayDeque<Actor> queue; // очередь
-    ArrayList<Actor> market; // магазин
+public class Market implements MarketBehaviour, QueueBehaviour{
+    ArrayDeque<Actor> queue;
+    ArrayList<Actor> market;
 
-	// Реализация интерфейса "MarketBehaviour" (3 метода ниже)
+    @Override
+    public void acceptToMarket(Actor actor) {
+        market.add(actor);
+    }
 
-	/**
-	 * "acceptToMarket" - вход в магазин
-	 */
-	@Override
-	public void acceptToMarket(Actor actor) {
-		market.add(actor);
-	}
+    @Override
+    public void releaseFromMarket(List<Actor> actors) {
+        market.removeAll(actors);
+    }
 
-	/**
-	 * "releaseFromMarket" - выход из магазина
-	 */
-	@Override
-	public void releaseFromMarket(List<Actor> actors) {
-		market.removeAll(actors);
-	}
+    @Override
+    public void update() {
+        takeOrders();
+        giveOrders();
+    }
 
-	/**
-	 * "update" - обновление информации о заказах
-	 */
-	@Override
-	public void update() { 
-		takeOrders(); // принятые заказы
-        giveOrders(); // отданные заказы
-	}
+    @Override
+    public void takeInQueue(Actor actor) {
+        queue.add(actor);
+    }
 
-
-	// Реализация интерфейса "QueueBehaviour" (4 метода ниже)
-
-	/**
-	 * "takeInQueue" ставит в очередь
-	 */
-	@Override
-	public void takeInQueue(Actor actor) {
-		queue.add(actor); // добавить в очередь        
-	}
-
-	/**
-	 * "takeOrders" принимает заказы
-	 */
-	@Override
-	public void takeOrders() {
-		Human human = (Human) queue.peek(); // проверка очереди
-        if (human != null) { 
-			human.setTakeOrder(); // внести заказ в список
+    @Override
+    public void takeOrders() {
+        Human human = (Human) queue.peek();
+        if (human != null) {
+            human.setTakeOrder();
         }
-	}
+    }
 
-	/**
-	 * "giveOrders" отдаёт заказы
-	 */
-	@Override
-	public void giveOrders() {
-        Human human = (Human) queue.peek(); // проверка очереди
-        if (human != null) { 
-            human.setMakeOrder(); // отдать заказ из списка
+    @Override
+    public void giveOrders() {
+        Human human = (Human) queue.peek();
+        if (human != null) {
+            human.setMakeOrder();
         }
-	}
+    }
 
-	/**
-	 * "releaseFromQueue" выпускает из очереди
-	 */
-	@Override
-	public void releaseFromQueue() {
+    @Override
+    public void releaseFromQueue() {
         queue.poll();
-	}
+    }
 }
-
