@@ -80,7 +80,7 @@ public abstract class ActAll implements ActorBehaviour {
 
 /*
  * Интерфейс ActorBehavoir содержит 
-   описание возможных действий актора в очереди/магазине
+ * описание возможных действий актора в очереди/магазине
  */
 interface ActorBehaviour {
 
@@ -151,7 +151,7 @@ class Human extends ActAll {
 
 
 /**
- * Интерфейс MarketBehaviour, который
+ * Интерфейс MarketBehaviour
  * описывает логику магазина – 
  * приход/уход покупателей,
  * обновление состояния магазина
@@ -164,7 +164,7 @@ interface MarketBehaviour {
 }
 
 /**
- * Интерфейс QueueBehaviour, который 
+ * Интерфейс QueueBehaviour
  * описывает логику очереди - 
  * вход/выход из очереди,
  * принятие/отдача заказа
@@ -178,8 +178,8 @@ interface QueueBehaviour {
 }
 
 /**
- * Класс Market, реализующий два
- * вышеуказанных интерфейса и хранящий
+ * Класс Market реализует
+ * два вышеуказанных интерфейса и хранит
  * список людей в очереди в различных статусах
  */
 class Market implements MarketBehaviour, QueueBehaviour {
