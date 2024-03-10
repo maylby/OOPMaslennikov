@@ -61,9 +61,9 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	 */
 	@Override
 	public void takeOrders() {
-        Human human = (Human) queue.peek(); // проверка очереди
+		Human human = (Human) queue.peek(); // проверка очереди
         if (human != null) { 
-            human.setTakeOrder(); // внести заказ в список
+			human.setTakeOrder(); // внести заказ в список
         }
 	}
 
@@ -109,8 +109,8 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	 * "update" - обновление информации о заказах
 	 */
 	@Override
-	public void update() {
-        takeOrders(); // принятые заказы
+	public void update() { 
+		takeOrders(); // принятые заказы
         giveOrders(); // отданные заказы
 	}
 }
