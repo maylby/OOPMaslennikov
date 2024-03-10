@@ -74,3 +74,28 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	}
 }
 
+/*
+Домашнее задание (ДЗ-2)
+
+Реализовать класс Market и все методы, которые он обязан реализовывать. 
+Методы из интерфейса QueueBehaviour, имитируют работу очереди, 
+MarketBehaviour – помещает и удаляет человека из очереди, 
+метод update – обновляет состояние магазина (принимает и отдает заказы)
+
+
+<<class>>
+Market
+
+void: acceptToMarket 
+void: acceptToMarket 
+void: acceptToMarket
+
+
+P.S.
+Рекомендации по выполнению ДЗ:
+
+ * "QueueBehaviour" - это очередь
+ * прописать поля ArrayList (реализация класса "Market" (?))
+ * в классе "Market" взаимодействовать с полями
+
+ */
