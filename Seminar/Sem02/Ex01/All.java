@@ -3,6 +3,7 @@
 Урок 2. Принципы ООП Абстракция и интерфейсы. 
 https://gb.ru/lessons/414497
 
+
 Весь код в одном файле (All)
 */
 package OOP.Seminar.Sem02.Ex01;
