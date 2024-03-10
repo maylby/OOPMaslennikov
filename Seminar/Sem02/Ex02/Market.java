@@ -58,7 +58,7 @@ package OOP.Seminar.Sem02.Ex02;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.ArrayDeque; // класс "ArrayDeque" 
-							 // наследует AbstractCollection<E>
+							 // наследует класс AbstractCollection<E>
 							 // реализует интерфейсы:
 							 // Deque<E>, Cloneable, Serializable
 
