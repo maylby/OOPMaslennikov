@@ -12,12 +12,15 @@ https://gb.ru/lessons/414497
 
 1. Интерфейс ActorBehavoir, который будет содержать 
    описание возможных действий актора в очереди/магазине
+
 2. Абстрактный класс Actor, который хранит в себе параметры актора, 
    включая состояние готовности сделать заказ и факт получения заказа. 
    Дополнение: 
    для большего понимания, можно сделать методы-геттеры 
    для имени и прочих “персональных данных” abstract
-3. Класс Human, который должен наследоваться от Actor и реализовывать ActorBehavoir
+
+3. Класс Human, который должен наследоваться от Actor 
+   и реализовывать ActorBehavoir
 
 
 <<interface>>
@@ -63,6 +66,8 @@ import java.util.List;
 
 /*
  * "ActAll" -  переименованный класс "Actor"
+ * Абстрактный класс, который хранит в себе параметры актора, 
+   включая состояние готовности сделать заказ и факт получения заказа. 
  */
 public abstract class ActAll implements ActorBehaviour {
 
@@ -73,7 +78,10 @@ public abstract class ActAll implements ActorBehaviour {
 	public abstract String getName();
 }
 
-
+/*
+ * Интерфейс ActorBehavoir содержит 
+   описание возможных действий актора в очереди/магазине
+ */
 interface ActorBehaviour {
 
 	void setMakeOrder();
@@ -85,8 +93,9 @@ interface ActorBehaviour {
 
 
 /*
- * Класс "Human" (человек) 
- * наследует (extends) абстрактный класс "Actor" (деятель)
+ * Класс "Human" (человек) наследует (extends) 
+ * абстрактный класс "ActAll" (деятель)
+ * и реализует ActorBehavoir
  */
 class Human extends ActAll {
 
@@ -152,7 +161,6 @@ interface MarketBehaviour {
 	void acceptToMarket(ActAll actor);
 	void releaseFromMarket(List<ActAll> actors);
 	void update(); // вызывает методы accept и release
-
 }
 
 /**
