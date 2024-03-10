@@ -2,65 +2,24 @@
 Объектно-ориентированное программирование (семинары)
 Урок 2. Принципы ООП Абстракция и интерфейсы. 
 
-https://gb.ru/lessons/414497
+https://gb.ru/lessons/414497/homework
 
 
-01:04:00
+Реализация (класс "Market")
 
-Задание 2
-
-Необходимо реализовать строение классов, без
-конкретной реализации:
-
-1. Интерфейс QueueBehaviour, который описывает
-   логику очереди – помещение в/освобождение из
-   очереди, принятие/отдача заказа
-
-2. Интерфейс MarketBehaviour, который описывает
-   логику магазина – приход/уход покупателей,
-   обновление состояния магазина
-
-3. Класс Market, который реализовывает два
-   вышеуказанных интерфейса и хранит в списке
-   список людей в очереди в различных статусах
-
-
-Домашнее задание (ДЗ-2)
-
-Реализовать класс Market и все методы, которые он обязан реализовывать. 
-Методы из интерфейса QueueBehaviour, имитируют работу очереди, 
-MarketBehaviour – помещает и удаляет человека из очереди, 
-метод update – обновляет состояние магазина (принимает и отдает заказы)
-
-
-<<class>>
-Market
-
-void: acceptToMarket 
-void: acceptToMarket 
-void: acceptToMarket
-
-
-P.S.
-Рекомендации по выполнению ДЗ:
-
- * Реализация - класс "Market"
  * "QueueBehaviour" - это очередь (алгоритм очереди)
  * ("queue" - поле очереди)
  * "MarketBehaviour" - это магазин (алгоритм поведения)
  * ("market" - поле магазина)
  * прописать поля в ArrayList 
- * "Market" - взаимодействие с полями
+ * "Market" взаимодействует с полями
  */
 
-package OOP.Seminar.Sem02.Ex02;
+ package OOP.Homework.Home02.Solution;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.ArrayDeque; // класс "ArrayDeque" 
-							 // наследует класс AbstractCollection<E>
-							 // реализует интерфейсы:
-							 // Deque<E>, Cloneable, Serializable
+import java.util.ArrayDeque; 
 
 /**
  * Класс "Market" реализует 
@@ -71,10 +30,10 @@ public class Market implements QueueBehaviour, MarketBehaviour {
     ArrayDeque<Actor> queue; // очередь
     ArrayList<Actor> market; // магазин
 	
+
+	// 	Реализация интерфейса "QueueBehaviour" (4 метода ниже)
+
 	/**
-	 * Реализация интерфейса "QueueBehaviour"
-	 * (4 метода ниже)
-	 * 
 	 * "takeInQueue" ставит в очередь
 	 */
 	@Override
@@ -96,6 +55,7 @@ public class Market implements QueueBehaviour, MarketBehaviour {
             human.setTakeOrder();
         }
 	}
+
 
 	/*
 	 * "giveOrders" отдаёт заказы
@@ -121,9 +81,9 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 	}
 
 
+	// Реализация интерфейса "MarketBehaviour" (3 метода ниже)
+
 	/**
-	 * Реализация интерфейса "MarketBehaviour"
-	 * (3 метода ниже)
 	 * 
 	 * "acceptToMarket" - вход в магазин
 	 */
