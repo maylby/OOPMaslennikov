@@ -31,7 +31,7 @@ package OOP.Seminar.Sem02.Ex02;
 import java.util.List;
 
 /*
- * Интерфейс MarketBehaviour, который
+ * Интерфейс MarketBehaviour
  * описывает логику магазина – 
  * приход/уход покупателей,
  * обновление состояния магазина
@@ -40,6 +40,14 @@ interface MarketBehaviour {
 
 	void acceptToMarket(Actor actor);
 	void releaseFromMarket(List<Actor> actors);
-	void update(); // вызывает методы accept и release
-
+	void update(); 	// "update" вызывает методы accept и release
+					/*
+					 * P.S. 
+					 * Интерфейс "QueueBehaviour"
+					 * не является обязательным, т.к.
+					 * создан для инкапсуляции, чтобы
+					 * лишний раз не писать,
+					 * вызывает метод, который
+					 * уже есть в интерфейсе.
+					 */
 }
