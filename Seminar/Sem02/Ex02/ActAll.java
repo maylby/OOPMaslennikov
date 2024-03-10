@@ -55,12 +55,14 @@ interface ActorBehaviour {
 Решение
 (Alexey Logachev)
 
+Весь код папки "Ex02" в одном файле "ActAll"
 */
-
 package OOP.Seminar.Sem02.Ex02;
 
 import java.util.List;
-
+/*
+ * "ActAll" -  переименованный класс "Actor"
+ */
 public abstract class ActAll implements ActorBehaviour {
 
 	protected String name;
@@ -98,7 +100,10 @@ interface MarketBehaviour {
 	void releaseFromQueue();
 }
 
-
+/*
+ * Класс "Human" (человек) 
+ * наследует (extends) абстрактный класс "Actor" (деятель)
+ */
 class Human extends Actor {
 
     @Override
