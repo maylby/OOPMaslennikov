@@ -210,7 +210,7 @@ class Market implements MarketBehaviour, QueueBehaviour {
 	}
 
 	@Override
-	public void releaseFromMarket(List<Actor> actors) {
+	public void releaseFromMarket(List<ActAll> actors) {
 		// releaseFromMarket(List<Actor> actors) = true;
 	}
 
