@@ -6,7 +6,7 @@ https://gb.ru/lessons/414497
 
 */
 
-package OOP.Seminar.Sem02.Ex02;
+package OOP.Homework.Home02.Solution;
 
 public class Human extends Actor {
 
