@@ -73,7 +73,7 @@ public class Market implements MarketBehaviour, QueueBehaviour {
 	}
 
 
-		// Реализация интерфейса "QueueBehaviour" (4 метода ниже)
+	// Реализация интерфейса "QueueBehaviour" (4 метода ниже)
 
 	/**
 	 * "takeInQueue" ставит в очередь
