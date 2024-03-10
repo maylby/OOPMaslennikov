@@ -2,11 +2,11 @@
 Объектно-ориентированное программирование (семинары)
 Урок 2. Принципы ООП Абстракция и интерфейсы. 
 
-https://gb.ru/lessons/414497
+https://gb.ru/lessons/414497/homework
 
 */
 
-package OOP.Seminar.Sem02.Ex02;
+package OOP.Homework.Home02.Solution;
 
 interface ActorBehaviour {
 
