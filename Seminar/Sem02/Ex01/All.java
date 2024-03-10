@@ -4,7 +4,7 @@
 https://gb.ru/lessons/414497
 
 
-Весь код в одном файле (All)
+Весь код папки "Ex001" в одном файле (All)
 */
 package OOP.Seminar.Sem02.Ex01;
 
