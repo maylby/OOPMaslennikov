@@ -84,23 +84,6 @@ interface ActorBehaviour {
 }
 
 
-interface MarketBehaviour {
-
-	void acceptToMarket(ActAll actor);
-	void releaseFromMarket(List<ActAll> actors);
-	void update(); // вызывает методы accept и release
-
-}
-
-
-interface QueueBehaviour {
-
-	void takeInQueue(ActAll actor);
-	void takeOrders();
-	void giveOrders();
-	void releaseFromQueue();
-}
-
 /*
  * Класс "Human" (человек) 
  * наследует (extends) абстрактный класс "Actor" (деятель)
@@ -134,10 +117,65 @@ class Human extends ActAll {
 }
 
 
+/*
+01:04:00
 
+Задание 2 
+(в продолжение Задания 1)
+
+Необходимо реализовать строение классов, без
+конкретной реализации:
+
+1. Интерфейс QueueBehaviour, который описывает
+   логику очереди – помещение в/освобождение из
+   очереди, принятие/отдача заказа
+
+2. Интерфейс MarketBehaviour, который описывает
+   логику магазина – приход/уход покупателей,
+   обновление состояния магазина
+
+3. Класс Market, который реализовывает два
+   вышеуказанных интерфейса и хранит в списке
+   список людей в очереди в различных статусах
+
+*/
+
+
+/*
+ * Интерфейс MarketBehaviour, который
+ * описывает логику магазина – 
+ * приход/уход покупателей,
+ * обновление состояния магазина
+ */
+interface MarketBehaviour {
+
+	void acceptToMarket(ActAll actor);
+	void releaseFromMarket(List<ActAll> actors);
+	void update(); // вызывает методы accept и release
+
+}
+
+/*
+ * Интерфейс QueueBehaviour, который 
+ * описывает логику очереди - 
+ * вход/выход из очереди,
+ * принятие/отдача заказа
+ */
+interface QueueBehaviour {
+
+	void takeInQueue(ActAll actor);
+	void takeOrders();
+	void giveOrders();
+	void releaseFromQueue();
+}
+
+/*
+ * Класс Market, реализующий два
+ * вышеуказанных интерфейса и хранящий
+ * список людей в очереди в различных статусах
+ */
 class Market implements MarketBehaviour, QueueBehaviour {
 
-	
 	@Override
 	public void takeInQueue(ActAll actor) {
 		// return null;
@@ -174,26 +212,3 @@ class Market implements MarketBehaviour, QueueBehaviour {
 	}
 }
 
-/*
-Домашнее задание 2
-
- * Рекомендации по выполнению ДЗ
- *
- * "QueueBehaviour" - это очередь
- * прописать поля ArrayList (реализация класса "Market" (?))
- * в "Market" взаимодействовать с полями
-
-Реализовать класс Market и все методы, которые он обязан реализовывать. 
-Методы из интерфейса QueueBehaviour, имитируют работу очереди, 
-MarketBehaviour – помещает и удаляет человека из очереди, 
-метод update – обновляет состояние магазина (принимает и отдает заказы)
-
-
-<<class>>
-Market
-
-void: acceptToMarket 
-void: acceptToMarket 
-void: acceptToMarket
-
- */
