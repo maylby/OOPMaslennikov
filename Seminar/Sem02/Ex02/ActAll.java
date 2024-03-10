@@ -44,7 +44,14 @@ Human (extends Actor)
 
 
 00:43:00
+interface ActorBehaviour {
 
+	void setMakeOrder();
+	void setTakeOrder();
+
+	boolean isMakeOrder();
+	boolean isTakeOrder();
+}
 Решение
 (Alexey Logachev)
 
@@ -52,6 +59,70 @@ Human (extends Actor)
 
 package OOP.Seminar.Sem02.Ex02;
 
-public class ActAll {
-    
+import java.util.List;
+
+public abstract class ActAll implements ActorBehaviour {
+
+	protected String name;
+	protected boolean isMakeOrder;
+	protected boolean isTakeOrder;
+
+	public abstract String getName();
+}
+
+
+interface ActorBehaviour {
+
+	void setMakeOrder();
+	void setTakeOrder();
+
+	boolean isMakeOrder();
+	boolean isTakeOrder();
+}
+
+
+interface QueueBehaviour {
+
+	void acceptToMarket(Actor actor);
+	void releaseFromMarket(List<Actor> actors);
+	void update(); // вызывает методы accept и release
+
+}
+
+
+interface MarketBehaviour {
+
+	void takeInQueue(Actor actor);
+	void takeOrders();
+	void giveOrders();
+	void releaseFromQueue();
+}
+
+
+class Human extends Actor {
+
+    @Override
+	public String getName() {
+		return name;
+	}
+
+	@Override
+	public void setMakeOrder() {
+		isMakeOrder = true;
+	}
+
+	@Override
+	public void setTakeOrder() {
+		isTakeOrder = true;
+	}
+
+	@Override
+	public boolean isMakeOrder() {
+		return isMakeOrder;
+	}
+
+	@Override
+	public boolean isTakeOrder() {
+		return isTakeOrder;
+	} 
 }
