@@ -44,17 +44,23 @@ void: acceptToMarket
 P.S.
 Рекомендации по выполнению ДЗ:
 
- * "QueueBehaviour" - это очередь (создать пару (?) полей)
- * прописать поля ArrayList (реализация класса "Market" (?))
- * в классе "Market" взаимодействовать с полями
-
+ * Реализация - класс "Market"
+ * "QueueBehaviour" - это очередь (алгоритм очереди)
+ * ("queue" - поле очереди)
+ * "MarketBehaviour" - это магазин (алгоритм поведения)
+ * ("market" - поле магазина)
+ * прописать поля в ArrayList 
+ * "Market" - взаимодействие с полями
  */
 
 package OOP.Seminar.Sem02.Ex02;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.ArrayDeque;
+import java.util.ArrayDeque; // класс "ArrayDeque" 
+							 // наследует AbstractCollection<E>
+							 // реализует интерфейсы:
+							 // Deque<E>, Cloneable, Serializable
 
 /**
  * Класс "Market" реализует 
@@ -62,7 +68,7 @@ import java.util.ArrayDeque;
  * и хранит список людей в очереди в различных статусах
  */
 public class Market implements QueueBehaviour, MarketBehaviour {
-    ArrayDeque<Actor> queue; // Очередь
+    ArrayDeque<Actor> queue; // очередь
     ArrayList<Actor> market; // магазин
 	
 	/**
