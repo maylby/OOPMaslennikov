@@ -24,57 +24,7 @@ https://gb.ru/lessons/414497
    вышеуказанных интерфейса и хранит в списке
    список людей в очереди в различных статусах
 
- */
 
-package OOP.Seminar.Sem02.Ex02;
-
-import java.util.List;
-
-/*
- * Класс Market, который реализует два
- * вышеуказанных интерфейса и хранит
- * список людей в очереди в различных статусах
- */
-public class Market implements QueueBehaviour, MarketBehaviour {
-
-	
-	@Override
-	public void takeInQueue(Actor actor) {
-		// return null;
-	}
-
-	@Override
-	public void takeOrders() {
-		// return null;
-	}
-
-	@Override
-	public void giveOrders() {
-		// giveOrders = true;
-	}
-
-	@Override
-	public void releaseFromQueue() {
-		// releaseFromQueue = true;
-	}
-
-	@Override
-	public void acceptToMarket(Actor actor) {
-		// acceptToMarket(Actor actor) = true;
-	}
-
-	@Override
-	public void releaseFromMarket(List<Actor> actors) {
-		// releaseFromMarket(List<Actor> actors) = true;
-	}
-
-	@Override
-	public void update() {
-		// void update = true;
-	}
-}
-
-/*
 Домашнее задание (ДЗ-2)
 
 Реализовать класс Market и все методы, которые он обязан реализовывать. 
@@ -99,3 +49,98 @@ P.S.
  * в классе "Market" взаимодействовать с полями
 
  */
+
+package OOP.Seminar.Sem02.Ex02;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.ArrayDeque;
+
+/**
+ * Класс "Market" реализует 
+ * интерфейсы "MarketBehaviour" и "QueueBehaviour" 
+ * и хранит список людей в очереди в различных статусах
+ */
+public class Market implements QueueBehaviour, MarketBehaviour {
+    ArrayDeque<Actor> queue; // Очередь
+    ArrayList<Actor> market; // магазин
+	
+	/**
+	 * Реализация интерфейса "QueueBehaviour"
+	 * (4 переопределённых метода ниже)
+	 * 
+	 * "takeInQueue" ставит в очередь
+	 */
+	@Override
+	public void takeInQueue(Actor actor) {
+        queue.add(actor); // добавить в очередь
+	}
+
+	/*
+	 * "takeOrders" принимает заказы
+	 */
+	@Override
+	public void takeOrders() {
+        Human human = (Human) queue.peek(); // проверка очереди
+		/*
+		 * Если число людей не равно нулю, то
+		 * внести заказ в список
+		 */
+        if (human != null) {
+            human.setTakeOrder();
+        }
+	}
+
+	/*
+	 * "giveOrders" отдаёт заказы
+	 */
+	@Override
+	public void giveOrders() {
+        Human human = (Human) queue.peek(); // проверка очереди
+		/*
+		 * Если число людей не равно нулю, то
+		 * отдать заказ из списка
+		 */
+        if (human != null) {
+            human.setMakeOrder();
+        }
+	}
+
+	/*
+	 * "releaseFromQueue" выпускает из очереди
+	 */
+	@Override
+	public void releaseFromQueue() {
+        queue.poll();
+	}
+
+
+	/**
+	 * Реализация интерфейса "MarketBehaviour"
+	 * (3 переопределённых метода ниже)
+	 * 
+	 * "acceptToMarket" - вход в магазин
+	 */
+	@Override
+	public void acceptToMarket(Actor actor) {
+		market.add(actor);
+	}
+
+	/*
+	 * "releaseFromMarket" - выход из магазина
+	 */
+	@Override
+	public void releaseFromMarket(List<Actor> actors) {
+		market.removeAll(actors);
+	}
+
+	/*
+	 * "update" - обновление информации о заказах
+	 */
+	@Override
+	public void update() {
+        takeOrders(); // принятые заказы
+        giveOrders(); // отданные заказы
+	}
+}
+
