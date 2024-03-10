@@ -4,13 +4,35 @@
 
 https://gb.ru/lessons/414497
 
-*/
+
+Домашнее задание 2
+
+ * Рекомендации по выполнению ДЗ
+ *
+ * "QueueBehaviour" - это очередь
+ * прописать поля ArrayList (реализация класса "Market" (?))
+ * в "Market" взаимодействовать с полями
+
+Реализовать класс Market и все методы, которые он обязан реализовывать. 
+Методы из интерфейса QueueBehaviour, имитируют работу очереди, 
+MarketBehaviour – помещает и удаляет человека из очереди, 
+метод update – обновляет состояние магазина (принимает и отдает заказы)
+
+
+<<class>>
+Market
+
+void: acceptToMarket 
+void: acceptToMarket 
+void: acceptToMarket
+
+ */
 
 package OOP.Seminar.Sem02.Ex02;
 
 import java.util.List;
 
-public class Market implements MarketBehaviour, QueueBehaviour {
+public class Market implements QueueBehaviour, MarketBehaviour {
 
 	
 	@Override
@@ -49,26 +71,3 @@ public class Market implements MarketBehaviour, QueueBehaviour {
 	}
 }
 
-/*
-Домашнее задание 2
-
- * Рекомендации по выполнению ДЗ
- *
- * "QueueBehaviour" - это очередь
- * прописать поля ArrayList (реализация класса "Market" (?))
- * в "Market" взаимодействовать с полями
-
-Реализовать класс Market и все методы, которые он обязан реализовывать. 
-Методы из интерфейса QueueBehaviour, имитируют работу очереди, 
-MarketBehaviour – помещает и удаляет человека из очереди, 
-метод update – обновляет состояние магазина (принимает и отдает заказы)
-
-
-<<class>>
-Market
-
-void: acceptToMarket 
-void: acceptToMarket 
-void: acceptToMarket
-
- */
