@@ -29,7 +29,7 @@ P.S.
 
  */
 
-package OOP.Homework.Home02;
+package OOP.Homework.Home02.Info;
 
 public class InfoHome02 {
     
