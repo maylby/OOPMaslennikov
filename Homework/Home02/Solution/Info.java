@@ -29,8 +29,8 @@ P.S.
 
  */
 
-package OOP.Homework.Home02.Info;
+package OOP.Homework.Home02.Solution;
 
-public class InfoHome02 {
+public class Info {
     
 }
