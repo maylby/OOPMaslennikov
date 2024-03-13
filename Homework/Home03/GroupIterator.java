@@ -28,5 +28,7 @@ https://gb.ru/lessons/414498/homework
      public Student next() {
          return students.get(count++);
      }
+
+     // Как реализовать удаление (одно из условий "Задачи 1)"?
  }
  

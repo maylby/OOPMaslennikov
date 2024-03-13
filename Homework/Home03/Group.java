@@ -12,14 +12,7 @@ https://gb.ru/lessons/414498/homework
  
  public class Group implements Iterable<Student>{
      private ArrayList<Student> students;
-     private String specialization;
-     private int number;
     
-     public Group(String specialization, int number) {
-        this.specialization = specialization;
-        this.number = number;
-     }
-     
      public Group(ArrayList<Student> students) {
          this.students = students;
      }
@@ -36,39 +29,7 @@ https://gb.ru/lessons/414498/homework
      public Iterator<Student> iterator() {
          return new GroupIterator(students);
      }
+}
 
 
-     public String getSpecialization() {
-        return specialization;
-    }
- 
-    public void setSpecialization(String specialization) {
-        this.specialization = specialization;
-    }
-
-    public String getNumbern() {
-        return number;
-    }
- 
-    public void setNumbern(String number) {
-        this.number = number;
-    }
-
-     @Override
-     public String toString() {
-         return "Group{" + "№: " + number +
-                 ", specialization = '" + specialization + '\'' +
-                 '}';
-     }
-  
-     @Override
-     public int compareTo(Group group) {
-         return this.specialization.compareTo(group.specialization);
-     }
- 
-    // @Override
-    // public int compareTo(Group student) {
-    //     return this.specialization.compareTo(student.specialization);
-    // }
-     
- }
+    
