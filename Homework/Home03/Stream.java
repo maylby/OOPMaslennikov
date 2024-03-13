@@ -17,7 +17,8 @@ public class Stream implements Iterator<Group>{
 
     public Stream(ArrayList<Group> groups) {
         this.groups = groups;
-        this.index = 0;
+        this.index = 0; // "index" - то же, что "count"
+                        // (см. файл "GroupIterator")
     }
 
     public String fullGroup() {
@@ -28,7 +29,8 @@ public class Stream implements Iterator<Group>{
 
     @Override
     public boolean hasNext() {
-        return index++ < 2;
+        return index++ < groups.size(); // "size" - число групп,
+                                        // возможно, нужно написать "length" (?)
     }
     
     @Override

@@ -30,10 +30,15 @@ public class GroupIterator implements Iterator<Student> {
         return students.get(count++);
     }
     
-    // Как реализовать удаление (одно из условий "Задачи 1)"?
-    @Override
-    default void remove() {
-       throw new UnsupportedOperationException("remove " + students);
-    }    
+    /*
+     * метод удаления (remove)
+     * Как реализовать удаление?
+     * (одно из условий "Задачи 1")
+     */
+    // 
+    // @Override
+    // default void remove() {
+    //    throw new UnsupportedOperationException("remove: %s" + students);
+    // }    
 }
  
