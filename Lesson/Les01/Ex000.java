@@ -83,7 +83,29 @@ https://gb.ru/lessons/414489
 основными понятиями которой являются классы и объекты.
 Говорят, что разработка в стиле ООП ведется с использованием классов объектов, 
 которые обладают состоянием и поведением, зависящим от этого состояния.
+*/
 
+package OOP.Lesson.Les01;
+public class Ex000 {
+}
 
+/* 
 00:12:30
+
+Lesson_07.Ex001;
  */
+class PointMethod {
+    static double distance(int x1, int y1, int x2, int y2) {
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+    }
+    public static void main(String[] args) {
+
+        int ax = 0;
+        int ay = 0;
+        int bx = 0;
+        int by = 1;
+        System.out.println(distance(ax, ay, bx, by));
+        // Создать точку 
+        // Печать точки
+    }
+}
