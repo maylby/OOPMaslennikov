@@ -54,7 +54,7 @@ public class Worker implements Iterator<String> {  /* Если реализов�
     }
 
     /*
-     * Ревлизация вывода с указанием выводимых полей
+     * Реaлизация вывода с указанием выводимых полей
      */
     public String fullName() {
         return String.format("%s %s", firstName, lastName);

@@ -7,15 +7,16 @@ https://gb.ru/lessons/414498/homework
 
 package OOP.Homework.Home03;
 
-import java.util.ArrayList;
+import java.util.List;
  import java.util.Iterator;
 
 public class Stream implements Iterator<Group>{
-    public ArrayList<Group> groups;
+    public List<Group> groups;
     public String specialiation;
     public int number;
+    
 
-    public Stream(ArrayList<Group> groups) {
+    public Stream(List<Group> groups) {
         this.groups = groups;
         this.index = 0; // "index" - то же, что "count"
                         // (см. файл "GroupIterator")

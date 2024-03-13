@@ -9,16 +9,26 @@ https://gb.ru/lessons/414498/homework
 package OOP.Homework.Home03;
 
 public class Student implements Comparable<Student>{
+    private int id;
     private String name;
     private int age;
     private String specialization;
     private int rating;
  
-    public Student(String name, int age, String specialization, int rating) {
+    public Student(int id, String name, int age, String specialization, int rating) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.specialization = specialization;
         this.rating = rating;
+    }
+
+    public int getId() {
+        return id;
+    }
+ 
+    public void setId(int id) {
+        this.id = id;
     }
  
     public String getName() {
@@ -53,11 +63,11 @@ public class Student implements Comparable<Student>{
         this.rating = rating;
     }
 
- 
     @Override
     public String toString() {
-        return "Student{" +
-                "name = '" + name + '\'' +
+        return "Student{" + 
+                " id = " + id +
+                ", name = '" + name + '\'' +
                 ", age = " + age +
                 ", specialization = '" + specialization + '\'' +
                 ", rating = " + rating +
@@ -66,7 +76,9 @@ public class Student implements Comparable<Student>{
  
     @Override
     public int compareTo(Student student) {
-        return this.name.compareTo(student.name);
+        return this.name.compareTo(student.name); // Код работает, только с именем (name),
+                                                  // при "id", "age", "specialization", "rating" 
+                                                  // выдаёт ошибку (???)
     }
 }
  

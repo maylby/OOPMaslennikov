@@ -7,7 +7,7 @@ https://gb.ru/lessons/414498/homework
 
 package OOP.Homework.Home03;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
  
@@ -33,7 +33,7 @@ public class GroupIterator implements Iterator<Student> {
     /*
      * метод удаления (remove)
      * Как реализовать удаление?
-     * (одно из условий "Задачи 1")
+     * (одно из условий "Задачи")
      */
     // 
     // @Override

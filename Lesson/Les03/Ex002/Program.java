@@ -36,28 +36,28 @@ public class Program {
         /*
          * Метод Worker с имплементированным итератором
          */
-        // Worker worker = new Worker(
-        //     "Имя", "Фамилия", 23, 4567);
+        Worker worker = new Worker(
+            "Имя", "Фамилия", 23, 4567);
 
-        // Iterator<String> components = worker; // прямое преведение переменной "worker" 
-        //                                       // к типу (String) итератора (Iterator),
-        //                                       // имплементированный классу "Worker"
-        // while (components.hasNext()) {
-        //     System.out.println(worker.next());
-        // }
+        Iterator<String> components = worker; // прямое преведение переменной "worker" 
+                                              // к типу (String) итератора (Iterator),
+                                              // имплементированный классу "Worker"
+        while (components.hasNext()) {
+            System.out.println(worker.next());
+        }
         //#endregion - конец кода
        
         //#region Beverage Iterator
 
-        Beverage latte = new Coffee();
-        latte.addComponent(new Water("Вода"));
-        latte.addComponent(new Вeans("Зёрна"));
-        latte.addComponent(new Milk("Молоко"));
+        // Beverage latte = new Coffee();
+        // latte.addComponent(new Water("Вода"));
+        // latte.addComponent(new Вeans("Зёрна"));
+        // latte.addComponent(new Milk("Молоко"));
         
-        Iterator<Ingredient> iterator = latte;
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
+        // Iterator<Ingredient> iterator = latte;
+        // while (iterator.hasNext()) {
+        //     System.out.println(iterator.next());
+        // }
 
         //#endregion
     }
