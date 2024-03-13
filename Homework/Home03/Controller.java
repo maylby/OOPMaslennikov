@@ -11,6 +11,6 @@ package OOP.Homework.Home03;
  * Контроллер (метод удаления студента) 
  * вызывает метод из ГруппыСервис
  */
-public class Controller {
+public class Controller extends ServisGroup {
     
 }
