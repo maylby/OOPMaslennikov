@@ -9,10 +9,10 @@ package OOP.Homework.Home03;
 import java.util.Comparator;
 
 public class StreamComparator implements Comparator<Student> {
-     @Override
-     public int compare(Student g1, Student g2) {
-         String s1 = g1.getSpecialization();
-         String s2 = g2.getSpecialization();
-         return s1.compareTo(s2);
-     }
- }
+    @Override
+    public int compare(Student g1, Student g2) {
+        String s1 = g1.getSpecialization();
+        String s2 = g2.getSpecialization();
+        return s1.compareTo(s2);
+    }
+}
