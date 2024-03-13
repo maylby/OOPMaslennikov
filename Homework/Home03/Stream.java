@@ -8,15 +8,17 @@ https://gb.ru/lessons/414498/homework
 package OOP.Homework.Home03;
 
 import java.util.List;
- import java.util.Iterator;
+// import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Stream implements Iterator<Group>{
-    public List<Group> groups;
-    public String specialiation;
-    public int number;
+    private ArrayList<Group> groups;
+    private String specialiation;
+    private int number;
     
 
-    public Stream(List<Group> groups) {
+    public Stream(ArrayList<Group> groups) {
         this.groups = groups;
         this.index = 0; // "index" - то же, что "count"
                         // (см. файл "GroupIterator")
@@ -35,25 +37,14 @@ public class Stream implements Iterator<Group>{
     }
     
     @Override
-    public String next() {
+    public String next() {  // "String" подчёркнут красным 
+                            // Система: "Тип возвращаемого значения 
+                            // несовместим с Iterator<Group>" (???)
         switch (index) {
             case 1:
                 return String.format("gpoup: %s", specialiation);
             default:
-                return String.format("number: %d", number);
+                return String.format("number: %s", number);
         }
     }
-
-    // public ArrayList<Group> getGroups() {
-    //     return groups;
-    // }
-
-    // public void setGroups(ArrayList<Group> groups) {
-    //     this.groups = groups;
-    // }
-
-    // @Override
-    // public Iterator<Group> iterator() {
-    //     return new StreamIterator(groups);
-    // }
 }
