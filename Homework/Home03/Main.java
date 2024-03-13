@@ -62,5 +62,18 @@ https://gb.ru/lessons/414498/homework
          for (Student student : group) {
              System.out.println(student);
          }
+
+         Group g01 = new Group("Chemistry", 3);
+         Group g02 = new Group("Physics", 2);
+         Group g03 = new Group("History", 4);
+
+         ArrayList<Group> groups = new ArrayList<>(List.of(g01, g02, g03));
+
+         Stream stream = new Stream(groups);
+         groups.sort(new StreamComparator());
+
+         for (Group group : stream) {
+            System.out.println(group);
+         }
      }
  }
