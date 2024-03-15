@@ -15,7 +15,7 @@ public class Program {
     public static void main(String[] args) {
 
         Worker w = new Worker(28, "firstName", "lastName", 20, 22);
-
+        System.out.println(w); // добавил, чтобы система "не ругалась"
         // #region ParameterizedWorker
 
         ParameterizedWorker<Integer> w1 = new ParameterizedWorker<Integer>(
@@ -38,13 +38,13 @@ public class Program {
         // #endregion
 
         // #region MultiParameterized
-        // MultiParameterized<Integer, Double, String> mp1 = new MultiParameterized<>(
-        //         1, 2.0, "3.0");
-        // System.out.println(mp1);
+        MultiParameterized<Integer, Double, String> mp1 = new MultiParameterized<>(
+                1, 2.0, "3.0");
+        System.out.println(mp1);
 
-        // MultiParameterized<String, String, String> mp2 = new MultiParameterized<>(
-        //         "1", "2.0", "3.0");
-        // System.out.println(mp2);
+        MultiParameterized<String, String, String> mp2 = new MultiParameterized<>(
+                "1", "2.0", "3.0");
+        System.out.println(mp2);
 
         // #endregion
 
