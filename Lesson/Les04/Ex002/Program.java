@@ -25,7 +25,7 @@ public class Program {
                 "lastName",
                 20,
                 22);
-        System.out.println(w1.getId()); // Выводит, только значение "id"
+        System.out.println(w1.getId()); // Выводит, только значение "id" (1990)
 
         String uid = UUID.randomUUID().toString();
         ParameterizedWorker<String> w2 = new ParameterizedWorker<>(
@@ -34,19 +34,26 @@ public class Program {
                 "lastName",
                 20,
                 22);
-        System.out.println(w2.getId()); // (?) не выводит ничего
+        System.out.println(w2.getId()); // (?) вывод: 64c707a5-2442-4217-b2ad-3348d31b11be
 
         // #endregion
 
         // #region MultiParameterized
         MultiParameterized<Integer, Double, String> mp1 = new MultiParameterized<>(
                 1, 2.0, "3.0");
-        System.out.println(mp1);
+        System.out.println(mp1); // E1 type: Integer  E2 type: Double  E3 type: String 
 
         MultiParameterized<String, String, String> mp2 = new MultiParameterized<>(
                 "1", "2.0", "3.0");
-        System.out.println(mp2);
+        System.out.println(mp2); // E1 type: String  E2 type: String  E3 type: String
 
         // #endregion
     }
 }
+/*
+Вывод:
+1990
+64c707a5-2442-4217-b2ad-3348d31b11be
+E1 type: Integer  E2 type: Double  E3 type: String
+E1 type: String  E2 type: String  E3 type: String
+ */
