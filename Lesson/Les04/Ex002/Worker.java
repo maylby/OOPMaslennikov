@@ -8,7 +8,7 @@ https://gb.ru/lessons/414492
 "Воркер" (рабочий)
  */
 
- package OOP.Lesson.Less04.Ex002;
+ package OOP.Lesson.Les04.Ex002;
 
  public class Worker {
      private int id;

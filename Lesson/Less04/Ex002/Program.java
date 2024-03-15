@@ -7,7 +7,7 @@ https://gb.ru/lessons/414492
 Экземпляр "воркера" (рабочего)
 
  */
-package OOP.Lesson.Less04.Ex002;
+package OOP.Lesson.Les04.Ex002;
 
 import java.util.UUID;
 

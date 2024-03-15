@@ -22,7 +22,7 @@ https://gb.ru/lessons/414492
 
  */
 
-package OOP.Lesson.Less04.Ex001;
+package OOP.Lesson.Les04.Ex001;
 
 import java.util.ArrayList;
 import java.util.List;
