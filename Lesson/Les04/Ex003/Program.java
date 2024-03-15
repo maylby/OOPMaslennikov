@@ -24,8 +24,8 @@ public class Program {
 	// класс "Methods" прередаёт метод (getElementFromIntegerCollection), где
 	// указаны пременная (data) из коллекции (List) и значение (1)
 	*/
-	Integer t = Methods<Integer>.getElementFromIntegerCollection(data, 1);
-	System.out.println(t); // вывод результата
+	// Integer t = Methods<Integer>.getElementFromIntegerCollection(data, 1);
+	// System.out.println(t); // вывод результата
 	
 
 	/*
