@@ -22,8 +22,8 @@ public class Repository {
     public Repository(String name) {
         this.ds = new ArrayList<>();
         this.name = name;
-        System.out.printf("\n  >>  %s created\n",this.name); // консоль для подтверждения
-							                                        // факта использования репозитория,
+        System.out.printf("\n  >>  %s created\n",this.name); // консоль подтверждения факта
+							                                        // использования репозитория,
 							                                        // но этого здесь быть не должно 
     }
     
@@ -41,7 +41,7 @@ public class Repository {
     public Content get(Integer index) {
         return ds.get(index);
     }
-    
+
     // В качестве тренировки реализуйте возможность работы с foreach
 
 }
