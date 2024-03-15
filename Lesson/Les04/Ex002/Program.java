@@ -16,6 +16,7 @@ public class Program {
 
         Worker w = new Worker(28, "firstName", "lastName", 20, 22);
         System.out.println(w); // добавил, чтобы система "не ругалась"
+                               // (?) не выводит ничего
         // #region ParameterizedWorker
 
         ParameterizedWorker<Integer> w1 = new ParameterizedWorker<Integer>(
@@ -24,7 +25,7 @@ public class Program {
                 "lastName",
                 20,
                 22);
-        System.out.println(w1.getId());
+        System.out.println(w1.getId()); // Выводит, только значение "id"
 
         String uid = UUID.randomUUID().toString();
         ParameterizedWorker<String> w2 = new ParameterizedWorker<>(
@@ -33,7 +34,7 @@ public class Program {
                 "lastName",
                 20,
                 22);
-        System.out.println(w2.getId());
+        System.out.println(w2.getId()); // (?) не выводит ничего
 
         // #endregion
 
@@ -47,6 +48,5 @@ public class Program {
         System.out.println(mp2);
 
         // #endregion
-
     }
 }
