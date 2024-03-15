@@ -20,7 +20,9 @@ https://gb.ru/lessons/414492
 Проектирование уровня экземпляров класса
 Не работает для статики
 
-*/
+ */
+
+package OOP.Lesson.Less04.Ex001;
 
 import java.util.ArrayList;
 import java.util.List;
