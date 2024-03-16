@@ -1,6 +1,6 @@
 package OOP.Lesson.Les005;
 
-public class Pair {
+public class Ex01Pair {
     public static void main(String[] args) {
 
         System.out.println("+");
