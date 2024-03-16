@@ -14,20 +14,22 @@ public class Program {
         Repository<AudioContent> pTchaikovsky = new Repository<>("pTchaikovsky");
         pTchaikovsky.add(new AudioContent("ПРОИЗВЕДЕНИЕ pTchaikovsky 1"));
         pTchaikovsky.add(new AudioContent("ПРОИЗВЕДЕНИЕ pTchaikovsky 2"));
+        pTchaikovsky.add(new AudioContent("ПРОИЗВЕДЕНИЕ pTchaikovsky 3"));
         
         
         for (int index = 0; index < pTchaikovsky.count(); index++) {
             System.out.println(pTchaikovsky.get(index));
         }
+        System.out.println();
+        System.out.println();
+        // System.out.println();
 
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println(pTchaikovsky.count()); // 3 - число строк, выводимых ниже
 
-        System.out.println(pTchaikovsky.count());
         for (int index = 0; index < pTchaikovsky.count(); index++) {
             System.out.println(pTchaikovsky.get(index));
         }
+        System.out.println();
 
         // Repository<VideoContent> videoContent = new Repository<>("videoContent");
         // videoContent.add(new VideoContent("ВИДЕО 1"));
