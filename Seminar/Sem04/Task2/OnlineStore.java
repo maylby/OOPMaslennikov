@@ -5,14 +5,14 @@ import java.util.List;
 
 public class OnlineStore<T, K, V> {
 
-private List<Product<T>> products;
-private int orderCounter;
-private List<Order<K, V>> orders;
+    private List<Product<T>> products;
+    private int orderCounter;
+    private List<Order<K, V>> orders;
 
-public OnlineStore() {
-    products = new ArrayList<>();
-    orders = new ArrayList<>();
-    orderCounter = 0;
+    public OnlineStore() {
+        products = new ArrayList<>();
+        orders = new ArrayList<>();
+        orderCounter = 0;
     }
 
     void addProd(Product<T> product) {
@@ -29,4 +29,3 @@ public OnlineStore() {
         return "list = " + "№" + orderCounter + orders;
     }
 }
-

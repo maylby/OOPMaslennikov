@@ -20,8 +20,8 @@ public class Order<K, V> { // K number order, V list products
 
     @Override
     public String toString() {
-        return "№{" + number +
-        "list=" + listProd +
-        '}';
+        return " №:{" + number +
+                " list = " + listProd +
+                '}';
     }
 }
