@@ -13,14 +13,19 @@ public class Main {
         VetClinic<Cat> vetClinicC = new VetClinic<>();
         VetClinic<Dog> vetClinicD = new VetClinic<>();
 
-        Dog dog1 = new Dog("bobik");
-        Dog dog2 = new Dog("sharik");
+        Dog dog1 = new Dog("Bobik");
+        Dog dog2 = new Dog("Sharik");
 
         Cat cat1 = new Cat("Murka");
         Cat cat2 = new Cat("Barsik");
 
         vetClinicC.add(cat1);
         vetClinicC.help(cat1);
+        vetClinicC.add(cat2);
+        vetClinicC.help(cat2);
+        
+        vetClinicD.add(dog1);
+        vetClinicD.help(dog1);
         vetClinicD.add(dog2);
         vetClinicD.help(dog2);
     }

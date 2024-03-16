@@ -4,18 +4,24 @@ import java.util.ArrayList;
 
 public class VetClinic<T> {
     private T client;
+    // private T age;
     private ArrayList<T> clients = new ArrayList<>();
 
     public VetClinic(T client) {
         this.client = client;
     }
 
+    /*
+     * Дубль выше написанного метода
+     * для разных (?) животных (собаки/кошки) можно не заполнять
+     * На каждое животное создаётся отдельный метод (VetClinic)???
+     */
     public VetClinic() {
 
     }
 
-    public void add(T cl) {
-        clients.add(cl);
+    public void add(T client) {
+        clients.add(client);
     }
 
     public T getClient() {
@@ -25,6 +31,7 @@ public class VetClinic<T> {
     public void setClient(T client) {
         this.client = client;
     }
+
 
     @Override
     public String toString() {
