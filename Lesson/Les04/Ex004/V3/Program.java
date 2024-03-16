@@ -18,26 +18,26 @@ public class Program {
             System.out.println(videoStorage.get(index));
         }
         
-        //#region проблема решена
+        //#region проблема решена (???)
 
-        // audioStorage.add(new VideoContent("jfvjdhdf7768.mp4")); 
-        // videoStorage.add(new AudioContent("Дорожка 005.wav")); 
+        audioStorage.add(new VideoContent("jfvjdhdf7768.mp4")); 
+        videoStorage.add(new AudioContent("Дорожка 005.wav")); 
 
         //#endregion
 
-        //#region  проблема решена
+        //#region  проблема решена (???)
         //
         
-        // Repository<String> stringRepository = new Repository<>("stringRepository");
-        // stringRepository.add("Кринж");
-        // stringRepository.add("Краш");
-        // stringRepository.add("Рофл");
-        // stringRepository.add("Криповый");
-        // stringRepository.add("Личинус");
-        // stringRepository.add("Шеймить");
-        // for (int i = 0; i < stringRepository.count(); i++) {
-        //     System.out.println(stringRepository.get(i));
-        // }
+        Repository<String> stringRepository = new Repository<>("stringRepository");
+        stringRepository.add("Кринж");
+        stringRepository.add("Краш");
+        stringRepository.add("Рофл");
+        stringRepository.add("Криповый");
+        stringRepository.add("Личинус");
+        stringRepository.add("Шеймить");
+        for (int i = 0; i < stringRepository.count(); i++) {
+            System.out.println(stringRepository.get(i));
+        }
         //#endregion
     }
 }

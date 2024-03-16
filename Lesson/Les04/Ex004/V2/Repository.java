@@ -13,7 +13,7 @@ import java.util.List;
 * неопределённый тип "Т" наследует базовый класс (Content), где
 * заданы форматы аудио и видео
 */
-public class Repository<T extends Content>/*<T>*/ {
+public class Repository<T>{
     List<T> ds;
 
     private String name;

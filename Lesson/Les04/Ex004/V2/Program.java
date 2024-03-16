@@ -22,13 +22,7 @@ public class Program {
         
         //#region проблема решена
 
-        /*
-        * После сделанных обобщений, 
-        * поместить аудио контент в видео нельзя
-        * и наоборот, видео нельзя поместить в аудио,
-        * такое добавление (add) система запрещает
-        * "add" подчёркивает красным
-        */
+
         // audioStorage.add(new VideoContent("jfvjdhdf7768.mp4")); 
         // videoStorage.add(new AudioContent("Дорожка 005.wav")); 
 
@@ -39,12 +33,7 @@ public class Program {
         
         /*
         * Чтобы программа работала, только с файлами аудио и видео формата,
-        * следует изменить запись в репозитории (см. файл "Repository")
-        * запись в репозитории заменена с <T> на <T extends Content>
-        * P.S.
-        * Несоответствие границ: тип String не является допустимой заменой 
-        * ограниченного параметра <T расширяет содержимое> типа Repository<T>.
-        * <String> - подчёркнут красным
+        * следует изменить запись в репозитории (см. файл "Repository", папка "V3")
         */ 
         Repository<String> stringRepository = new Repository<String>("stringRepository");
         stringRepository.add("Кринж");
