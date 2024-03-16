@@ -35,11 +35,16 @@ public class Program {
         //#region 
         // (нет)
         
-	/*
-	* Чтобы программа работала, только с файлами аудио и видео формата,
-	* следует изменить запись в репозитории (см. выше)
-	*/ 
-        Repository<String> stringRepository = new Repository<>("stringRepository");
+        /*
+        * Чтобы программа работала, только с файлами аудио и видео формата,
+        * следует изменить запись в репозитории (см. файл "Repository")
+        * запись в репозитории заменена с <T> на <T extends Content>
+        * P.S.
+        * Несоответствие границ: тип String не является допустимой заменой 
+        * ограниченного параметра <T расширяет содержимое> типа Repository<T>.
+        * <String> - подчёркнут красным
+        */ 
+        Repository<String> stringRepository = new Repository<String>("stringRepository");
         stringRepository.add("Кринж");
         stringRepository.add("Краш");
         stringRepository.add("Рофл");
@@ -55,9 +60,9 @@ public class Program {
 	* для работы фора, в качестве тренировки требуется 
 	* прописать некий код в файле репозитория (см. задание выше)
 	*/
-	for (Content string : videoStorage) {
+	// for (Content string : videoStorage) {
 		
-	}
+	// }
     }
 }
 
