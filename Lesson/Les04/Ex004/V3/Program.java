@@ -19,25 +19,36 @@ public class Program {
         }
         
         //#region проблема решена (???)
-
-        audioStorage.add(new VideoContent("jfvjdhdf7768.mp4")); 
-        videoStorage.add(new AudioContent("Дорожка 005.wav")); 
+        /*
+        * После сделанных обобщений "<T extends Content>" в "Repository"
+        * поместить аудио контент в видео нельзя
+        * и наоборот, видео нельзя поместить в аудио,
+        * такое добавление (add) система запрещает
+        * "add" подчёркивает красным
+        */
+        // audioStorage.add(new VideoContent("jfvjdhdf7768.mp4")); 
+        // videoStorage.add(new AudioContent("Дорожка 005.wav")); 
 
         //#endregion
 
         //#region  проблема решена (???)
-        //
-        
-        Repository<String> stringRepository = new Repository<>("stringRepository");
-        stringRepository.add("Кринж");
-        stringRepository.add("Краш");
-        stringRepository.add("Рофл");
-        stringRepository.add("Криповый");
-        stringRepository.add("Личинус");
-        stringRepository.add("Шеймить");
-        for (int i = 0; i < stringRepository.count(); i++) {
-            System.out.println(stringRepository.get(i));
-        }
+        /*
+         * запись в репозитории заменена с <T> на <T extends Content>
+         * P.S.
+         * Несоответствие границ: тип String не является допустимой заменой 
+         * ограниченного параметра <T расширяет содержимое> типа Repository<T>.
+         * <String> - подчёркнут красным
+         */
+        // Repository<String> stringRepository = new Repository<>("stringRepository");
+        // stringRepository.add("Кринж");
+        // stringRepository.add("Краш");
+        // stringRepository.add("Рофл");
+        // stringRepository.add("Криповый");
+        // stringRepository.add("Личинус");
+        // stringRepository.add("Шеймить");
+        // for (int i = 0; i < stringRepository.count(); i++) {
+        //     System.out.println(stringRepository.get(i));
+        // }
         //#endregion
     }
 }

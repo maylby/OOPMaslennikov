@@ -3,7 +3,10 @@ package OOP.Lesson.Les04.Ex004.V3;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/*
+ * В репозиторий добавлено обобщение, 
+ * изменён тип с <T> на <T extends Content>
+ */
 public class Repository<T extends Content> {
     List<T> ds;
 
