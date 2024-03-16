@@ -1,4 +1,4 @@
-package OOP.Lesson.Les005;
+package OOP.Lesson.Les04.Ex005;
 
 class Ex003_GenericMethod {
     public static void main(String[] args) {
