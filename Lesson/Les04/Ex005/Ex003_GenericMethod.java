@@ -1,5 +1,7 @@
 package OOP.Lesson.Les04.Ex005;
 
+import java.util.Random;
+
 class Ex003_GenericMethod {
     public static void main(String[] args) {
         System.out.println(GenericMethod.<String>Swap("str1", "str2"));
