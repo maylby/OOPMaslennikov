@@ -33,11 +33,16 @@ public class Program {
         // videoContent.add(new VideoContent("ВИДЕО 1"));
         // videoContent.add(new VideoContent("ВИДЕО 2"));
         
-        // pTchaikovsky.merge(videoContent);
+        // /*
+        //  * Контроль ошибки слияния (merge) аудио и видео контента
+        //  */
+        // pTchaikovsky.merge(videoContent); // Метод merge(Repository<AudioContent>) 
+        //                                   // типа Repository<AudioContent> 
+        //                                   // неприменим для аргументов 
+        //                                   // (Repository<VideoContent>)Java(67108979)
 
         // for (int index = 0; index < pTchaikovsky.count(); index++) {
         //     System.out.println(pTchaikovsky.get(index));
         // }
-
     }
 }
