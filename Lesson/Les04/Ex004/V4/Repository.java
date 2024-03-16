@@ -33,6 +33,12 @@ public class Repository<T extends Content> {
         }
     }
 
-    // В качестве тренировки реализуйте возможность работы с foreach
+    /*
+	* В качестве тренировки реализуйте возможность работы с foreach требуется, 
+    * в файле репозитория (?) или отдельно (?), прописать код "videoStorage"
+	*/
+	// for (Content string : videoStorage) {
+		
+	// }
 
 }
