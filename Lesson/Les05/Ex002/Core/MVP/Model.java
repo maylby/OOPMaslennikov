@@ -12,8 +12,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import Ex002Phonebook.Core.Infrastructure.Phonebook;
-import Ex002Phonebook.Core.Models.Contact;
+import OOP.Lesson.Les05.Ex002.Core.Infrastructure.Phonebook;
+import OOP.Lesson.Les05.Ex002.Core.Models.Contact;
 
 /*
 * Модель (Model) работы с данными
