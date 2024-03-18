@@ -20,3 +20,16 @@ https://gb.ru/lessons/414493
 
 Решение
  */
+
+ package OOP.Lesson.Les05.Ex001;
+
+ /*
+ * Интерфейс "Model"
+ */
+ public interface Model {
+     int result();
+ 
+     void setX(int value);
+ 
+     void setY(int value);
+ }
