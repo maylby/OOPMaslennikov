@@ -19,6 +19,10 @@ https://gb.ru/lessons/414493
 */
 package OOP.Lesson.Les05.Ex002;
 
+/*
+* Модуль хранение базы данных
+*/
 public class Config {
-    
+    public static String pathDb = "data.db";
 }
+
