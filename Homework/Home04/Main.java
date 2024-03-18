@@ -21,18 +21,18 @@ public class Main {
     public static void main(String[] args) {
 
     	Library<String, Integer, String> library = new Library<>(); // OnlineStore
-								    // T, K, V
-    	library.addProd(new Product<>("book", 1991)); // "shirt" (рубаха) - книга (?)
-    	library.addProd(new Product<>("jornal", 2011)); // "dress" (платье) - журнал (?)
+								                                    // T, K, V
+    	library.addBook(new Book<>("book", "LastName", 1991)); 
+    	library.addBook(new Book<>("jornal", "Edition", 2011));
     	// System.out.println(library);
 
-    	LibraryCard<Integer, String> card1 = new LibraryCard<Integer, String>(1111); // Order
-   	LibraryCard<Integer, String> card2 = new LibraryCard<Integer, String>(1112); // № карточки?
+    	LibraryCard<Integer, String> card1 = new LibraryCard<Integer, String>(0021); 
+   	    LibraryCard<Integer, String> card2 = new LibraryCard<Integer, String>(0012);
     
-    	card1.setListProd("book");
-    	card2.setListProd("jornal");
-    	library.createOrder(card1);
-    	library.createOrder(card2);
+    	card1.setListBook("book");
+    	card2.setListBook("jornal");
+    	library.createLibraryCard(card1);
+    	library.createLibraryCard(card2);
 
     	System.out.println(library);
     }

@@ -6,6 +6,7 @@ https://gb.ru/lessons/414499/homework
  */
 package OOP.Homework.Home04;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /*
@@ -19,9 +20,9 @@ public class Library<T, K, V> {
 
     private List<Book<T>> books;
     private int cardCount;
-    private List<LibraryCard<K, V>> orders; // Order
-
-    public OnlineStore() {
+    private List<LibraryCard<K, V>> libraryCards; 
+    
+    public Library() {
         books = new ArrayList<>();
         libraryCards = new ArrayList<>();
         cardCount = 0;

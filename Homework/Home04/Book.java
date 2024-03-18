@@ -13,8 +13,9 @@ package OOP.Homework.Home04;
 public class Book<T> {
     private T name;
     private String autor;
+    private Integer pages;
     
-    public Book(T name, String autor) {
+    public Book(T name, String autor, Integer pages) {
         this.name = name;
         this.autor = autor;
     }
@@ -26,9 +27,13 @@ public class Book<T> {
     public String getAutor() {
         return autor;
     }
+
+    public Integer getPages() {
+        return pages;
+    }
     
     @Override
     public String toString() {
-        return String.format("Книга %s", name);
+        return String.format("Книга %s", name, pages);
     }
 }

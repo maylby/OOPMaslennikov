@@ -6,6 +6,8 @@ https://gb.ru/lessons/414499/homework
  */
 package OOP.Homework.Home04;
 
+import java.util.ArrayList;
+
 /*
 * "LibraryCard" - библиотечная карточка определенной книги
 * "K" - номер карточки, "V" - информация о книге
@@ -19,11 +21,11 @@ public class LibraryCard<K, V> {
     }
 
     public ArrayList<V> getListBook() {
-        return ListBook;
+        return listBook;
     }
 
     public void setListBook(V book) {
-        ListBook.add(book);
+        listBook.add(book);
     }
 
     @Override
