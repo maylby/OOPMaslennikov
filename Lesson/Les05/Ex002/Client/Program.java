@@ -10,6 +10,15 @@ https://gb.ru/lessons/414493
  */
 package OOP.Lesson.Les05.Ex002.Client;
 
+import OOP.Lesson.Les05.Ex002.UI.App; // импорт "App" из папки "UI" 
+
+// Консольное приложение
 public class Program {
-    
+
+    public static void main(String[] args) {
+        
+        App.ButtonClick(); // кнопка запуска приложения (App)
+     
+    }
 }
+
