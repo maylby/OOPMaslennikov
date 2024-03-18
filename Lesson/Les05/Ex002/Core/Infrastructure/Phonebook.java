@@ -14,7 +14,7 @@ package OOP.Lesson.Les05.Ex002.Core.Infrastructure;
 import java.util.ArrayList;
 import java.util.List;
 
-import Ex002Phonebook.Core.Models.Contact;
+import OOP.Lesson.Les05.Ex002.Core.Models.Contact;
 
 /*
 * класс Phonebook (записная книжка)

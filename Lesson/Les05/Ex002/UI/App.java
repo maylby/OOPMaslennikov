@@ -3,6 +3,8 @@
 Урок 5. ООП: От простого к практике
 https://gb.ru/lessons/414493
 
+00:42:30
+
  */
 package OOP.Lesson.Les05.Ex002.UI;
 

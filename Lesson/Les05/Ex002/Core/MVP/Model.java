@@ -70,7 +70,10 @@ public class Model {
 
         try (FileWriter writer = new FileWriter(path, false)) {
             for (int i = 0; i < currentBook.count(); i++) {
-                Contact contact = currentBook.getContact(i);
+                Contact contact = currentBook.getContact(i); // Метод getContact(int) не определен для типа "Phonebook"
+                                                             // Возможно, нужно добавить механику обновления записи в "update"
+                                                             // или дописать условие (if) для получения (get) контакта в "List<Contact>"
+                                                             // (см. "Phonebook")
                 writer.append(String.format("%s\n", contact.firstName));
                 writer.append(String.format("%s\n", contact.lastName));
                 writer.append(String.format("%s\n", contact.description));
