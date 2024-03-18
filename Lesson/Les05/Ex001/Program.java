@@ -22,6 +22,33 @@ ________________________
 */
 package OOP.Lesson.Les05.Ex001;
 
+// Клиенский код (приложение)
+
 public class Program {
-    
+    public static void main(String[] args) {
+
+        // var m = new SumModel();
+        // var v = new View();  // "SumModel" и "View" можно передать, 
+                                // минуя переменные (m, v), сразу в "Present",
+                                // исключив две строки кода (var m, var v)
+        // Present p = new Present(m, v);
+        // p.buttonClick();
+
+	    /*
+        две первые выше идущие строки можно исключить,
+        вставив переданные переменным значения в "Presenter",
+        передать всё сразу переменной "р" и, 
+        размножив команду "buttonClick", 
+        предоставить возможность пользователю
+        повторять цикл неограниченное число раз,
+        вводить значения, кликать "button", получая результат (сумму)
+	    */ 
+        Presenter p = new Presenter(new SumModel(), new View()); // "View" отвечает за то, как
+								                                 // выглядит вывод на экран
+        p.buttonClick();
+        p.buttonClick();
+        p.buttonClick();
+        p.buttonClick();
+
+    }
 }
