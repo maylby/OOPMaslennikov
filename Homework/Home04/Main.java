@@ -20,11 +20,10 @@ package OOP.Homework.Home04;
 public class Main {
     public static void main(String[] args) {
 
-    	Library<String, Integer, String> library = new Library<>(); // OnlineStore
-								                                    // T, K, V
+    	Library<String, Integer, String> library = new Library<>(); 
+        
     	library.addBook(new Book<>("book", "LastName", 1991)); 
     	library.addBook(new Book<>("jornal", "Edition", 2011));
-    	// System.out.println(library);
 
     	LibraryCard<Integer, String> card1 = new LibraryCard<Integer, String>(0021); 
    	    LibraryCard<Integer, String> card2 = new LibraryCard<Integer, String>(0012);
