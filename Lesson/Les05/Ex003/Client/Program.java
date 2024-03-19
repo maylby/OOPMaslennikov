@@ -29,15 +29,27 @@ public class Program {
 
         Canvas canvas = new Canvas("Canvas");
 
-       
+        /*
+         * Второй вид записи 
+         * задана иерархия вложений
+         */
         shape2.shapes.add(shape1);
         shape4.shapes.add(shape2);
         shape4.shapes.add(shape3);
         shape6.shapes.add(shape4);
         shape6.shapes.add(shape5);
 
+        /*
+         * Первый вид записи 
+         * последовательный вызов
+         */
+        // canvas.shapes.add(shape1);
+        // canvas.shapes.add(shape2);
+        // canvas.shapes.add(shape3);
+        // canvas.shapes.add(shape4);
+        // canvas.shapes.add(shape5);
         canvas.shapes.add(shape6);
-
+        
         System.out.println(canvas);
 
         // #endregion
