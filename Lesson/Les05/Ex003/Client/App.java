@@ -25,11 +25,11 @@ public class App {
 
     public void start() throws UnacceptableValueException {
         StringBuilder sb = new StringBuilder()
-                .append("\n ==== \n")
-                .append("1 - append shape\n")
-                .append("2 - show shape\n")
-                .append("3 - show all area\n")
-                .append("0 - exit\n");
+                .append("\n ==== \n") // (???)
+                .append("1 - append shape\n") // "добавить фигуру" (перечень фигур)
+                .append("2 - show shape\n") // "показать фигуру (форму)"
+                .append("3 - show all area\n") // показать всё (?)
+                .append("0 - exit\n"); // вывод результата
 
 
         while (true) {
