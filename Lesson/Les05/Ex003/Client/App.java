@@ -26,9 +26,9 @@ public class App {
     public void start() throws UnacceptableValueException {
         StringBuilder sb = new StringBuilder()
                 .append("\n ==== \n") // (???)
-                .append("1 - append shape\n") // "добавить фигуру" (перечень фигур)
-                .append("2 - show shape\n") // "показать фигуру (форму)"
-                .append("3 - show all area\n") // показать всё (?)
+                .append("1 - append shape\n") // "добавить фигуру" (выбор из списка)
+                .append("2 - show shape\n") // "показать фигуру" (площади выбранных фигур)
+                .append("3 - show all area\n") // показать общую площадь фигур
                 .append("0 - exit\n"); // вывод результата
 
 
