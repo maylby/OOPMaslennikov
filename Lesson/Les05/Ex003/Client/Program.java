@@ -7,7 +7,7 @@ https://gb.ru/lessons/414493
 package OOP.Lesson.Les05.Ex003.Client;
 
 import OOP.Lesson.Les05.Ex003.Mathematics.Exceptions.UnacceptableValueException;
-import OOP.Lesson.Les05.Ex003.Mathematics.CalculateArea.CalculateArea;
+// import OOP.Lesson.Les05.Ex003.Mathematics.CalculateArea.CalculateArea;
 import OOP.Lesson.Les05.Ex003.Mathematics.Shapes.Canvas;
 import OOP.Lesson.Les05.Ex003.Mathematics.Shapes.Circle;
 import OOP.Lesson.Les05.Ex003.Mathematics.Shapes.Rectangle;
