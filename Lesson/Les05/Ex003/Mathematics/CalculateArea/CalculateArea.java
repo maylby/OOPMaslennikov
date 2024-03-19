@@ -35,6 +35,9 @@ public class CalculateArea implements Calculate {
         }
     }
 
+    /*
+     * Метод (calculate) вычисления площади
+     */
     private void calculate(Shape shape, RefInt ref) {
         ref.value += shape.getArea();
 
@@ -44,6 +47,11 @@ public class CalculateArea implements Calculate {
 
     }
 
+    /*
+     * Метод, проходящий по всем фигурам
+     * и описывающий (считающий?) их
+     * (подсчёт в методе "calculate" /см. выше/)
+     */
     public double visit(Shape shape) {
         RefInt area = new RefInt(0);
 
