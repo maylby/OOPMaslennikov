@@ -29,7 +29,7 @@ public class App {
                 .append("1 - append shape\n") // "добавить фигуру" (выбор из списка)
                 .append("2 - show shape\n") // "показать фигуру" (площади выбранных фигур)
                 .append("3 - show all area\n") // показать общую площадь фигур
-                .append("0 - exit\n"); // вывод результата
+                .append("0 - exit\n"); // завершение работы
 
 
         while (true) {
