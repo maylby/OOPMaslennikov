@@ -25,7 +25,9 @@ public class CalculateArea implements Calculate {
     }
 
     /**
-     * RefInt
+     * RefInt - класс внутри класса,
+     * приватный, т.к. нужен, только 
+     * для работы методов "visit" и "calculate" 
      */
     private class RefInt {
         public double value;
