@@ -38,7 +38,8 @@ public class CalculateArea implements Calculate {
     }
 
     /*
-     * Метод (calculate) вычисления площади
+     * Метод (calculate) вычисления площади,
+     * аналог метода "Print" из класса "Shape"
      */
     private void calculate(Shape shape, RefInt ref) {
         ref.value += shape.getArea();
