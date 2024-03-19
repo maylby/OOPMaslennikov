@@ -37,9 +37,15 @@ public class Model {
     // получение контакта
     public Contact currentContact() {
         if (currentIndex >= 0) {
-            return currentBook.getContact(currentIndex);
+            return currentBook.getContact(currentIndex); // Метод getContact(int)  
+                                                         // не определен для типа "Phonebook"
+                                                         // Возможно, нужно добавить механику 
+                                                         // обновления записи в "update"
+                                                         // или дописать условие (if) 
+                                                         // для получения (get) контакта 
+                                                         // в "List<Contact>" (см. "Phonebook")
         } else {
-            // ???...
+            // ???... // что здесь нужно и/или можно дописать?
             return null;
         }
     }
@@ -70,10 +76,8 @@ public class Model {
 
         try (FileWriter writer = new FileWriter(path, false)) {
             for (int i = 0; i < currentBook.count(); i++) {
-                Contact contact = currentBook.getContact(i); // Метод getContact(int) не определен для типа "Phonebook"
-                                                             // Возможно, нужно добавить механику обновления записи в "update"
-                                                             // или дописать условие (if) для получения (get) контакта в "List<Contact>"
-                                                             // (см. "Phonebook")
+                Contact contact = currentBook.getContact(i); // (см. комментарий выше)
+
                 writer.append(String.format("%s\n", contact.firstName));
                 writer.append(String.format("%s\n", contact.lastName));
                 writer.append(String.format("%s\n", contact.description));
