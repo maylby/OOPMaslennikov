@@ -30,22 +30,22 @@ class IPhone implements BasePhone, Fax, EMail {
 
     @Override
     public void Call() {
+
     }
 
     @Override
     public void SendSMS() {
-       
-
+    
     }
 
     @Override
     public void SendEMail() {
-        
 
     }
 
     @Override
     public void SendFax() {
+        
     }
 }
 
