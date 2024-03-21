@@ -1,3 +1,9 @@
+/*
+Объектно-ориентированное программирование (лекции)
+Урок 6. SOLID
+https://gb.ru/lessons/414494
+
+ */
 package OOP.Lesson.Les06;
 
 // Interface segregation principle
@@ -45,7 +51,7 @@ class IPhone implements BasePhone, Fax, EMail {
 
     @Override
     public void SendFax() {
-        
+
     }
 }
 
