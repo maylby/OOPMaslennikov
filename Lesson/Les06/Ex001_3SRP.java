@@ -66,6 +66,7 @@ class FileManager extends DataManager {
     };
 }
 
+// Менеджер базы данных
 class DbManeger extends DataManager {
 
     private void saveDb(PlannerSRP planner, String url, String username, String password) {
@@ -75,7 +76,7 @@ class DbManeger extends DataManager {
     }
 }
 
-
+// Поставщик подключения
 class ContentProvider {
     String uri;
     String username;
