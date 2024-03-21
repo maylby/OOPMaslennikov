@@ -9,6 +9,13 @@ package OOP.Lesson.Les06;
 public class Ex002_2OCP {
     public static void main(String[] args) {
 
+        /*
+         * Записии о предоставляемых скидках
+         * для клиента того или иного статуса.
+         * Для изменения скидок или расширения списка,
+         * достаточно изменить размер скидки, либо
+         * добавить клиента с новым статусом
+         */
         System.out.println(new BaseClient().getDiscount(100));
         System.out.println(new SilverPartner().getDiscount(100));
         System.out.println(new VIPPartner().getDiscount(100));
