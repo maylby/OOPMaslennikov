@@ -17,6 +17,10 @@ public class Ex001_1SRP {
     }
 }
 
+/*
+ * Класс "Planner" (планировщик)
+ * для ведения и систематизации каких-либо записей
+ */
 class Planner {
 
     List<String> entries = new ArrayList<>();
@@ -27,19 +31,24 @@ class Planner {
     public void removeEntry(int index) {
         entries.remove(index);
     }
+
+    // Метод прегрузки для записной книжки
     @Override
     public String toString() {
         return String.join("\n", entries);
     }
 
+    // Сохранить данные в файл
     public void saveAllText(String path) {
         /// ошибки связанные с...
     }
     
+    // Загрузить данные из файла
     public void loadFromFile(String path) {
         /// ошибки связанные с...
     }
 
+    // Загрузить из базы данных  
     public void loadFromDB(String url, String username, String password) {
         /// ошибки связанные с...
     }
