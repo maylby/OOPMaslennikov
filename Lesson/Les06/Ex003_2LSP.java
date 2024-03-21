@@ -17,6 +17,13 @@ public class Ex003_2LSP {
             System.out.println(animal.getType());
         }
 
+        /*
+         * Интерфейс (?) "Legs" (лапы),
+         * содержащий в себе животных, имеющих лапы
+         * Если определённый класс не имплементирует данный интерфейс, то
+         * животное, принадлежащее этому классу, нельзя будет внести в список.
+         * Т.е., система не позволит вписать змею или рыбу.
+         */
         List<Legs> list2 = new ArrayList<>(Arrays.asList(new Dog()/* , new Python() */));
         for (var animal : list2) {
             System.out.println(animal.getLegsCount());
