@@ -22,8 +22,8 @@ public class Ex001_3SRP {
         // planner.saveAllText("path");
         // planner.loadFromDB("10.0.0.0","admin","1234");
         DataManager dm = new DataManager();
-        dm.saveAllText(planner, "c:\\безысходность\\srp.txt");
-
+        dm.saveAllText(planner, "c:\\безысходность\\srp.txt"); // Метод "saveAllText" не определен
+                                                               // для типа "DataManager".
     }
 }
 
@@ -45,8 +45,9 @@ class PlannerSRP {
 
 
 class DataManager {
-    void save( PlannerSRP planner, String path);
+    void save( PlannerSRP planner, String path) {
 
+    }
 }
 
 class FileManager extends DataManager {
@@ -59,7 +60,8 @@ class FileManager extends DataManager {
         if(check(path));///
     }
 
-    private void save( PlannerSRP planner, String path) {
+    private void save( PlannerSRP planner, String path) { // Невозможно уменьшить видимость метода, 
+                                                          // унаследованного от "DataManager".
         this.saveAllText(planner, path);
     };
 }
@@ -68,7 +70,7 @@ class DbManeger extends DataManager {
 
     private void saveDb(PlannerSRP planner, String url, String username, String password) {
         /// ошибки связанные с ...
-        if (check(url)); ///
+        if (check(url)); // Метод "check(String)" не определен для типа "DbManeger".
         save(planner, new ContentProvider(url, username, password).getPath());
     }
 }
