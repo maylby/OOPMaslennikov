@@ -2,6 +2,7 @@
 Объектно-ориентированное программирование (лекции)
 Урок 6. SOLID
 https://gb.ru/lessons/414494
+
  */
 package OOP.Lesson.Les06;
 
@@ -26,6 +27,7 @@ public class Ex001_2SRP {
     }
 }
 
+// Планировщик с двумя функциями, удаление и добавление данных
 class PlannerSRP {
     List<String> entries = new ArrayList<>();
 
@@ -41,22 +43,27 @@ class PlannerSRP {
     }    
 }
 
-
+// Классу "DataManager" передано управление данными
 class DataManager {
+
+    // метод проверки имени файла
     private boolean check(String filenameOfConnect){
         return true;
     }
 
+    // сохранение в файл
     public void saveAllText(PlannerSRP planner,String path) {
         /// ошибки связанные с...
         if(check(path));///
     }
     
+    // загрузка из файла
     public void loadFromFile(PlannerSRP planner,String path) {
         /// ошибки связанные с...
         if(check(path));///
     }
 
+    // загрузка из базы данных
     public void loadFromDB(String url, String username, String password) {
         /// ошибки связанные с...
         if(check(url));///
