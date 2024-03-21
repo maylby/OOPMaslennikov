@@ -1,3 +1,8 @@
+/*
+Объектно-ориентированное программирование (лекции)
+Урок 6. SOLID
+https://gb.ru/lessons/414494
+ */
 package OOP.Lesson.Les06;
 
 import java.util.ArrayList;
