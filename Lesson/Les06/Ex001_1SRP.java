@@ -9,11 +9,11 @@ import java.util.List;
 
 public class Ex001_1SRP {
     public static void main(String[] args) {
-        Planner revengePlanner = new Planner();
-        revengePlanner.addEntry("1");
-        revengePlanner.removeEntry(0);
-        revengePlanner.saveAllText("path");
-        revengePlanner.loadFromDB("10.0.0.0","admin","1234");
+        Planner revengePlanner = new Planner(); // создать новый планировщик
+        revengePlanner.addEntry("1"); // добавить "вход"
+        revengePlanner.removeEntry(0); // удалить "вход"
+        revengePlanner.saveAllText("path"); // сохранить весь текст
+        revengePlanner.loadFromDB("10.0.0.0","admin","1234"); // загрузка БД
     }
 }
 
@@ -25,9 +25,12 @@ class Planner {
 
     List<String> entries = new ArrayList<>();
 
+    // метод добавления записи
     public void addEntry(String text) {
         entries.add(text);
     }
+
+    // метод удаления записи
     public void removeEntry(int index) {
         entries.remove(index);
     }
