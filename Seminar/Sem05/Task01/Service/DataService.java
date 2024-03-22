@@ -55,6 +55,7 @@ public class DataService {
 	 * при выполнении ДЗ
 	 */
 	public void id(int id) {
-		studentView.studCheck(students, id);
+		studentView.studCheck(students, id); // система сообщает, что 
+											 // "studentView" не может быть решен
 	}
 }

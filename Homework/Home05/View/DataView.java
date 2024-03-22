@@ -4,14 +4,14 @@
 https://gb.ru/lessons/414500
 
  */
-package OOP.Seminar.Sem05.Task01.View;
+package OOP.Homework.Home05.View;
 
 import java.util.ArrayList;
 
 import OOP.Homework.Home03.Student;
 
-public class StudentView {
-    public StudentView() {
+public class DataView {
+    public DataView() {
 
     }
 
