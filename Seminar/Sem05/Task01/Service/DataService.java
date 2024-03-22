@@ -44,4 +44,13 @@ public class DataService {
 			System.out.println(teachers);
 		}
 	}
+
+	/*
+	 * Метод "id" 
+	 * Показан Генадием Ионовым, 
+	 * как метод, добавленный вне семинара
+	 */
+	public void id(int id) {
+		studentView.studCheck(students, id);
+	}
 }
