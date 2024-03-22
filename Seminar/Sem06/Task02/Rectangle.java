@@ -1,3 +1,12 @@
+/*
+Объектно-ориентированное программирование (семинары)
+Урок 6. ООП Дизайн и Solid
+https://gb.ru/lessons/414501
+
+00:59:30
+Роман Сухачев 
+
+ */
 package OOP.Seminar.Sem06.Task02;
 
 public class Rectangle {
