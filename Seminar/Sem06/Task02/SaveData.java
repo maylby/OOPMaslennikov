@@ -1,3 +1,10 @@
+/*
+Объектно-ориентированное программирование (семинары)
+Урок 6. ООП Дизайн и Solid
+https://gb.ru/lessons/414501
+
+Александ Верзун
+ */
 package OOP.Seminar.Sem06.Task02;
 
 import OOP.Seminar.Sem06.Task01.Employee;
