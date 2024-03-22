@@ -21,12 +21,12 @@ public class LightBulb implements Switchable {
 }
 
 interface Switchable {
-    public void turnOn();
-    public void turnOff();
+    public void turnOn(); // включить
+    public void turnOff(); // выключить
 }
     
 class Switch {
-    private Switchable bulb;
+    private Switchable bulb; // "bulb" - лампочка
     
     public Switch(Switchable device) {
         this.bulb = device;
