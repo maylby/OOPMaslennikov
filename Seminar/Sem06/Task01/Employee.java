@@ -4,7 +4,6 @@
 https://gb.ru/lessons/414501
 
 00:41:00
-
 Генадий Ионов
 
  */
@@ -14,7 +13,7 @@ package OOP.Seminar.Sem06.Task01;
  * Класс "Employe" (Сотрудник)
  * (Сохранение данных о сотрудниках)
  */
-public class Employe {
+public class Employee {
     private String name;
     
     public void saveEmploye() {
