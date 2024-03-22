@@ -9,6 +9,11 @@ https://gb.ru/lessons/414501
  */
 package OOP.Seminar.Sem06.Task02;
 
+/*
+ * В этом примере, чтобы добавить поддержку других фигур, 
+ * придется изменять класс AreaCalculator. Это нарушает OCP, 
+ * так как класс не открыт для расширения и закрыт для изменения.
+ */
 public class Rectangle {
     public double width;
 	public double height;
