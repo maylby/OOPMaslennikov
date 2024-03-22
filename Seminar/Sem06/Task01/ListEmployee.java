@@ -1,3 +1,10 @@
+/*
+Объектно-ориентированное программирование (семинары)
+Урок 6. ООП Дизайн и Solid
+https://gb.ru/lessons/414501
+
+Генадий Ионов
+ */
 package OOP.Seminar.Sem06.Task01;
 
 import java.util.ArrayList;
