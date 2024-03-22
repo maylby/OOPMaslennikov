@@ -11,12 +11,26 @@ package OOP.Seminar.Sem06.Task01;
 
 /*
  * Класс "Employe" (Сотрудник)
- * (Сохранение данных о сотрудниках)
+ * (получение набора данных о сотрудниках)
  */
 public class Employee {
     private String name;
-    
-    public void saveEmployee() {
-        // сохранение данных о сотруднике в базу данных
+    private double salary;
+
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }    
+
 }
