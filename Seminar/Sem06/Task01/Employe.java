@@ -10,6 +10,10 @@ https://gb.ru/lessons/414501
  */
 package OOP.Seminar.Sem06.Task01;
 
+/*
+ * Класс "Employe" (Сотрудник)
+ * (Сохранение данных о сотрудниках)
+ */
 public class Employe {
     private String name;
     
