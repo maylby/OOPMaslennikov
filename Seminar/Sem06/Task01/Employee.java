@@ -16,7 +16,7 @@ package OOP.Seminar.Sem06.Task01;
 public class Employee {
     private String name;
     
-    public void saveEmploye() {
+    public void saveEmployee() {
         // сохранение данных о сотруднике в базу данных
     }
 }
