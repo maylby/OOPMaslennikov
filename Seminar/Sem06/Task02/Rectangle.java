@@ -14,11 +14,16 @@ package OOP.Seminar.Sem06.Task02;
  * придется изменять класс AreaCalculator. Это нарушает OCP, 
  * так как класс AreaCalculator закрыт для расширения и изменения.
  */
+
 public class Rectangle {
     public double width;
 	public double height;
 }
 
+/*
+ * Если понадобиться вычислить, например, площадь круга, то
+ * придётся преписывать код. Что нарушает принципы SOLID.
+ */
 class AreaCalculator {
 	public double calculateArea(Rectangle rectangle) {
 	    return rectangle.width * rectangle.height;
