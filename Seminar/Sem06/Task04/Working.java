@@ -13,17 +13,10 @@ https://gb.ru/lessons/414501
  */
 package OOP.Seminar.Sem06.Task04;
 
-/**
- * 
- * Working
- */
 interface Working {
     void work();
 }
 
-/**
- * Eating
- */
 interface Eating {
     void eat();    
 }
