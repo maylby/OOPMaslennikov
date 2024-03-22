@@ -14,10 +14,10 @@ public class SaveData {
     Employee employee; // поменял "worker" на "employee"
     int id;
 
-    public void saveData(int id, String name, double salary) {
+    public void saveData(int id, Employee employee) {
         // сохранение данных сотрудника в базу данных 
-        employee.getName();
-        employee.getSalary();
+        employee.getName(); // показать имя сотрудника
+        employee.getSalary(); // показать зарплату
         id++;
     }
 }
