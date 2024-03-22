@@ -16,6 +16,7 @@ public class StudentView {
     }
 
     public void studCheck(ArrayList<Student> students, int id) {
+
         for (Student student : students) {
             if (student.getId() == id) {
                 System.out.println(student);
@@ -23,3 +24,7 @@ public class StudentView {
         }
     }
 }
+
+// можно решить с помощью итератора (Роман Сукачёв)
+// (?) интерфейса итератор?
+// (?) "Iterator<String> iter = ..."

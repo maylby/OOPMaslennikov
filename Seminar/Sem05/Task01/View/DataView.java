@@ -1,14 +1,14 @@
 /*
 Объектно-ориентированное программирование (семинары)
 Урок 5. От простого к практике
-https://gb.ru/lessons/414500/homework
+https://gb.ru/lessons/414500
 
  */
 package OOP.Seminar.Sem05.Task01.View;
 
-import OOP.Homework.Home05.Service.DataService;
-import OOP.Homework.Home05.Data.Student;
-import OOP.Homework.Home05.Data.User;
+import OOP.Seminar.Sem05.Task01.Service.DataService;
+import OOP.Seminar.Sem05.Task01.Data.Student;
+import OOP.Seminar.Sem05.Task01.Data.User;
 
 /**
  * Сделать package View
