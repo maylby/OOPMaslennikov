@@ -44,4 +44,9 @@ public class DataService {
 			System.out.println(teachers);
 		}
 	}
+
+	public void id(int id) {
+		dataView.studCheck(students, id); 
+		
+	}
 }
