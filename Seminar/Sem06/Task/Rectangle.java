@@ -7,7 +7,7 @@ https://gb.ru/lessons/414501
 Роман Сухачев 
 
  */
-package OOP.Seminar.Sem06.Task02;
+package OOP.Seminar.Sem06.Task;
 
 /*
  * В этом примере, чтобы добавить поддержку других фигур, 
