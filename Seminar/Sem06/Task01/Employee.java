@@ -44,7 +44,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee [name = " + name + ", salary = " + salary + "]";
+        // return "Employee [name = " + name + ", salary = " + salary + "]"; // "return" (вариант-1)
+        return String.format("Имя: %s, ЗП: %d", name, salary); // "return" (вариант-2)
     }    
 
 }
