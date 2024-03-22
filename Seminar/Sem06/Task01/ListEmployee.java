@@ -1,7 +1,11 @@
 package OOP.Seminar.Sem06.Task01;
 
+import java.util.ArrayList;
+
 public class ListEmployee {
-    public void saveEmployee() {
-        // Сохранение данных о сотруднике в базу данных
+    ArrayList<Employee> EmployeeList = new ArrayList<Employee>();
+    
+    public void saveEmployee(Employee employee) {
+        EmployeeList.add(employee);
     }
 }
