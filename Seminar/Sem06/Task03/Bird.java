@@ -25,5 +25,7 @@ public class Bird {
  * который наследует "Ostrich" (страус).
  */
 class Ostrich extends Bird {
-
+	// public void fly() {
+    //     throw new UnsupportedOperationException("Страус не умеет летать");
+    // }
 }
