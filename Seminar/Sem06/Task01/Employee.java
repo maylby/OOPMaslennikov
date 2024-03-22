@@ -15,6 +15,15 @@ package OOP.Seminar.Sem06.Task01;
  */
 public class Employee {
     private String name;
+    // private double salary; // строка "salary" удалена VSCode при создании
+                              // конструктора "Employee" (см. ниже)
+                              // восстановление строки выдаёт ошибку
+
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
     private double salary;
 
     public String getName() {
