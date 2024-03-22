@@ -3,7 +3,8 @@
 Урок 6. ООП Дизайн и Solid
 https://gb.ru/lessons/414501
 
-01:25:00
+00:16:00
+Роман Сухачев 
 
  */
 package OOP.Seminar.Sem06.Task;
