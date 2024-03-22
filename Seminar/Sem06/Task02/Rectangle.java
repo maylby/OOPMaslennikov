@@ -6,13 +6,16 @@ https://gb.ru/lessons/414501
  */
 package OOP.Seminar.Sem06.Task02;
 
-public class Rectangle {
+public class Rectangle implements AreaCalculator {
 	public double width;
 	public double height;
-}
 
-class AreaCalculator {
-	public double calculateArea(Rectangle rectangle) {
-	return rectangle.width * rectangle.height;
+	@Override
+	public double calculateArea() {
+		return width * height;
 	}
 }
+
+interface AreaCalculator {
+    public double calculateArea();
+} 
