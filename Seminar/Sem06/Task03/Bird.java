@@ -20,12 +20,10 @@ public class Bird {
 }
 
 /*
- * Из тела файла удалена закомиченная часть кода, т.к.
- * метод "fly" прописан в классе "Bird", 
- * который наследует "Ostrich"
+ * Из тела класса удален метод "fly()",
+ * прописанный в классе "Bird" (медведь), 
+ * который наследует "Ostrich" (страус).
  */
 class Ostrich extends Bird {
-	// public void fly() {
-	//     throw new UnsupportedOperationException("Страус не умеет летать");
-	// }
+
 }
