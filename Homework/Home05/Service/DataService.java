@@ -9,6 +9,7 @@ package OOP.Homework.Home05.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+import OOP.Homework.Home05.View.DataView;
 import OOP.Homework.Home05.Data.Student;
 import OOP.Homework.Home05.Data.Teacher;
 import OOP.Homework.Home05.Data.User;
@@ -47,6 +48,6 @@ public class DataService {
 
 	public void id(int id) {
 		dataView.studCheck(students, id); 
-		
+
 	}
 }
