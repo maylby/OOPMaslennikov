@@ -10,7 +10,7 @@ Dependency Inversion Principle (Принцип инверсии зависимо
  */
 package OOP.Seminar.Sem06.Task05;
 
-public class LightBulb {
+public class LightBulb implements Switchable {
     public void turnOn() {
         // Включение лампочки
     }
@@ -18,13 +18,18 @@ public class LightBulb {
     public void turnOff() {
         // Выключение лампочки
     }
-    }
+}
+
+interface Switchable {
+    public void turnOn();
+    public void turnOff();
+}
     
 class Switch {
-    private LightBulb bulb;
+    private Switchable bulb;
     
-    public Switch() {
-        this.bulb = new LightBulb();
+    public Switch(Switchable device) {
+        this.bulb = device;
     }
     
     public void operate() {
