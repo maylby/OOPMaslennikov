@@ -15,7 +15,6 @@ package OOP.Seminar.Sem06.Task;
 (Liskov’s Substitution Principle - Принцип подстановки Барбары Лисков), 
 так как наследующий класс Ostrich изменяет ожидаемое поведение 
 метода fly() базового класса Bird.
-
  */
 public class Bird {
 	public void fly() {
