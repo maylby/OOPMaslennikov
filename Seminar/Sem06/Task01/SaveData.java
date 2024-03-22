@@ -5,10 +5,7 @@ https://gb.ru/lessons/414501
 
 Александ Верзун
  */
-package OOP.Seminar.Sem06.Task02;
-
-import OOP.Seminar.Sem06.Task01.Employee;
-// import OOP.Seminar.Sem06.Task01.ListEmployee;
+package OOP.Seminar.Sem06.Task01;
 
 public class SaveData {
     Employee employee; // поменял "worker" на "employee"
