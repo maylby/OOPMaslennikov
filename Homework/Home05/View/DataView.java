@@ -1,40 +1,25 @@
 /*
 Объектно-ориентированное программирование (семинары)
 Урок 5. От простого к практике
-https://gb.ru/lessons/414500/homework
+https://gb.ru/lessons/414500
 
  */
-package OOP.Homework.Home05.View;
+package OOP.Seminar.Sem05.Task01.View;
 
-import OOP.Homework.Home05.Service.DataService;
-import OOP.Homework.Home05.Data.Student;
-import OOP.Homework.Home05.Data.User;
+import java.util.ArrayList;
 
-/**
- * Сделать package View
- * Написать View, где будет метод вывода в консоль 
- * данных студента, поданных на вход.
- */
-public class DataView {
-    private DataService DataService;
+import OOP.Homework.Home03.Student;
 
-    public DataView() {
-        this.DataService = new DataService();
-    }
-    public void addUser(User student){
-        DataService.addUser(student);
+public class StudentView {
+    public StudentView() {
 
     }
 
-    public void showUser() {
-       DataService.seeUser();
-    }
-
-    @Override
-    public String toString() {
-        return "DataView {" +
-                "DataService = " + DataService +
-                '}';
-
+    public void studCheck(ArrayList<Student> students, int id) {
+        for (Student student : students) {
+            if (student.getId() == id) {
+                System.out.println(student);
+            }
+        }
     }
 }
