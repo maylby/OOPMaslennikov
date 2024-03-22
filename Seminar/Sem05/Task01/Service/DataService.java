@@ -9,6 +9,7 @@ package OOP.Seminar.Sem05.Task01.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+// import OOP.Seminar.Sem05.Task01.View; // нужно ли импортировать "View" 
 import OOP.Seminar.Sem05.Task01.Data.Student;
 import OOP.Seminar.Sem05.Task01.Data.Teacher;
 import OOP.Seminar.Sem05.Task01.Data.User;
@@ -49,6 +50,7 @@ public class DataService {
 	 * Метод "id" 
 	 * Показан Генадием Ионовым, 
 	 * как метод, добавленный вне семинара
+	 * при выполнении ДЗ
 	 */
 	public void id(int id) {
 		studentView.studCheck(students, id);

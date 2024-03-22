@@ -27,5 +27,7 @@ public class Main {
 		data.read(true);
 		System.out.println();
 		data.read(false);
+
+		data.id(2); // добавлено на семинаре-6 (00:38:05)
 	}
 }
