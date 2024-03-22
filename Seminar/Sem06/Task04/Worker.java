@@ -5,7 +5,12 @@ https://gb.ru/lessons/414501
 
  */
 package OOP.Seminar.Sem06.Task04;
+/*
+Здесь Engineer вынужден реализовывать метод eat(), хотя он ему не нужен. 
+Принцип ISP (Interface Segregation Principle - Принцип разделения интерфейса) нарушается, т.к. 
+интерфейс Worker должен быть разделен на более мелкие воизбежание "жирных" интерфейсов.
 
+ */
 interface Work {
     void work();
 }
