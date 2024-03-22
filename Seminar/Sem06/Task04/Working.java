@@ -28,3 +28,21 @@ interface Eating {
     void eat();    
 }
 
+class Engineer implements Working {
+    
+    @Override
+    public void work() {
+    }
+}
+
+class Worker implements Working, Eating {
+
+    @Override
+    public void eat() {
+    }
+
+    @Override
+    public void work() {
+    }
+
+}
