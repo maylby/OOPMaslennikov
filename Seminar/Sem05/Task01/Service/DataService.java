@@ -9,9 +9,7 @@ package OOP.Seminar.Sem05.Task01.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-// import OOP.Seminar.Sem05.Task01.View; // нужно ли импортировать "View"?
-									  // Импортировать можно, только тип. 
-									  // OOP.Seminar.Sem05.Task01.View разрешается в пакет
+import OOP.Seminar.Sem05.Task01.View.StudentView; 
 import OOP.Seminar.Sem05.Task01.Data.Student;
 import OOP.Seminar.Sem05.Task01.Data.Teacher;
 import OOP.Seminar.Sem05.Task01.Data.User;
