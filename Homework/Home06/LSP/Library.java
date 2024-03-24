@@ -4,10 +4,10 @@
 https://gb.ru/lessons/414501/homework
 
 
-Реализация ISP 
-Принцип разделения интерфейса
+Реализация LSP 
+Принцип подстановки Барбары Лисков
 */
-package OOP.Homework.Home06.ISP;
+package OOP.Homework.Home06.LSP;
 
 import java.util.ArrayList;
 import java.util.List;

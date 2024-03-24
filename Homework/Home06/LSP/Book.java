@@ -4,10 +4,10 @@
 https://gb.ru/lessons/414501/homework
 
 
-Реализация DIP 
-Принцип инверсии зависимостей
+Реализация LSP 
+Принцип подстановки Барбары Лисков
 */
-package OOP.Homework.Home06.DIP;
+package OOP.Homework.Home06.LSP;
 
 /*
 * Book - книгa в библиотеке
