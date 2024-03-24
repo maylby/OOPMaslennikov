@@ -30,8 +30,8 @@ public class LibraryCard<K, V> {
 
     @Override
     public String toString() {
-        return " Книга:{" + number +
-                " Аннотация = " + listBook +
+        return  "Книга:{ " + number +
+                ", Аннотация: " + listBook +
                 '}';
     }
 }
