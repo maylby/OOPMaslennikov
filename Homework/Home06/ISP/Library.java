@@ -4,10 +4,10 @@
 https://gb.ru/lessons/414501/homework
 
 
-Реализация DIP 
-Принцип инверсии зависимостей
+Реализация ISP 
+Принцип разделения интерфейса
 */
-package OOP.Homework.Home06.DIP;
+package OOP.Homework.Home06.ISP;
 
 import java.util.ArrayList;
 import java.util.List;
