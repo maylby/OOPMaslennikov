@@ -29,11 +29,11 @@ public class Library<T, K, V> {
 
 
     void addBook(Book<T> book) {
-        books.add(book); // Метод add(Book<T>) не определен для типа Book<T>.
+        books.add(book); // Метод add(Book<T>) не определен для типа Book<T>
     }
 
     void createLibraryCard(LibraryCard<K, V> libraryCards) {
-        libraryCards.add(libraryCards);
+        libraryCards.add(libraryCards); // Метод add(Book<T>) не определен для типа Book<T>
         cardCount++;
     }
 
