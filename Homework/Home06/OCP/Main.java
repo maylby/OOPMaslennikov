@@ -7,7 +7,8 @@ https://gb.ru/lessons/414501/homework
 Реализация LSP 
 Принцип подстановки Барбары Лисков
 */
-package OOP.Homework.Home06.LSP;
+package OOP.Homework.Home06.OCP;
+
 
 public class Main {
     public static void main(String[] args) {

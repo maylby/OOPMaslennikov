@@ -7,7 +7,7 @@ https://gb.ru/lessons/414501/homework
 Реализация LSP 
 Принцип подстановки Барбары Лисков
 */
-package OOP.Homework.Home06.LSP;
+package OOP.Homework.Home06.OCP;
 
 /*
 * Book - книгa в библиотеке
