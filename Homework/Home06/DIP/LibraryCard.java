@@ -1,10 +1,13 @@
 /*
 Объектно-ориентированное программирование (семинары)
-Урок 4. ООП: Обобщения. ч1
-https://gb.ru/lessons/414499/homework
+Урок 6. ООП Дизайн и Solid
+https://gb.ru/lessons/414501/homework
 
- */
-package OOP.Homework.Home04;
+
+Реализация DIP 
+Принцип инверсии зависимостей
+*/
+package OOP.Homework.Home06.DIP;
 
 import java.util.ArrayList;
 
