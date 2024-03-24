@@ -14,6 +14,7 @@ import java.util.ArrayList;
 */
 public class LibraryCard<K, V> {
     private K number;
+    
     public LibraryCard(K number, ArrayList<V> listBook) {
         this.number = number;
         this.listBook = listBook;

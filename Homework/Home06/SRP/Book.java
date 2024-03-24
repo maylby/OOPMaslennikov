@@ -46,7 +46,7 @@ public class Book<T> {
 /*
 * класс "Autor"
 * содержит метод поиска автора, который
-* вынесен в отдельный класс
+* вынес в отдельный класс
 */
 class Autor {
     private String autor;
