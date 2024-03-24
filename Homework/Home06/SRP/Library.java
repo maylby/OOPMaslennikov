@@ -1,11 +1,10 @@
-package OOP.Homework.Home06.SRP;
-
 /*
 Объектно-ориентированное программирование (семинары)
 Урок 6. ООП Дизайн и Solid
 https://gb.ru/lessons/414501/homework
 */
 
+package OOP.Homework.Home06.SRP;
 
 /*
 * "Library" - библиотека
