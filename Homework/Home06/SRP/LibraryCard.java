@@ -1,9 +1,12 @@
 /*
 Объектно-ориентированное программирование (семинары)
-Урок 4. ООП: Обобщения. ч1
-https://gb.ru/lessons/414499/homework
+Урок 6. ООП Дизайн и Solid
+https://gb.ru/lessons/414501/homework
 
- */
+
+Реализация SRP 
+(Single Responsibility Principle - Принцип единственной ответственности)
+*/
 package OOP.Homework.Home06.SRP;
 
 import java.util.ArrayList;
@@ -14,7 +17,7 @@ import java.util.ArrayList;
 */
 public class LibraryCard<K, V> {
     private K number;
-    
+
     public LibraryCard(K number, ArrayList<V> listBook) {
         this.number = number;
         this.listBook = listBook;
