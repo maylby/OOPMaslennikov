@@ -4,7 +4,7 @@
 https://gb.ru/lessons/414493
 
  */
-package OOP.Lesson.Les05.Ex003.Client;
+package OOP.Lesson.Les07.Client;
 
 import java.util.Scanner;
 
