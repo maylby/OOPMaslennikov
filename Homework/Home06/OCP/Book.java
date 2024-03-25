@@ -59,7 +59,7 @@ abstract class Book<T> { // (?) Система сообщает: "Парамет
  * класс "Journal" (журналы)
  * наследует класс "Book" и реализует итерфейс "Fragment"
  */
-class Journal extends Book<T> implements Fragment {
+class Journal<T> extends Book<T> implements Fragment {
 
     // Конструктор Journal
     public Journal(T name, String autor, Integer pages) {

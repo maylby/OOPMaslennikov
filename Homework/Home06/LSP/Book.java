@@ -9,6 +9,12 @@ https://gb.ru/lessons/414501/homework
 */
 package OOP.Homework.Home06.LSP;
 
+/**
+ * Article
+ */
+interface Article {
+    void text();
+}
 /*
 * Book - книгa в библиотеке
 * параметр типа T - ее название
@@ -40,3 +46,8 @@ public class Book<T> {
         return String.format("Книга %s", name, pages);
     }
 }
+
+class Newspaper extends Book<T>  {
+
+}
+
