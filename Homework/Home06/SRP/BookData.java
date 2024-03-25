@@ -3,7 +3,8 @@
 Урок 6. ООП Дизайн и Solid
 https://gb.ru/lessons/414501/homework
 
-Реализация SRP (Single Responsibility Principle - Принцип единственной ответственности)
+Реализация SRP 
+(Принцип единственной ответственности)
  */
 package OOP.Homework.Home06.SRP;
 

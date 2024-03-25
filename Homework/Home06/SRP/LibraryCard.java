@@ -5,7 +5,10 @@ https://gb.ru/lessons/414501/homework
 
 
 Реализация SRP 
-(Single Responsibility Principle - Принцип единственной ответственности)
+Принцип единственной ответственности
+
+Код класса "LibraryCard" ставлен без изменений
+(см. реализация SRP в классах Book и BookData)
 */
 package OOP.Homework.Home06.SRP;
 

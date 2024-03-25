@@ -2,8 +2,13 @@
 Объектно-ориентированное программирование (семинары)
 Урок 6. ООП Дизайн и Solid
 https://gb.ru/lessons/414501/homework
-*/
 
+Реализация SRP 
+Принцип единственной ответственности
+
+Код класса "Library" ставлен без изменений
+(см. реализация SRP в классах Book и BookData)
+*/
 package OOP.Homework.Home06.SRP;
 
 import java.util.ArrayList;
