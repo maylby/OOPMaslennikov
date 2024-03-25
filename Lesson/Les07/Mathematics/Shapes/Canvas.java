@@ -1,10 +1,10 @@
 /*
 Объектно-ориентированное программирование (лекции)
-Урок 5. ООП: От простого к практике
-https://gb.ru/lessons/414493
+Урок 7. Есть ли жизнь без Java?
+https://gb.ru/lessons/414495
 
  */
-package OOP.Lesson.Les05.Ex003.Mathematics.Shapes;
+package OOP.Lesson.Les07.Mathematics.Shapes;
 
 /*
  * Класс "холст" (Canvas) для вычисления площади фигур, т.е.
