@@ -49,7 +49,7 @@ public class Book<T> {
 * вынес в отдельный класс
 */
 class Autor {
-    private String autor;
+    String autor;
 
     public void autor() {
         // поиск автора книги
