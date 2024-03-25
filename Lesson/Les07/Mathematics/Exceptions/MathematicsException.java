@@ -4,7 +4,7 @@
 https://gb.ru/lessons/414493
 
  */
-package OOP.Lesson.Les05.Ex003.Mathematics.Exceptions;
+package OOP.Lesson.Les07.Mathematics.Exceptions;
 
 /*
  * Класс для работы с математической библиотечкой, который
