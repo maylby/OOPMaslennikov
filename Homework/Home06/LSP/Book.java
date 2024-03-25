@@ -47,7 +47,28 @@ public class Book<T> {
     }
 }
 
-class Newspaper extends Book<T>  {
+class Newspaper<T> extends Book<T> implements Article {
 
+    public Newspaper(T name, String autor, Integer pages) {
+        super(name, autor, pages);
+        
+    }
+
+    @Override
+    public void text() {
+        // метод поиска статьи
+    }
 }
 
+class Journal<T> extends Book<T> implements Article {
+
+    public Journal(T name, String autor, Integer pages) {
+        super(name, autor, pages);
+        
+    }
+
+    @Override
+    public void text() {
+        // метод поиска статьи
+    }
+}
