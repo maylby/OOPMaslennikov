@@ -4,8 +4,8 @@
 https://gb.ru/lessons/414501/homework
 
 
-Реализация LSP 
-Принцип подстановки Барбары Лисков
+Реализация OCP 
+Принцип открытости/закрытости
 */
 package OOP.Homework.Home06.OCP;
 
