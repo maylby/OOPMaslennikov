@@ -6,6 +6,9 @@ https://gb.ru/lessons/414501/homework
 
 Реализация LSP 
 Принцип подстановки Барбары Лисков
+
+Код класса "Library" ставлен без изменений
+(см. реализация LSP в классе Book)
 */
 package OOP.Homework.Home06.LSP;
 
