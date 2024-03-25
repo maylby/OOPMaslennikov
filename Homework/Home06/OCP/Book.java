@@ -26,7 +26,8 @@ interface Fragment {
 * абстрактный класс Book - книгa в библиотеке
 * параметр типа <T> - ее название
 */
-abstract class Book<T> {
+abstract class Book<T> { // (?) Система сообщает: "Параметр типа T скрывает тип T"
+                         // Что это значит? Какие действия от меня требуются?
     private T name;
     private String autor;
     private Integer pages;
