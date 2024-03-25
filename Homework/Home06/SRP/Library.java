@@ -30,6 +30,7 @@ public class Library<T, K, V> {
 
     void addBook(Book<T> book) {
         books.add(book); // Метод add(Book<T>) не определен для типа Book<T>
+                         // Что не так, что надо сделать для исправления ошибки?
     }
 
     void createLibraryCard(LibraryCard<K, V> libraryCards) {
