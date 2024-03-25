@@ -6,6 +6,9 @@ https://gb.ru/lessons/414501/homework
 
 Реализация DIP 
 Принцип инверсии зависимостей
+
+Код класса "LibraryCard" ставлен без изменений
+(см. реализация DIP в классе BookDIP)
 */
 package OOP.Homework.Home06.DIP;
 

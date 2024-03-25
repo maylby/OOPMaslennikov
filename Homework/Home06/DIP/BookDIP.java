@@ -8,6 +8,7 @@ package OOP.Homework.Home06.DIP;
 И те, и другие должны зависеть от абстракций.
 Абстракции не должны зависеть от деталей. 
 Детали должны зависеть от абстракций.
+
  */
 public class BookDIP {
     public static void main(String[] args) {
@@ -34,6 +35,7 @@ class WinFormView implements View {
     }
 }
 
+// реализация принципа инверсии зависимостей
 class BookInfo {
     View view;
 
