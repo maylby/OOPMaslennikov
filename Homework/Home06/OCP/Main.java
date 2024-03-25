@@ -17,6 +17,7 @@ public class Main {
         
     	library.addBook(new Book<>("book", "LastName", 1991)); // Невозможно создать экземпляр типа Book
     	library.addBook(new Book<>("journal", "Edition", 2011)); // Невозможно создать экземпляр типа Book
+																 // Что нужно изменить для восстановления?
 
     	LibraryCard<Integer, String> card1 = new LibraryCard<Integer, String>(0021); 
    	    LibraryCard<Integer, String> card2 = new LibraryCard<Integer, String>(0012);
