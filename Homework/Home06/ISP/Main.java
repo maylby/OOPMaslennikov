@@ -6,6 +6,9 @@ https://gb.ru/lessons/414501/homework
 
 Реализация ISP 
 Принцип разделения интерфейса
+
+Код класса "Main" ставлен без изменений
+(см. реализация ISP в классе Book)
 */
 package OOP.Homework.Home06.ISP;
 

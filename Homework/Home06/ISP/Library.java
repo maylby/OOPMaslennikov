@@ -6,19 +6,16 @@ https://gb.ru/lessons/414501/homework
 
 Реализация ISP 
 Принцип разделения интерфейса
+
+Код класса "Library" ставлен без изменений
+(см. реализация ISP в классе Book)
+
 */
 package OOP.Homework.Home06.ISP;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-* "Library" - библиотека
-* метод добавления книг 
-* метод выдачи библиотечных карточек
-* метод вывода информации о всех выданных книгах 
-* с их библиотечными карточками.
-*/
 public class Library<T, K, V> {
 
     private List<Book<T>> books;
