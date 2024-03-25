@@ -6,6 +6,9 @@ https://gb.ru/lessons/414501/homework
 
 Реализация OCP 
 Принцип открытости/закрытости
+
+Код класса "Library" ставлен без изменений
+(см. реализация OCP в классе Book)
 */
 package OOP.Homework.Home06.OCP;
 
