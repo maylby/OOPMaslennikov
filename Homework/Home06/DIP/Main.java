@@ -14,8 +14,8 @@ public class Main {
 
     	Library<String, Integer, String> library = new Library<>(); 
         
-    	library.addBook(new Book<>("book", "LastName", 1991)); 
-    	library.addBook(new Book<>("jornal", "Edition", 2011));
+    	library.addBook(new BookInfo<>("book", "LastName", 1991)); 
+    	library.addBook(new BookInfo<>("jornal", "Edition", 2011));
 
     	LibraryCard<Integer, String> card1 = new LibraryCard<Integer, String>(0021); 
    	    LibraryCard<Integer, String> card2 = new LibraryCard<Integer, String>(0012);

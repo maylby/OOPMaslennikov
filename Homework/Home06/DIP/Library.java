@@ -21,7 +21,7 @@ import java.util.List;
 */
 public class Library<T, K, V> {
 
-    private List<Book<T>> books;
+    private List<BookInfo<T>> books;
     private int cardCount;
     private List<LibraryCard<K, V>> libraryCards; 
     
@@ -31,7 +31,7 @@ public class Library<T, K, V> {
         cardCount = 0;
     }
 
-    void addBook(Book<T> book) {
+    void addBook(BookInfo<T> book) {
         books.add(book);
     }
 
