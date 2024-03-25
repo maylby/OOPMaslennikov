@@ -19,8 +19,8 @@ import java.util.List;
 * метод вывода информации о всех выданных книгах 
 * с их библиотечными карточками.
 */
-public class Library<T, K, V> { // (?) Система сообщает: "Параметр типа T скрывает тип T"
-                                // Что это значит? Какие действия от меня требуются?
+public class Library<T, K, V> {
+    
     private List<Book<T>> books;
     private int cardCount;
     private List<LibraryCard<K, V>> libraryCards; 
