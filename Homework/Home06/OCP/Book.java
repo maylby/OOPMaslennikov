@@ -4,16 +4,29 @@
 https://gb.ru/lessons/414501/homework
 
 
-Реализация OCP 
-Принцип открытости/закрытости
+Реализация OCP (Принцип открытости/закрытости)
+
+Добавлен интерфейс "Fragment" 
+поиска по текста фрагменту (quoten)
+Добавлен класс "Journal" (журналы)
 */
 package OOP.Homework.Home06.OCP;
 
+/**
+ * инерфейс "Fragment"
+ * поиск по цитате (quoten),
+ * по совпадению набора слов
+ */
+interface Fragment {
+    void quoten(); 
+    
+}
+
 /*
-* Book - книгa в библиотеке
-* параметр типа T - ее название
+* абстрактный класс Book - книгa в библиотеке
+* параметр типа <T> - ее название
 */
-public class Book<T> {
+abstract class Book<T> {
     private T name;
     private String autor;
     private Integer pages;
@@ -39,4 +52,25 @@ public class Book<T> {
     public String toString() {
         return String.format("Книга %s", name, pages);
     }
+}
+
+/**
+ * класс "Journal" (журналы)
+ * наследует класс "Book" и реализует итерфейс "Fragment"
+ */
+class Journal extends Book<T> implements Fragment {
+
+    // Конструктор Journal
+    public Journal(T name, String autor, Integer pages) {
+        super(name, autor, pages);
+        
+    }
+
+    // метод поиска по цитате
+    @Override
+    public void quoten() {
+        // реализация поиска по цитате
+
+    }
+
 }
