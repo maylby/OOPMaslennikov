@@ -4,8 +4,7 @@
 https://gb.ru/lessons/414501/homework
 
 
-Реализация ISP 
-Принцип разделения интерфейса
+Реализация ISP (Принцип разделения интерфейса)
 
 Добавлен интерфейс "Article" (статья)
 для поиска по текста статьи 
@@ -19,14 +18,14 @@ package OOP.Homework.Home06.ISP;
  * ArticleJournal
  */
 interface ArticleJournal {
-    void text();
+    void tableContents();
 }
 
 /**
  * ArticleJournal
  */
 interface ArticleNewspaper {
-    void text();
+    void contents();
 }
 
 /*
@@ -61,8 +60,45 @@ public class Book<T> {
     }
 }
 
+
+/*
+ * класс "Journal" (журнал)
+ * наследует класс Book
+ * реализует два интерфейса 
+ * для журнала (ArticleJournal)
+ * и для газеты (ArticleNewspaper)
+ */
+class Journal<T> extends Book<T> implements ArticleJournal, ArticleNewspaper {
+
+    public Journal(T name, String autor, Integer pages) {
+        super(name, autor, pages);
+        
+    }
+
+    @Override
+    public void tableContents() {
+        // метод поиска статьи в газете
+        // отличается от поиска в журнале
+        // нет оглавления (содержания)
+    }
+
+    @Override
+    public void contents() {
+        // метод поиска статьи в журнале
+        // отличается от поиска в газете
+        // есть оглавление (содержания)
+    }
+
+}
+
+
 /*
  * класс "Newspaper" (газета)
+ * наследует класс Book
+ * реализует, только один интерфейс 
+ * для газеты (ArticleNewspaper),
+ * метод поиска статьи для журнала в газете не применим, т.к.
+ * нет оглавления, которое есть в журнале.
  */
 class Newspaper<T> extends Book<T> implements ArticleNewspaper {
 
@@ -72,29 +108,9 @@ class Newspaper<T> extends Book<T> implements ArticleNewspaper {
     }
 
     @Override
-    public void text() {
+    public void contents() {
         // метод поиска статьи в газете
         // отличается от поиска в журнале
         // нет оглавления (содержания)
-    }
-}
-
-
-/*
- * класс "Journal" (журнал)
- * наследует класс
- */
-class Journal<T> extends Book<T> implements ArticleJournal {
-
-    public Journal(T name, String autor, Integer pages) {
-        super(name, autor, pages);
-        
-    }
-
-    @Override
-    public void text() {
-        // метод поиска статьи в журнале
-        // отличается от поиска в газете
-        // есть оглавление (содержания)
     }
 }
