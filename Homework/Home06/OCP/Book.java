@@ -62,17 +62,16 @@ abstract class Book<T> { // (?) Система сообщает: "Парамет
  */
 class Journal<T> extends Book<T> implements Fragment {
 
-    // Конструктор Journal
+    // конструктор журнала
     public Journal(T name, String autor, Integer pages) {
         super(name, autor, pages);
         
     }
 
-    // метод поиска по цитате
     @Override
     public void quoten() {
-        // реализация поиска по цитате
-
+        // метод поиска по фрагменту текста
     }
+
 
 }
