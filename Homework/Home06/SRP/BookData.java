@@ -7,15 +7,17 @@ https://gb.ru/lessons/414501/homework
  */
 package OOP.Homework.Home06.SRP;
 
-public class BookData extends Book { // Что значит "Неявный суперконструктор Book() 
-                                     // не определен для конструктора по умолчанию. 
-                                     // Необходимо определить явный конструктор"???
-    BookData bookData;
+public class BookData<T> extends Book<T> { 
+    public BookData(T name, String autor) {
+        super(name, autor);    
+    }
+
     int id;
+    public void bookData(int id, BookData<T> bookData) {
 
-    public void bookData (int id, BookData bookData) {
-
-        // сохранение данных о книге 
+        /*
+         *  сохранение данных о книге 
+         */
         bookData.getName(); // получить название книги
         bookData.getAutor(); // получить автора
         // bookData.getNumber(); // получить номер карточки
