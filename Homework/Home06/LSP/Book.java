@@ -18,7 +18,7 @@ package OOP.Homework.Home06.LSP;
  * Article
  */
 interface Article {
-    void text();
+    void table();
 }
 /*
 * Book - книгa в библиотеке
@@ -52,19 +52,12 @@ public class Book<T> {
     }
 }
 
-class Newspaper<T> extends Book<T> implements Article {
-
-    public Newspaper(T name, String autor, Integer pages) {
-        super(name, autor, pages);
-        
-    }
-
-    @Override
-    public void text() {
-        // метод поиска статьи
-    }
-}
-
+/*
+ * Класс "Journal" 
+ * наследует класс "Book",
+ * реализует интерфейс "Article"
+ * (поиск статьи по оглавлению)
+ */
 class Journal<T> extends Book<T> implements Article {
 
     public Journal(T name, String autor, Integer pages) {
@@ -73,7 +66,23 @@ class Journal<T> extends Book<T> implements Article {
     }
 
     @Override
-    public void text() {
+    public void table() {
         // метод поиска статьи
     }
+}
+
+/*
+ * Класс "Newspaper" 
+ * наследует класс "Book", но
+ * не реализует интерфейс "Article", т.к.
+ * поиск статьи в журнале отличается поиска в газете
+ * (в газете нет оглавления).
+ */
+class Newspaper<T> extends Book<T> {
+
+    public Newspaper(T name, String autor, Integer pages) {
+        super(name, autor, pages);
+        
+    }
+
 }
