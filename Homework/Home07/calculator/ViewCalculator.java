@@ -15,7 +15,7 @@ public class ViewCalculator {
             int primaryArg = promptInt("1-й аргумент: ");
             Calculable calculator = createCalculation.create(primaryArg);
             while (true) {
-                String cmd = prompt("Действие (*, +, /, =) : ");
+                String cmd = prompt("Выбрать действие (*, +, /, =) : ");
                 if (cmd.equals("*")) {
                     int arg = promptInt("2-й аргумент: ");
                     calculator.multi(arg);
@@ -37,7 +37,7 @@ public class ViewCalculator {
                     break;
                 }
             }
-            String cmd = prompt("Продолжить? да: Y / нет: N");
+            String cmd = prompt("Продолжить? Да: Y / Нет: N");
             if (cmd.equals("Y")) {
                 continue;
             }
