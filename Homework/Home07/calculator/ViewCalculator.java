@@ -12,34 +12,36 @@ public class ViewCalculator {
 
     public void run() {
         while (true) {
-            int primaryArg = promptInt("1-й аргумент: ");
-            Calculable calculator = createCalculation.create(primaryArg);
+            int firstArg = promptInt("1-й аргумент: ");
+            Calculable calculator = createCalculation.create(firstArg);
             while (true) {
-                String cmd = prompt("Выбрать действие (*, +, /, =) : ");
-                if (cmd.equals("*")) {
+                String act = prompt("Действие (*, +, /, =) : ");
+                if (act.equals("*")) {
                     int arg = promptInt("2-й аргумент: ");
-                    calculator.multi(arg);
+                    calculator.mult(arg);
                     continue;
                 }
-                if (cmd.equals("+")) {
+                if (act.equals("+")) {
+                    
                     int arg = promptInt("2-й аргумент: ");
                     calculator.sum(arg);
                     continue;
                 }
-                if (cmd.equals("/")) {
+                if (act.equals("/")) {
                     int arg = promptInt("2-й аргумент: ");
                     calculator.div(arg);
-                    continue;
+                    if (arg == 0) throw new RuntimeException("Деление на ноль!");
+                    else continue;
                 }
-                if (cmd.equals("=")) {
+                if (act.equals("=")) {
                     int result = calculator.getResult();
                     System.out.printf("Результат %d\n", result);
                     break;
                 }
-            }
-            String cmd = prompt("Продолжить? Да: Y / Нет: N");
-            if (cmd.equals("Y")) {
-                continue;
+            }    
+                String act = prompt("Продолжить (Y/N)? ");
+                if (act.equals("Y")) {
+                    continue;
             }
             break;
         }

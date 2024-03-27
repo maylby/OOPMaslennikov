@@ -2,33 +2,33 @@ package OOP.Homework.Home07.calculator;
 
 public final class Calculator implements Calculable {
 
-    private int primaryArg;
+    private int firstArg;
 
-    public Calculator(int primaryArg) {
-        this.primaryArg = primaryArg;
+    public Calculator(int firstArg) {
+        this.firstArg = firstArg;
     }
 
     @Override
     public Calculable sum(int arg) {
-        primaryArg += arg;
+        firstArg += arg;
         return this;
     }
 
     @Override
-    public Calculable multi(int arg) {
-        primaryArg *= arg;
+    public Calculable mult(int arg) {
+        firstArg *= arg;
         return this;
     }
 
     @Override
     public Calculable div(int arg) {
-        primaryArg /= arg;
+        firstArg /= arg;
         return this;
     }
-    
+
     @Override
     public int getResult() {
-        return primaryArg;
+        return firstArg;
     }
 }
 
