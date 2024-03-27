@@ -12,18 +12,23 @@ public class ViewCalculator {
 
     public void run() {
         while (true) {
-            int primaryArg = promptInt("Введите первый аргумент: ");
+            int primaryArg = promptInt("1-й аргумент: ");
             Calculable calculator = createCalculation.create(primaryArg);
             while (true) {
-                String cmd = prompt("Введите команду (*, +, =) : ");
+                String cmd = prompt("Действие (*, +, /, =) : ");
                 if (cmd.equals("*")) {
-                    int arg = promptInt("Введите второй аргумент: ");
+                    int arg = promptInt("2-й аргумент: ");
                     calculator.multi(arg);
                     continue;
                 }
                 if (cmd.equals("+")) {
-                    int arg = promptInt("Введите второй аргумент: ");
+                    int arg = promptInt("2-й аргумент: ");
                     calculator.sum(arg);
+                    continue;
+                }
+                if (cmd.equals("/")) {
+                    int arg = promptInt("2-й аргумент: ");
+                    calculator.div(arg);
                     continue;
                 }
                 if (cmd.equals("=")) {
@@ -32,7 +37,7 @@ public class ViewCalculator {
                     break;
                 }
             }
-            String cmd = prompt("Еще посчитать (Y/N)?");
+            String cmd = prompt("Продолжить? да: Y / нет: N");
             if (cmd.equals("Y")) {
                 continue;
             }
