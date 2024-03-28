@@ -29,9 +29,21 @@ public class ViewCalculator {
                 }
                 if (act.equals("/")) {
                     int arg = promptInt("2-й аргумент: ");
+                    if (arg == 0) {
+                        private String prompt(String message)
+                        Scanner sc = new Scaner(Sistem.in);
+                        System.err.println("Делить на ноль нельзя, введите другой аргумент")
+                
+                        int x = sc.nextInt();
+                        while (x == 0) {
+                            System.err.println("Делить на ноль нельзя, введите другой аргумент")
+                            x = sc.nextInt();
+                        }
+                    }
+                    // throw new RuntimeException("Деление на ноль!");
+                    // else continue;  
                     calculator.div(arg);
-                    if (arg == 0) throw new RuntimeException("Деление на ноль!");
-                    else continue;
+                    continue;
                 }
                 if (act.equals("=")) {
                     int result = calculator.getResult();
