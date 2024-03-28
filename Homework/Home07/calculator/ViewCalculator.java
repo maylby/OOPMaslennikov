@@ -38,40 +38,36 @@ public class ViewCalculator {
                 if (act.equals("/")) {
                     int arg = promptInt("2-й аргумент: ");
                     if (arg == 0) {
+                        // throw new RuntimeException("Деление на ноль!");
                         
-                    //         /*
-                    //          * Код "while" для обработки ошибки "Деление на ноль"
-                    //          * 
-                    //          * Система сообщает об ошибке: 
-                    //          * "Сканер не может быть преобразован в тип"
-                    //          * Разобраться, что не так!..
-                    //          */
-                    //         Scanner sc = new Scaner(Sistem.in); 
-                    //         System.err.println("Делить на ноль нельзя, введите другой аргумент")
+                        /*
+                         * Обработка ошибки "Деление на ноль"
+                         * Замена строки "throw"
+                         */
+                        Scanner sc = new Scanner(System.in); 
+                        System.err.println("Делить на ноль нельзя!\n Ведите другой аргумент: ");
                     
-                    //         int x = sc.nextInt();
-                    //         while (x == 0) {
-                    //             System.err.println("Делить на ноль нельзя, введите другой аргумент")
-                    //             x = sc.nextInt();
-                    //         }
-                    //     }
-                    // }
-                        throw new RuntimeException("Деление на ноль!"); // сохранил "throw"
+                        int x = sc.nextInt();
+                        while (x == 0) {
+                            System.err.println("Делить на ноль нельзя!\n Ведите другой аргумент: ");
+                            x = sc.nextInt();
+                        }
+                        calculator.div(x);
+                        continue;
                     }
                     calculator.div(arg);
-                    continue;  
-                    
-                    // continue;
+                    continue;
                 }
+
                 if (act.equals("=")) {
                     int result = calculator.getResult();
                     System.out.printf("Результат %d\n", result);
                     break;
                 }
             }    
-                String act = prompt("Продолжить (Y/N)? ");
+                String act = prompt("Продолжить? (да: Y / нет: N) ");
                 if (act.equals("Y")) {
-                    continue;
+                    continue; // (?) не возвращает к дальнейшей работе
             }
             break;
         }
