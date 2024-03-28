@@ -12,16 +12,16 @@ import java.util.Scanner;
 
 public class ViewCalculator {
 
-    private ICreateCalculation createCalculation;
+    private ICalculationMaker calculationMaker;
 
-    public ViewCalculator(ICreateCalculation createCalculation) {
-        this.createCalculation = createCalculation;
+    public ViewCalculator(ICalculationMaker calculationMaker) {
+        this.calculationMaker = calculationMaker;
     }
 
     public void run() {
         while (true) {
             int firstArg = promptInt("1-й аргумент: ");
-            Calculable calculator = createCalculation.create(firstArg);
+            Calculable calculator = calculationMaker.create(firstArg);
             while (true) {
                 String act = prompt("Действие (*, +, /, =) : ");
                 if (act.equals("*")) {
@@ -86,8 +86,7 @@ public class ViewCalculator {
     }
     // in.close(); // Как закрыть сканер?
     //             // Надо ли это делать в данном случае?
-    //             // Если нет, то почему?
-                
+    //             // Если нет, то почему?          
 }
 
 

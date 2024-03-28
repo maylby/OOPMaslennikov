@@ -16,8 +16,8 @@ package OOP.Homework.Home07.calculator;
  */
 public class Main {
     public static void main(String[] args) {
-        ICreateCalculation createCalculation = new CreateCalculation();
-        ViewCalculator view = new ViewCalculator(createCalculation);
+        ICalculationMaker calculationMaker = new CalculationMaker();
+        ViewCalculator view = new ViewCalculator(calculationMaker);
         view.run();
     }
 }
