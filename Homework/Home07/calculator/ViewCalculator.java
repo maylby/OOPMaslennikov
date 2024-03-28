@@ -50,7 +50,8 @@ public class ViewCalculator {
                     // }
                         throw new RuntimeException("Деление на ноль!"); // сохранил "throw"
                     }
-                    else continue;  
+                    calculator.sum(arg);
+                    continue;  
                     
                     // continue;
                 }
