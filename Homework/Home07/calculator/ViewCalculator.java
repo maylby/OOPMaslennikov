@@ -39,17 +39,17 @@ public class ViewCalculator {
                     int arg = promptInt("2-й аргумент: ");
                     if (arg == 0) {
                         // throw new RuntimeException("Деление на ноль!");
-                        
+
                         /*
                          * Обработка ошибки "Деление на ноль"
                          * Замена строки "throw"
                          */
                         Scanner sc = new Scanner(System.in); 
-                        System.err.println("Делить на ноль нельзя!\n Ведите другой аргумент: ");
+                        System.err.printf("Делить на ноль нельзя!\nВедите другой аргумент: ");
                     
                         int x = sc.nextInt();
                         while (x == 0) {
-                            System.err.println("Делить на ноль нельзя!\n Ведите другой аргумент: ");
+                            System.err.printf("Делить на ноль нельзя!\nВедите другой аргумент: ");
                             x = sc.nextInt();
                         }
                         calculator.div(x);
