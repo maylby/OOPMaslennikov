@@ -84,6 +84,11 @@ public class ViewCalculator {
         System.out.print(message);
         return Integer.parseInt(in.nextLine());
     }
+    // in.close(); // Как закрыть сканер?
+    //             // Надо ли это делать в данном случае?
+    //             // Если нет, то почему?
+                
 }
+
 
 
